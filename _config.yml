@@ -1,0 +1,14 @@
+# Site settings
+title: OpenSource Weekends
+email: osweekends@gmail.com
+baseurl: "" # the subpath of your site, e.g. /blog
+url: "http://osweekends.github.com" # the base hostname & protocol for your site
+
+# Build settings
+markdown: kramdown
+sass:
+  style: :compressed
+gems:
+  - jekyll-feed
+  - jekyll-sitemap
+  - jekyll-paginate

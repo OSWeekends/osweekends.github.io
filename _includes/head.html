@@ -1,0 +1,65 @@
+<head>
+  
+<title>Ignacio Villanueva &ndash; Front-end Developer focusing front-end architecture, front-end performance and responsive web design.</title>
+
+<!-- StyleSheets & DNS Prefetch -->
+  <link rel="dns-prefetch" href="//fonts.googleapis.com">
+  <link rel="dns-prefetch" href="{{ site.twitter }}">
+  <link rel="stylesheet" href="/css/main.css">
+
+<!-- Robots & indexing -->
+  {% if page.external %}
+  <meta name="robots" content="noindex,nofollow">
+  <meta http-equiv="refresh" content="0;url={{ page.external.url }}" />
+  {% else %}
+  <meta name="robots" content="index,follow"> 
+  <meta name="revisit-after" content="1 days"> 
+  {% endif %}
+
+<!-- Open Graph data -->
+  <!-- <meta property="og:title" content="{% if page.title %}{{ page.title }}{% else %}{{ site.title }}{% endif %}" />
+  <meta property="og:url" content="{{ page.url | replace:'index.html','' | prepend: site.baseurl | prepend: site.url }}" />
+  <meta property="og:image" content="http://ignaciodenuevo.com/images/logo.jpg" />
+  <meta property="og:image:type" content="image/jpeg" />
+  <meta property="og:image:width" content="158" />
+  <meta property="og:image:height" content="158" />
+  <meta property="og:description" content="{% if page.excerpt %}{{ page.excerpt | strip_html | strip_newlines | truncate: 140 }}{% else %}{{ site.description }}{% endif %}" />
+  <meta property="og:site_name" content="{{ site.url }}" /> -->
+
+<!-- Twitter cards -->
+  <meta name="twitter:card" content="summary">
+  <meta name="twitter:site" content="@os_weekends">
+  <meta name="twitter:domain" content="{{ site.url }}">
+  <meta name="twitter:creator" content="@os_weekends">
+  <meta name="twitter:title" content="{{ page.title }} – OpenSource Weekends">
+  <meta name="twitter:image" content="/images/logo.jpg">
+  <meta name="twitter:description" content="{% if page.excerpt %}{{ page.excerpt | strip_html | strip_newlines | truncate: 160 }}{% else %}{{ site.description }}{% endif %}">
+
+<!-- RSS -->
+  <link rel="alternate" type="application/rss+xml" title="{{ site.title }}" href="{{ "/feed.xml" | prepend: site.baseurl | prepend: site.url }}" />
+  
+<!-- Favicon -->
+  <!-- <link rel="apple-touch-icon" sizes="57x57" href="/images/favicon/apple-touch-icon-57x57.png">
+  <link rel="apple-touch-icon" sizes="60x60" href="/images/favicon/apple-touch-icon-60x60.png">
+  <link rel="apple-touch-icon" sizes="72x72" href="/images/favicon/apple-touch-icon-72x72.png">
+  <link rel="apple-touch-icon" sizes="76x76" href="/images/favicon/apple-touch-icon-76x76.png">
+  <link rel="apple-touch-icon" sizes="114x114" href="/images/favicon/apple-touch-icon-114x114.png">
+  <link rel="apple-touch-icon" sizes="120x120" href="/images/favicon/apple-touch-icon-120x120.png">
+  <link rel="apple-touch-icon" sizes="144x144" href="/images/favicon/apple-touch-icon-144x144.png">
+  <link rel="apple-touch-icon" sizes="152x152" href="/images/favicon/apple-touch-icon-152x152.png">
+  <link rel="apple-touch-icon" sizes="180x180" href="/images/favicon/apple-touch-icon-180x180.png">
+  <link rel="icon" type="image/png" href="/images/favicon/favicon-32x32.png" sizes="32x32">
+  <link rel="icon" type="image/png" href="/images/favicon/android-chrome-192x192.png" sizes="192x192">
+  <link rel="icon" type="image/png" href="/images/favicon/favicon-96x96.png" sizes="96x96">
+  <link rel="icon" type="image/png" href="/images/favicon/favicon-16x16.png" sizes="16x16">
+  <link rel="manifest" href="/images/favicon/manifest.json">
+  <link rel="mask-icon" href="/images/favicon/safari-pinned-tab.svg" color="#c5003e">
+  <meta name="msapplication-TileColor" content="#c5003e">
+  <meta name="msapplication-TileImage" content="/images/favicon/mstile-144x144.png"> -->
+  
+<!-- Chrome for Android Toolbar Color-->
+  <!-- <meta name="theme-color" content="#C5003E"> -->
+
+<!-- Other -->
+  <link rel="canonical" href="{{ page.url | replace:'index.html','' | prepend: site.baseurl | prepend: site.url }}">
+</head>
