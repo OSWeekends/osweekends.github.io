@@ -1,8 +1,10 @@
 # Site settings
 title: OpenSource Weekends
 email: osweekends@gmail.com
+twitter: https://twitter.com/os_weekends
+github: https://github.com/OSWeekends
+url: http://osweekends.github.com
 baseurl: "" # the subpath of your site, e.g. /blog
-url: "http://osweekends.github.com" # the base hostname & protocol for your site
 
 # Build settings
 markdown: kramdown

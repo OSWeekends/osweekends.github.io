@@ -1,3 +1,98 @@
 // -----------------------------------------------------------------------------
 // This file contains all styles related to the header of the site/application.
 // -----------------------------------------------------------------------------
+.hero {
+    height: auto;
+    margin-bottom: 2em;
+    padding-top: 5em;
+    padding-bottom: 5em;
+    background: $mainColor;
+    background: -moz-linear-gradient(top, $mainColor 0%, $secondaryColor 100%);
+    background: -webkit-gradient(linear, left top, left bottom, color-stop(0%, $mainColor), color-stop(100%, $secondaryColor));
+    background: -webkit-linear-gradient(top, $mainColor 0%, $secondaryColor 100%);
+    background: -o-linear-gradient(top, $mainColor 0%, $secondaryColor 100%);
+    background: -ms-linear-gradient(top, $mainColor 0%, $secondaryColor 100%);
+    background: linear-gradient(to bottom, $mainColor 0%, $secondaryColor 100%);
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='$mainColor', endColorstr='$secondaryColor',GradientType=0 );
+    
+	& a {
+		color: $bgColor;	
+	}
+}
+
+
+.header {
+	display: flex;
+	align-items: center;
+}
+
+
+h1 {
+	max-width: 200px;
+	color: $bgColor;
+
+	& div {
+		margin-bottom: -16px;
+	}
+
+	& a {
+		text-decoration: none;
+	}
+
+	& a:hover {
+		text-decoration: none;
+	}
+}
+
+
+
+// 
+// Nav bar
+// 
+.nav {
+	display: flex;
+	margin: 0;
+	list-style-type: none;
+
+
+	li {
+		margin-right: 10px;
+		margin-left: 10px;
+
+		&:first-child {
+			margin-left: 0;
+		}
+
+		&:last-child {
+			margin-right: 0;
+		}
+	}	
+}
+
+	.nav__link {
+		text-decoration: none;
+
+		&:hover {
+			text-decoration: none;
+			border-bottom: 3px solid $bgColor;
+		}
+	}
+
+
+//
+// Navigation active item 
+//
+// .is-active {
+// 	background-color: $bgColor;
+
+// 	& a {
+// 		color: $mainColor;
+// 	}
+// }
+
+
+
+
+
+
+

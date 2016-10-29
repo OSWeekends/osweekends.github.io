@@ -1,3 +1,21 @@
 // -----------------------------------------------------------------------------
 // This file contains all styles related to the button component.
 // -----------------------------------------------------------------------------
+.btn {
+	display: block;
+	max-width: 150px;
+	padding: 10px;
+	text-align: center;
+	text-decoration: none;
+	background-color: $mainColor;
+	color: $bgColor;
+	border: 3px solid $mainColor;
+	border-radius: 3px;
+	transition: all 0.2s easy-in;
+
+	&:hover {
+		background-color: $bgColor;
+		color: $mainColor;
+		text-decoration: none;
+	}
+}

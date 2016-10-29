@@ -1,3 +1,20 @@
-<header>
-  
+<header class="hero">
+	<div class="wrapper  header">
+		<h1 class="{% if page.url == '/' %}  is-active{% endif %}">
+			<a href="/">
+				<div>Open</div>
+				<div>Source</div>
+				<div>Weekends</div>
+			</a>
+		</h1>
+		<nav role="navigation">
+			<ul class="nav">
+				{% for item in site.data.nav %}
+					<li {% if page.url == item.url %}class="is-active"{% endif %}>
+						<a class="nav__link" href="{{ item.url }}">{{ item.label }}</a>
+					</li>
+				{% endfor %}
+			</ul>
+		</nav>
+	</div>
 </header>

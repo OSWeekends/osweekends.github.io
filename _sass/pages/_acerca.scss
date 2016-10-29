@@ -1,0 +1,27 @@
+// -----------------------------------------------------------------------------
+// This file contains styles that are specific to the /acerca page.
+// -----------------------------------------------------------------------------
+
+.member-wrapper {
+	padding-left: 0;
+
+	& li {
+		max-width: calc(215px + 4px);
+		list-style-type: none;
+		border: 3px solid $mainColor;
+		border-radius: 3px;
+	}
+
+	& img {
+		max-width: 215px;
+	}
+
+	p {
+		margin-left: 10px;
+		font-family: $mainFont;
+	}
+
+	& .member-media {
+		// display: flex;
+	}
+}

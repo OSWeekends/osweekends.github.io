@@ -1,21 +1,28 @@
 // -----------------------------------------------------------------------------
 // This file contains CSS helper classes.
 // -----------------------------------------------------------------------------
+//
+// Makes the body of the website a block element with a max-width of 1024px;
+//
+.wrapper {
+  max-width: 1024px;
+  margin: 0 auto;
+}
 
-/**
- * Clear inner floats
- */
+//
+// Clear inner floats
+// 
 .clearfix::after {
   clear: both;
   content: '';
   display: table;
 }
 
-/**
- * Hide element while making it readable for screen readers
- * Shamelessly borrowed from HTML5Boilerplate:
- * https://github.com/h5bp/html5-boilerplate/blob/master/src/css/main.css#L119-L133
- */
+// 
+// Hide element while making it readable for screen readers
+// Shamelessly borrowed from HTML5Boilerplate:
+// https://github.com/h5bp/html5-boilerplate/blob/master/src/css/main.css#L119-L133
+//
 .visually-hidden { 
   border: 0;
   clip: rect(0 0 0 0);

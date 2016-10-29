@@ -1,3 +1,27 @@
-<footer>
+<footer class="wrapper">
+
+	<!-- Redes Sociales -->
+	<ul>
+		<li>
+			{% include github.html %}
+			<a href="{{ site.github }}" target="blank">Github</a>
+		</li>
+		<li>
+			{% include twitter.html %}
+			<a href="{{ site.twitter }}" target="blank">Twitter</a>
+		</li>
+	</ul>
+
+	<!-- Sponsors -->
+	<a href="http://kingofapp.com/">
+		<img class="icon-sponsor" src="/img/kingofapp.png" alt="King of App - Logo">
+	</a>
+	<a href="http://fictizia.com/">
+		<img class="icon-sponsor" src="/img/fictizia.svg" alt="Fictizia - Logo">
+	</a>
+
+	<!-- RSS Feed -->
+	<p class="rss-subscribe">Suscríbete a nuestro <a href="/feed.xml">RSS</a></p>
 
 </footer>
+

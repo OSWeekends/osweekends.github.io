@@ -1,9 +1,13 @@
 # humanstxt.org/
 
-    Author: Ignacio Villanueva
-    Site: www.IgnaciodeNuevo.com
-    Twitter: @IgnaciodeNuevo
+    Author: OpenSource Weekends
+    Site: https://osweekends.github.io/
+    Twitter: @OS_Weekends
     Location: Madrid, Spain
+    Team:
+        - Ulises Gascón - @kom_256
+        - José Gallego - @Josetekh
+        - Ignacio Villanueva - @IgnaciodeNuevo
 
 # TECHNOLOGY COLOPHON
 
@@ -13,4 +17,4 @@
     GitHub Pages
     Discus
     Icons: materialdesignicons.com
-    Font: Roboto
+    Fonts: Prociono & Open Sans

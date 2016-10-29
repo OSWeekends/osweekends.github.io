@@ -1,0 +1,8 @@
+- label: Blog
+  url: /blog/
+- label: Proyectos
+  url: /proyectos/
+- label: Acerca
+  url: /acerca/
+- label: Buscar
+  url: /search/
