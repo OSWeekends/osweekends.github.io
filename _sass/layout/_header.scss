@@ -14,11 +14,9 @@
 
 
 
-
-
 h1 {
 	display: block;
-	max-width: 12.5em;
+	// max-width: 11.125em;
     margin: 0 auto 1em;
 	color: $bgColor;
 
@@ -41,9 +39,11 @@ h1 {
 		align-items: center;
 		flex-wrap: wrap;
 	}
+
+	h1 {
+		margin: 0 3rem 0 0;
+	}
 }
-
-
 
 
 

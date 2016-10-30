@@ -9,11 +9,16 @@ layout: default
 	<li class="event">
 		<div class="card__banner"></div>
         <div class="event__img">
-        	<a href="{{ event.location }}" target="blank">
-        		<img src="{{ event.img }}" alt="Fotografía de {{ event.location }}" title="El lugar donde se va a organizar el evento es {{ event.location-name }}">
+        	<a href="{{ event.venue-url }}" target="blank">
+        		<img src="{{ event.img }}" alt="Fotografía de {{ event.venue-name }}" title="El lugar donde se va a organizar el evento es {{ event.venue-name }}">
         	</a>
         </div>
         <h3>{{ event.name }}</h3>
+        <ul>
+        	<li><strong>Fecha: </strong><span>{{ event.date }}</span></li>
+        	<li><strong>Hora: </strong><span>{{ event.hour }}</span></li>
+        	<li><strong>Dirección: </strong><a class="link" href="{{ event.venue-location }}">{{ event.venue-address }}</a></li>
+        </ul>
         <p>{{ event.desc }}</p>
 		<ul class="card__media">
 			<li>
@@ -31,6 +36,9 @@ layout: default
 <ul class="card--wrapper">
 	<li class="event">
 		<div class="card__banner"></div>
+		<div class="event__img">
+        {% include opensource.html %}
+        </div>
         <h3>Participa</h3>
         <p>Somos una comunidad orientada al <a class="link" href="https://es.wikipedia.org/wiki/C%C3%B3digo_abierto">OpenSource</a> que realiza un evento mensual en Madrid.</p>
         <p>Nuestro objetivo es compartir conocimiento y aprender unos de otros en el que cada miembro aporte lo que esté en su mano y quiera compartir.</p>
