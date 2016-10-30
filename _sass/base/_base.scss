@@ -6,7 +6,20 @@
 //
 html {
   box-sizing: border-box;
+  font-size: 16px;
+  font-size: 1em;
+  font-size: 1rem;
 }
+
+
+
+body {
+	font-family: $bodyFont;
+	font-weight: 400;
+  	line-height: 1.45;
+}
+
+
 
 // 
 // Make all elements from the DOM inherit from the parent box-sizing
