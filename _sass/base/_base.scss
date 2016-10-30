@@ -2,7 +2,7 @@
 // This file contains very basic styles.
 // -----------------------------------------------------------------------------
 // 
-// Set up a decent box model on the root element
+// Set up a decent box model and foont-size on the root element
 //
 html {
   box-sizing: border-box;
@@ -13,6 +13,9 @@ html {
 
 
 
+// 
+// Set up the font-family, font-weight and line-height on the body 
+// 
 body {
 	font-family: $bodyFont;
 	font-weight: 400;
