@@ -1,0 +1,26 @@
+<ul class="contacto">
+	<li class="media">
+		{% include email.html %}
+		<a class="link" href="mailto:{{ site.email }}">Email</a>
+	</li>
+	<li class="media">
+		{% include github.html %}
+		<a class="link" href="{{ site.github }}" target="blank">Github</a>
+	</li>
+	<li class="media">
+		{% include twitter.html %}
+		<a class="link" href="{{ site.twitter }}" target="blank">Twitter</a>
+	</li>
+	<li class="media">
+		{% include meetup.html %}
+		<a class="link" href="https://www.meetup.com/Open-Source-Weekends/">Meetup</a>
+	</li>
+	<li class="media">
+		{% include slack.html %}
+		<a class="link" href="https://osweekends.slack.com">Slack</a>
+	</li>
+	<li class="media">
+		{% include rss.html %}
+		<a class="link" href="/feed.xml">Feed RSS</a>
+	</li>
+</ul>

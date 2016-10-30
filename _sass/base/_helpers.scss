@@ -7,6 +7,14 @@
 .wrapper {
   max-width: 1024px;
   margin: 0 auto;
+  padding: 0 15px;
+}
+
+// 
+// Change default question mark from Martel typography to Arial/Verdana
+// 
+.qMark {
+  font-family: $questionMark;
 }
 
 //

@@ -4,17 +4,9 @@
 .hero {
     height: auto;
     margin-bottom: 2em;
-    padding-top: 5em;
-    padding-bottom: 5em;
-    background: $mainColor;
-    background: -moz-linear-gradient(top, $mainColor 0%, $secondaryColor 100%);
-    background: -webkit-gradient(linear, left top, left bottom, color-stop(0%, $mainColor), color-stop(100%, $secondaryColor));
-    background: -webkit-linear-gradient(top, $mainColor 0%, $secondaryColor 100%);
-    background: -o-linear-gradient(top, $mainColor 0%, $secondaryColor 100%);
-    background: -ms-linear-gradient(top, $mainColor 0%, $secondaryColor 100%);
-    background: linear-gradient(to bottom, $mainColor 0%, $secondaryColor 100%);
-    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='$mainColor', endColorstr='$secondaryColor',GradientType=0 );
-    
+   	padding: 5em 15px;
+    @include gradient($mainColor, $secondaryColor);
+
 	& a {
 		color: $bgColor;	
 	}
@@ -24,6 +16,7 @@
 .header {
 	display: flex;
 	align-items: center;
+	flex-wrap: wrap;
 }
 
 
@@ -51,6 +44,7 @@ h1 {
 // 
 .nav {
 	display: flex;
+	flex-wrap: wrap;
 	margin: 0;
 	list-style-type: none;
 

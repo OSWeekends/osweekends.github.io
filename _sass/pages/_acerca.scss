@@ -6,10 +6,18 @@
 	padding-left: 0;
 
 	& li {
-		max-width: calc(215px + 4px);
+		float: left;
+		max-width: 215px;
+		margin-right: 15px;
+		background-color: $lightGrey;
 		list-style-type: none;
-		border: 3px solid $mainColor;
 		border-radius: 3px;
+		box-shadow: rgba(0, 0, 0, 0.1) 1px 2px 0 0;
+    	overflow: hidden;
+
+    	&:last-child {
+    		margin-right: 0;
+    	}
 	}
 
 	& img {
@@ -17,11 +25,30 @@
 	}
 
 	p {
-		margin-left: 10px;
+		margin: -7px 0 0 0;
+		padding: 5px 10px;
 		font-family: $mainFont;
+		color: $bgColor;
+		@include gradient($mainColor, $secondaryColor);
 	}
 
 	& .member-media {
-		// display: flex;
+		display: flex;
+		align-items: center;
+		padding: 5px;
+	}
+
+	& a {
+		margin-left: 10px;
+	}
+}
+
+.media {
+	display: flex;
+	align-items: center;
+	padding: 5px;
+
+	& a {
+		margin-left: 5px;
 	}
 }
