@@ -3,10 +3,10 @@
 // -----------------------------------------------------------------------------
 .event {
 	position: relative;
-	align-items: center;
 	display: flex;
+	align-items: center;
 	flex-direction: column;
-    margin: 0 auto 1em;
+    margin: 0 auto 3em;
     background-color: $bgColor;
     border-radius: 3px;
     @include boxShador;
@@ -29,9 +29,9 @@
 	    width: calc(10em - 6px);
 		margin-top: -5em;
 		padding: 1em;
-	    border: 3px solid $mainColor;
+		border: 3px solid $mainColor;
 		border-radius: 50%;
-	    background-color: white;   
+	    background-color: $bgColor; 
 	}
 
 	& img {
@@ -45,6 +45,7 @@
 	& p {
 		margin-top: -1em;
 		padding: 1em;
+		align-self: flex-start;
 	}
 
 	& .card__media {

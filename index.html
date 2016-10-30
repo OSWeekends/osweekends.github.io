@@ -5,28 +5,37 @@ layout: default
 <h2>Próximo Evento</h2>
 
 <ul class="card--wrapper">
-	{% for org in site.data.eventos limit:1 %}
+	{% for event in site.data.eventos limit:1 %}
 	<li class="event">
 		<div class="card__banner"></div>
         <div class="event__img">
-        	<a href="{{ org.lugar }}" target="blank">
-        		<img src="{{ org.img }}" alt="Fotografía de {{ org.name }}">
+        	<a href="{{ event.location }}" target="blank">
+        		<img src="{{ event.img }}" alt="Fotografía de {{ event.location }}" title="El lugar donde se va a organizar el evento es {{ event.location-name }}">
         	</a>
         </div>
-        <h3>{{ org.name }}</h3>
-        <p>{{ org.desc }}</p>
+        <h3>{{ event.name }}</h3>
+        <p>{{ event.desc }}</p>
 		<ul class="card__media">
 			<li>
-				<a class="link" href="{{ org.web }}" target="blank">{% include web.html %}</a>
+				<a class="link" href="{{ event.web }}" target="blank">{% include web.html %}</a>
 			<li>
-				<a class="link" href="{{ org.twitter }}" target="blank">{% include twitter.html %}</a>
+				<a class="link" href="{{ event.twitter }}" target="blank">{% include twitter.html %}</a>
 			</li>
-			<li>
-				<a class="link" href="{{ org.github }}" target="blank">{% include github.html %}</a>
-			</li></li>
 		</ul>
 	</li>
 	{% endfor %}
 </ul>
 
 <h2><span class="qMark">¿</span>Quieres compartir tu proyecto<span class="qMark">?</span></h2>
+
+<ul class="card--wrapper">
+	<li class="event">
+		<div class="card__banner"></div>
+        <h3>Participa</h3>
+        <p>Somos una comunidad orientada al <a class="link" href="https://es.wikipedia.org/wiki/C%C3%B3digo_abierto">OpenSource</a> que realiza un evento mensual en Madrid.</p>
+        <p>Nuestro objetivo es compartir conocimiento y aprender unos de otros en el que cada miembro aporte lo que esté en su mano y quiera compartir.</p>
+        <p>Así mismo contribuimos a proyectos OpenSource con el fin de mejorar la sociedad o simplemente ayudar a otros en sus proyectos ya sea para aprender o por el mero hecho de darnos el placer de contribuir.</p>
+        <p>Si ves que estas ideas te interesan no dudes en venirte al próximo evento.</p>
+        <p>Si eres alguien que necesita ayuda en tu proyecto y es OpenSource no dudes en venir a presentarlo a alguno de nuestros <a class="link" href="/eventos/">eventos</a>.</p>
+	</li>
+</ul>

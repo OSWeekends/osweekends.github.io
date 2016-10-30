@@ -1,7 +1,7 @@
 - name: Primera Sesión - ¡Bienvenidos!
-  desc: (Traer portátil) - En esta primera sesión aprovecharemos para conocernos y ponernos al día sobre proyectos e iniciativas Open Source en las que participamos o queremos participar. También habrá microtalleres (git/github confirmado)
+  desc: <strong>Traed portátil</strong><br><br>En esta primera sesión aprovecharemos para conocernos y ponernos al día sobre proyectos e iniciativas Open Source en las que participamos o queremos participar.<br><br>También habrá microtalleres (git/github confirmado)
   img: ../img/campus.svg
-  lugar: https://www.campus.co/madrid/es
-  web: "{{ site.meetup }}/events/234913420/"
-  twitter: "{{ site.twitter }}"
-  github: "{{ site.github }}"
+  location-name: "Campus Madrid"
+  location: https://www.campus.co/madrid/es
+  web: https://www.meetup.com/Open-Source-Weekends/events/234913420/
+  twitter: https://twitter.com/os_weekends
