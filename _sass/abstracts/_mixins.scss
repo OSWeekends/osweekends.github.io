@@ -12,3 +12,9 @@
 	background: linear-gradient(135deg,  $from 0%,$to 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
 	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='$from', endColorstr='$to',GradientType=1 ); /* IE6-9 fallback on horizontal gradient */
 }
+
+@mixin boxShador {
+	-webkit-box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+	   -moz-box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+	   		box-shadow: 0 0 15px rgba(0, 0, 0, 0.2);
+}

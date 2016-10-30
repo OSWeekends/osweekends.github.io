@@ -4,7 +4,7 @@
 .hero {
     height: auto;
     margin-bottom: 2em;
-   	padding: 5em 15px;
+   	padding: 4em 1em;
     @include gradient($mainColor, $secondaryColor);
 
 	& a {
@@ -13,15 +13,13 @@
 }
 
 
-.header {
-	display: flex;
-	align-items: center;
-	flex-wrap: wrap;
-}
+
 
 
 h1 {
-	max-width: 200px;
+	display: block;
+	max-width: 12.5em;
+    margin: 0 auto 1em;
 	color: $bgColor;
 
 	& div {
@@ -37,52 +35,86 @@ h1 {
 	}
 }
 
+@media screen and (min-width: 43.75em) {
+	.header {
+		display: flex;
+		align-items: center;
+		flex-wrap: wrap;
+	}
+}
+
+
+
 
 
 // 
 // Nav bar
 // 
 .nav {
-	display: flex;
-	flex-wrap: wrap;
-	margin: 0;
+	padding-left: 0;
 	list-style-type: none;
+	text-align: center;
 
+	& li {
+		margin-bottom: 1em;
+	}
 
-	li {
-		margin-right: 10px;
-		margin-left: 10px;
-
-		&:first-child {
-			margin-left: 0;
-		}
-
-		&:last-child {
-			margin-right: 0;
-		}
-	}	
-}
-
-	.nav__link {
-		text-decoration: none;
+	& a {
+		display: block;
+		margin: 0 auto;
+		width: 6.25em;
+		padding: 5px;
+		border-bottom: 3px solid transparent;
 
 		&:hover {
+			color: $bgColor;
 			text-decoration: none;
 			border-bottom: 3px solid $bgColor;
 		}
 	}
+}
+
+	@media screen and (min-width: 43.75em) {
+		.nav {
+			display: flex;
+			flex-wrap: wrap;
+			margin: 0;
+			list-style-type: none;
+
+			li {
+				margin-right: 0.625em;
+				margin-left: 0.625em;
+
+				&:first-child {
+					margin-left: 0;
+				}
+
+				&:last-child {
+					margin-right: 0;
+				}
+			}	
+		}
+
+			.nav__link {
+				text-decoration: none;
+
+				&:hover {
+					text-decoration: none;
+					border-bottom: 3px solid $bgColor;
+				}
+			}
+	}
 
 
-//
-// Navigation active item 
-//
-// .is-active {
-// 	background-color: $bgColor;
 
-// 	& a {
-// 		color: $mainColor;
-// 	}
-// }
+
+
+// 
+// This class is added when the user is in a specific section as breadcrumb
+// 
+.is-active > a {
+	border-bottom: 3px solid $bgColor;
+}
 
 
 

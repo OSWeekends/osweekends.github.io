@@ -4,6 +4,29 @@ layout: default
 
 <h2>Próximo Evento</h2>
 
-<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Esse repellat distinctio nihil consequatur, maiores voluptates numquam. Nesciunt dolore ratione architecto corporis et, dolorem fugiat aliquam! Recusandae, aspernatur, explicabo. Impedit, blanditiis!</p>
+<ul class="card--wrapper">
+	{% for org in site.data.eventos limit:1 %}
+	<li class="event">
+		<div class="card__banner"></div>
+        <div class="event__img">
+        	<a href="{{ org.lugar }}" target="blank">
+        		<img src="{{ org.img }}" alt="Fotografía de {{ org.name }}">
+        	</a>
+        </div>
+        <h3>{{ org.name }}</h3>
+        <p>{{ org.desc }}</p>
+		<ul class="card__media">
+			<li>
+				<a class="link" href="{{ org.web }}" target="blank">{% include web.html %}</a>
+			<li>
+				<a class="link" href="{{ org.twitter }}" target="blank">{% include twitter.html %}</a>
+			</li>
+			<li>
+				<a class="link" href="{{ org.github }}" target="blank">{% include github.html %}</a>
+			</li></li>
+		</ul>
+	</li>
+	{% endfor %}
+</ul>
 
 <h2><span class="qMark">¿</span>Quieres compartir tu proyecto<span class="qMark">?</span></h2>
