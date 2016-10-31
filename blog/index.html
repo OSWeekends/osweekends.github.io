@@ -2,27 +2,29 @@
 layout: default
 ---
 
-<h2>Blog</h2>
+<section class="wrapper">
+    <h2>Blog</h2>
 
-<ul class="post-list">
-    {% for post in site.posts %}
-        <li>
-            <h3>{{ post.title }}</h3>
-            <time>{{ post.date | date: "%b %-d, %Y" }}</time>
-            <a class="btn" href="{{ post.url | prepend: site.baseurl }}">Leer más</a>
-        </li>
-    {% endfor %}
-</ul>
+    <ul class="post-list">
+        {% for post in site.posts %}
+            <li>
+                <h3>{{ post.title }}</h3>
+                <time>{{ post.date | date: "%b %-d, %Y" }}</time>
+                <a class="btn" href="{{ post.url | prepend: site.baseurl }}">Leer más</a>
+            </li>
+        {% endfor %}
+    </ul>
 
-<ul class="pagination">
-    {% if paginator.previous_page %}
-        <li>
-            <a href="{{ paginator.previous_page_path }}"><span class="pagination__icon">◀</span> Previous</a>
-        </li>
-    {% endif %}
-    {% if paginator.next_page %}
-        <li>
-            <a href="{{ paginator.next_page_path }}">Next <span class="pagination__icon">►</span></a>
-        </li>
-    {% endif %}
-</ul>
+    <ul class="pagination">
+        {% if paginator.previous_page %}
+            <li>
+                <a href="{{ paginator.previous_page_path }}"><span class="pagination__icon">◀</span> Previous</a>
+            </li>
+        {% endif %}
+        {% if paginator.next_page %}
+            <li>
+                <a href="{{ paginator.next_page_path }}">Next <span class="pagination__icon">►</span></a>
+            </li>
+        {% endif %}
+    </ul>
+</section>

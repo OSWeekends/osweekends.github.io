@@ -1,49 +1,51 @@
 ---
 layout: default
 ---
+<section class="wrapper">
+    <h2>Próximo Evento</h2>
 
-<h2>Próximo Evento</h2>
+    <ul class="card--wrapper">
+    	{% for event in site.data.eventos limit:1 %}
+    	<li class="event">
+    		<div class="card__banner"></div>
+            <div class="event__img">
+            	<a href="{{ event.venue-url }}" target="blank">
+            		<img src="{{ event.img }}" alt="Fotografía de {{ event.venue-name }}" title="El lugar donde se va a organizar el evento es {{ event.venue-name }}">
+            	</a>
+            </div>
+            <h3>{{ event.name }}</h3>
+            <ul>
+            	<li><strong>Fecha: </strong><span>{{ event.date }}</span></li>
+            	<li><strong>Hora: </strong><span>{{ event.hour }}</span></li>
+            	<li><strong>Dirección: </strong><a class="link" href="{{ event.venue-location }}">{{ event.venue-address }}</a></li>
+            </ul>
+            <p>{{ event.desc }}</p>
+    		<ul class="card__media">
+    			<li>
+    				<a class="link" href="{{ event.web }}" target="blank">{% include web.html %}</a>
+    			<li>
+    				<a class="link" href="{{ event.twitter }}" target="blank">{% include twitter.html %}</a>
+    			</li>
+    		</ul>
+    	</li>
+    	{% endfor %}
+    </ul>
 
-<ul class="card--wrapper">
-	{% for event in site.data.eventos limit:1 %}
-	<li class="event">
-		<div class="card__banner"></div>
-        <div class="event__img">
-        	<a href="{{ event.venue-url }}" target="blank">
-        		<img src="{{ event.img }}" alt="Fotografía de {{ event.venue-name }}" title="El lugar donde se va a organizar el evento es {{ event.venue-name }}">
-        	</a>
-        </div>
-        <h3>{{ event.name }}</h3>
-        <ul>
-        	<li><strong>Fecha: </strong><span>{{ event.date }}</span></li>
-        	<li><strong>Hora: </strong><span>{{ event.hour }}</span></li>
-        	<li><strong>Dirección: </strong><a class="link" href="{{ event.venue-location }}">{{ event.venue-address }}</a></li>
-        </ul>
-        <p>{{ event.desc }}</p>
-		<ul class="card__media">
-			<li>
-				<a class="link" href="{{ event.web }}" target="blank">{% include web.html %}</a>
-			<li>
-				<a class="link" href="{{ event.twitter }}" target="blank">{% include twitter.html %}</a>
-			</li>
-		</ul>
-	</li>
-	{% endfor %}
-</ul>
+    <h2><span class="qMark">¿</span>Quieres compartir tu proyecto<span class="qMark">?</span></h2>
 
-<h2><span class="qMark">¿</span>Quieres compartir tu proyecto<span class="qMark">?</span></h2>
-
-<ul class="card--wrapper">
-	<li class="event">
-		<div class="card__banner"></div>
-		<div class="event__img">
-        {% include opensource.html %}
-        </div>
-        <h3>Participa</h3>
-        <p>Somos una comunidad orientada al <a class="link" href="https://es.wikipedia.org/wiki/C%C3%B3digo_abierto">OpenSource</a> que realiza un evento mensual en Madrid.</p>
-        <p>Nuestro objetivo es compartir conocimiento y aprender unos de otros en el que cada miembro aporte lo que esté en su mano y quiera compartir.</p>
-        <p>Así mismo contribuimos a proyectos OpenSource con el fin de mejorar la sociedad o simplemente ayudar a otros en sus proyectos ya sea para aprender o por el mero hecho de darnos el placer de contribuir.</p>
-        <p>Si ves que estas ideas te interesan no dudes en venirte al próximo evento.</p>
-        <p>Si eres alguien que necesita ayuda en tu proyecto y es OpenSource no dudes en venir a presentarlo a alguno de nuestros <a class="link" href="/eventos/">eventos</a>.</p>
-	</li>
-</ul>
+    <ul class="card--wrapper">
+    	<li class="event">
+    	<div class="card__banner"></div>
+    	<div class="event__img">
+            {% include opensource.html %}
+            </div>
+            <h3>Participa</h3>
+            <p>Somos una comunidad orientada al <a class="link" href="https://es.wikipedia.org/wiki/C%C3%B3digo_abierto">OpenSource</a> que realiza un evento mensual en Madrid.</p>
+            <p>Nuestro objetivo es compartir conocimiento y aprender unos de otros en el que cada miembro aporte lo que esté en su mano y quiera compartir.</p>
+            <p>Así mismo contribuimos a proyectos OpenSource con el fin de mejorar la sociedad o simplemente ayudar a otros en sus proyectos ya sea para aprender o por el mero hecho de darnos el placer de contribuir.</p>
+            <p>Si ves que estas ideas te interesan no dudes en venirte al próximo evento.</p>
+            <p>Si eres alguien que necesita ayuda en tu proyecto y es OpenSource no dudes en venir a presentarlo a alguno de nuestros <a class="link" href="/eventos/">eventos</a>.</p>
+            <iframe src="https://docs.google.com/forms/d/e/1FAIpQLSc9dXlDENom2eSj3ATL5WI9UNPuv4kyaUJAszXQPMXow7yfHQ/viewform?embedded=true" width="100%" height="500" frameborder="0" marginheight="0" marginwidth="0">Cargando...</iframe>
+    	</li>
+    </ul>
+</section>

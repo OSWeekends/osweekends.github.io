@@ -5,26 +5,34 @@
 // Makes the body of the website a block element with a max-width of 1024px;
 //
 .wrapper {
-  max-width: 1024px;
-  margin: 0 auto;
-  padding: 0 15px;
+    max-width: 1024px;
+    margin: 0 auto;
+    padding: 0 15px;
 }
 
 // 
 // Change default question mark from Martel typography to Arial/Verdana
 // 
 .qMark {
-  font-family: $questionMark;
+    font-family: $questionMark;
 }
 
 //
 // Clear inner floats
 // 
 .clearfix::after {
-  clear: both;
-  content: '';
-  display: table;
+    clear: both;
+    content: '';
+    display: table;
 }
+
+// 
+// Helps to make /search/ and /events/ <section>'s be scrollable and helps the footer not to collapse with the header 
+// 
+.fullScreen {
+    min-height: calc(100vh - 592px)
+}
+
 
 // 
 // Hide element while making it readable for screen readers
@@ -32,12 +40,12 @@
 // https://github.com/h5bp/html5-boilerplate/blob/master/src/css/main.css#L119-L133
 //
 .visually-hidden { 
-  border: 0;
-  clip: rect(0 0 0 0);
-  height: 1px;
-  margin: -1px;
-  overflow: hidden;
-  padding: 0;
-  position: absolute;
-  width: 1px;
+    border: 0;
+    clip: rect(0 0 0 0);
+    height: 1px;
+    margin: -1px;
+    overflow: hidden;
+    padding: 0;
+    position: absolute;
+    width: 1px;
 }

@@ -1,49 +1,33 @@
 ---
 layout: default
 ---
+<section class="wrapper  fullScreen">
+    <h2>Buscar</h2>
 
-<h2>Buscar</h2>
+    <p>Cada evento que realizamos escribirmos un post en el blog con lo que se ha hecho, por ello si ves que hay algo que no encuentras puede que aquí puedas hacerlo.</p>
 
-<p>Cada evento que realizamos escribirmos un post en el blog con lo que se ha hecho, por ello si ves que hay algo que no encuentras puede que aquí puedas hacerlo.</p>
+    <p>Si estás buscando algún proyecto o post sobre el que crees que hemos escrito y no lo enuentras...</p>
 
-<p>Si estás buscando algún proyecto o post sobre el que crees que hemos escrito y no lo enuentras...</p>
+    <p>Prueba a buscarlo en el campo de búsqueda.</p>
 
-<p>Prueba a buscarlo en el campo de búsqueda.</p>
+    <noscript>Desafortunadamente no es posible usar el sistema de búsqueda debido a que tienes JavaScript desactivado, actívalo para poder usarlo.</noscript>
 
-<noscript>Desafortunadamente no es posible usar el sistema de búsqueda debido a que tienes JavaScript desactivado, actívalo para poder usarlo.</noscript>
+    <div class="search-container" id="search-container">
+      <input type="text" id="search-input" class="search-input" placeholder="Prueba a buscar algo..." role="search">
+      <ul id="results-container" class="search-results"></ul>
+    </div>
 
-<div class="search-container" id="search-container">
-  <input type="text" id="search-input" class="search-input" placeholder="Prueba a buscar algo..." role="search">
-  <ul id="results-container" class="search-results"></ul>
-</div>
-
-<h2><span class="qMark">¿</span>Quieres compartir tu proyecto<span class="qMark">?</span></h2>
-
-<ul class="card--wrapper">
-  <li class="event">
-    <div class="card__banner"></div>
-    <div class="event__img">
-        {% include opensource.html %}
-        </div>
-        <h3>Participa</h3>
-        <p>Somos una comunidad orientada al <a class="link" href="https://es.wikipedia.org/wiki/C%C3%B3digo_abierto">OpenSource</a> que realiza un evento mensual en Madrid.</p>
-        <p>Nuestro objetivo es compartir conocimiento y aprender unos de otros en el que cada miembro aporte lo que esté en su mano y quiera compartir.</p>
-        <p>Así mismo contribuimos a proyectos OpenSource con el fin de mejorar la sociedad o simplemente ayudar a otros en sus proyectos ya sea para aprender o por el mero hecho de darnos el placer de contribuir.</p>
-        <p>Si ves que estas ideas te interesan no dudes en venirte al próximo evento.</p>
-        <p>Si eres alguien que necesita ayuda en tu proyecto y es OpenSource no dudes en venir a presentarlo a alguno de nuestros <a class="link" href="/eventos/">eventos</a>.</p>
-  </li>
-</ul>
-
-<script src="/js/jekyll-search.js"></script>
-<script>
-document.addEventListener('DOMContentLoaded', function() {
-  SimpleJekyllSearch({
-    searchInput: document.getElementById('search-input'),
-    resultsContainer: document.getElementById('results-container'),
-    json:                 'data.json',
-    searchResultTemplate: '<h2>{title}</h2>\
-    					   <a class="btn" href="{url}">Leer más</a>',
-    noResultsText:        'Lo lamentamos, no hemos podido encontrar lo que buscabas. Posiblemente aún no hemos grabado ningún episodio sobre dicho tema.'
-  });
-});
-</script>
+    <script src="/js/jekyll-search.js"></script>
+    <script>
+    document.addEventListener('DOMContentLoaded', function() {
+      SimpleJekyllSearch({
+        searchInput: document.getElementById('search-input'),
+        resultsContainer: document.getElementById('results-container'),
+        json:                 'data.json',
+        searchResultTemplate: '<h2>{title}</h2>\
+        					   <a class="btn" href="{url}">Leer más</a>',
+        noResultsText:        'Lo lamentamos, no hemos podido encontrar lo que buscabas. Posiblemente aún no hemos grabado ningún episodio sobre dicho tema.'
+      });
+    });
+    </script>
+</section>

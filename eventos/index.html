@@ -2,60 +2,63 @@
 layout: default
 ---
 
-<h2>Próximos eventos</h2>
+<section class="wrapper  fullScreen">
 
-<ul class="card--wrapper">
-	{% for event in site.data.eventos %}
-	<li class="event">
-		<div class="card__banner"></div>
-        <div class="event__img">
-        	<a href="{{ event.venue-url }}" target="blank">
-        		<img src="{{ event.img }}" alt="Fotografía de {{ event.venue-name }}" title="El lugar donde se va a organizar el evento es {{ event.venue-name }}">
-        	</a>
-        </div>
-        <h3>{{ event.name }}</h3>
-        <ul>
-        	<li><strong>Fecha: </strong><span>{{ event.date }}</span></li>
-        	<li><strong>Hora: </strong><span>{{ event.hour }}</span></li>
-        	<li><strong>Dirección: </strong><a class="link" href="{{ event.venue-location }}">{{ event.venue-address }}</a></li>
-        </ul>
-        <p>{{ event.desc }}</p>
-		<ul class="card__media">
-			<li>
-				<a class="link" href="{{ event.web }}" target="blank">{% include web.html %}</a>
-			<li>
-				<a class="link" href="{{ event.twitter }}" target="blank">{% include twitter.html %}</a>
-			</li>
-		</ul>
-	</li>
-	{% endfor %}
-</ul>
+	<h2>Próximos eventos</h2>
 
-<h2>Eventos pasados</h2>
+	<ul class="card--wrapper">
+		{% for event in site.data.eventos %}
+		<li class="event">
+			<div class="card__banner"></div>
+	        <div class="event__img">
+	        	<a href="{{ event.venue-url }}" target="blank">
+	        		<img src="{{ event.img }}" alt="Fotografía de {{ event.venue-name }}" title="El lugar donde se va a organizar el evento es {{ event.venue-name }}">
+	        	</a>
+	        </div>
+	        <h3>{{ event.name }}</h3>
+	        <ul>
+	        	<li><strong>Fecha: </strong><span>{{ event.date }}</span></li>
+	        	<li><strong>Hora: </strong><span>{{ event.hour }}</span></li>
+	        	<li><strong>Dirección: </strong><a class="link" href="{{ event.venue-location }}">{{ event.venue-address }}</a></li>
+	        </ul>
+	        <p>{{ event.desc }}</p>
+			<ul class="card__media">
+				<li>
+					<a class="link" href="{{ event.web }}" target="blank">{% include web.html %}</a>
+				<li>
+					<a class="link" href="{{ event.twitter }}" target="blank">{% include twitter.html %}</a>
+				</li>
+			</ul>
+		</li>
+		{% endfor %}
+	</ul>
 
-<ul class="card--wrapper">
-	{% for event in site.data.ultimos-eventos %}
-	<li class="event">
-		<div class="card__banner"></div>
-        <div class="event__img">
-        	<a href="{{ event.venue-url }}" target="blank">
-        		<img src="{{ event.img }}" alt="Fotografía de {{ event.venue-name }}" title="El lugar donde se va a organizar el evento es {{ event.venue-name }}">
-        	</a>
-        </div>
-        <h3>{{ event.name }}</h3>
-        <ul>
-        	<li><strong>Fecha: </strong><span>{{ event.date }}</span></li>
-        	<li><strong>Hora: </strong><span>{{ event.hour }}</span></li>
-        	<li><strong>Dirección: </strong><a class="link" href="{{ event.venue-location }}">{{ event.venue-address }}</a></li>
-        </ul>
-        <p>{{ event.desc }}</p>
-		<ul class="card__media">
-			<li>
-				<a class="link" href="{{ event.web }}" target="blank">{% include web.html %}</a>
-			<li>
-				<a class="link" href="{{ event.twitter }}" target="blank">{% include twitter.html %}</a>
-			</li>
-		</ul>
-	</li>
-	{% endfor %}
-</ul>
+	<!-- <h2>Eventos pasados</h2>
+
+	<ul class="card--wrapper">
+		{% for event in site.data.ultimos-eventos %}
+		<li class="event">
+			<div class="card__banner"></div>
+	        <div class="event__img">
+	        	<a href="{{ event.venue-url }}" target="blank">
+	        		<img src="{{ event.img }}" alt="Fotografía de {{ event.venue-name }}" title="El lugar donde se va a organizar el evento es {{ event.venue-name }}">
+	        	</a>
+	        </div>
+	        <h3>{{ event.name }}</h3>
+	        <ul>
+	        	<li><strong>Fecha: </strong><span>{{ event.date }}</span></li>
+	        	<li><strong>Hora: </strong><span>{{ event.hour }}</span></li>
+	        	<li><strong>Dirección: </strong><a class="link" href="{{ event.venue-location }}">{{ event.venue-address }}</a></li>
+	        </ul>
+	        <p>{{ event.desc }}</p>
+			<ul class="card__media">
+				<li>
+					<a class="link" href="{{ event.web }}" target="blank">{% include web.html %}</a>
+				<li>
+					<a class="link" href="{{ event.twitter }}" target="blank">{% include twitter.html %}</a>
+				</li>
+			</ul>
+		</li>
+		{% endfor %}
+	</ul> -->
+</section>
