@@ -1,8 +1,8 @@
 # humanstxt.org/
 
-    Author: Ignacio Villanueva
-    Site: www.IgnaciodeNuevo.com
-    Twitter: @IgnaciodeNuevo
+    Author: OpenSource Weekends
+    Site: http://osweekends.github.com
+    Twitter: @OS_Weekends
     Location: Madrid, Spain
 
 # TECHNOLOGY COLOPHON
@@ -11,6 +11,4 @@
     Jekyll + Simple-Jekyll-Search
     Pygments Syntax Highlighter
     GitHub Pages
-    Discus
     Icons: materialdesignicons.com
-    Font: Roboto
