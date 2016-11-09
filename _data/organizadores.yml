@@ -1,0 +1,20 @@
+- name: Ulises Gascón
+  desc: Maker
+  img: ../img/portrait-ulises.jpg
+  web: http://www.blog.ulisesgascon.com/
+  twitter: https://twitter.com/kom_256
+  github: https://github.com/UlisesGascon
+
+- name: José Gallego
+  desc: Backend & Community Manager
+  img: ../img/portrait-jose.jpg
+  web: /
+  twitter: https://twitter.com/Josetekh
+  github: https://github.com/Josheriff
+
+- name: Ignacio Villanueva
+  desc: Front-end Developer
+  img: ../img/portrait-ignacio.jpg
+  web: http://ignaciodenuevo.com/
+  twitter: https://twitter.com/ignaciodenuevo
+  github: https://github.com/ignaciodenuevo

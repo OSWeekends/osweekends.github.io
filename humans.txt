@@ -1,9 +1,13 @@
 # humanstxt.org/
 
     Author: OpenSource Weekends
-    Site: http://osweekends.github.com
+    Site: http://osweekends.github.io
     Twitter: @OS_Weekends
     Location: Madrid, Spain
+    Team:
+        - Ulises Gascón - @kom_256
+        - José Gallego - @Josetekh
+        - Ignacio Villanueva - @IgnaciodeNuevo
 
 # TECHNOLOGY COLOPHON
 
@@ -11,4 +15,6 @@
     Jekyll + Simple-Jekyll-Search
     Pygments Syntax Highlighter
     GitHub Pages
+    Discus
     Icons: materialdesignicons.com
+    Fonts: Prociono & Open Sans

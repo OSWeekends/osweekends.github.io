@@ -1,0 +1,11 @@
+- name: Primera Sesión - ¡Bienvenidos!
+  desc: <strong>Traed portátil</strong><br><br>En esta primera sesión aprovecharemos para conocernos y ponernos al día sobre proyectos e iniciativas Open Source en las que participamos o queremos participar.<br><br>También habrá microtalleres (git/github confirmado)
+  img: ../img/campus.svg
+  venue-name: "Campus Madrid"
+  venue-url: https://www.campus.co/madrid/es
+  venue-location: https://www.google.com/maps/place/Campus+Madrid/@40.4123321,-3.720433,17z/data=!3m1!4b1!4m2!3m1!1s0xd422875fe8d546d:0xfc628be71587461f
+  venue-address: Calle Moreno Nieto, 2 Madrid, Spain 28005
+  date: "5 de Noviembre, 2016"
+  hour: "10:30h - 14:30h"
+  web: https://www.meetup.com/Open-Source-Weekends/events/234913420/
+  twitter: https://twitter.com/os_weekends

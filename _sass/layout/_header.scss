@@ -1,3 +1,124 @@
 // -----------------------------------------------------------------------------
 // This file contains all styles related to the header of the site/application.
 // -----------------------------------------------------------------------------
+.hero {
+    height: auto;
+    margin-bottom: 2em;
+   	padding: 4em 1em;
+    @include gradient($mainColor, $secondaryColor);
+
+	& a {
+		color: $bgColor;	
+	}
+}
+
+
+
+h1 {
+	display: block;
+	// max-width: 11.125em;
+    margin: 0 auto 1em;
+	color: $bgColor;
+
+	& div {
+		margin-bottom: -16px;
+	}
+
+	& a {
+		text-decoration: none;
+	}
+
+	& a:hover {
+		text-decoration: none;
+	}
+}
+
+@media screen and (min-width: 43.75em) {
+	.header {
+		display: flex;
+		align-items: center;
+		flex-wrap: wrap;
+	}
+
+	h1 {
+		margin: 0 3rem 0 0;
+	}
+}
+
+
+
+// 
+// Nav bar
+// 
+.nav {
+	padding-left: 0;
+	list-style-type: none;
+	text-align: center;
+
+	& li {
+		margin-bottom: 1em;
+	}
+
+	& a {
+		display: block;
+		margin: 0 auto;
+		width: 6.25em;
+		padding: 5px;
+		border-bottom: 3px solid transparent;
+
+		&:hover {
+			color: $bgColor;
+			text-decoration: none;
+			border-bottom: 3px solid $bgColor;
+		}
+	}
+}
+
+	@media screen and (min-width: 43.75em) {
+		.nav {
+			display: flex;
+			flex-wrap: wrap;
+			margin: 0;
+			list-style-type: none;
+
+			li {
+				margin-right: 0.625em;
+				margin-left: 0.625em;
+
+				&:first-child {
+					margin-left: 0;
+				}
+
+				&:last-child {
+					margin-right: 0;
+				}
+			}	
+		}
+
+			.nav__link {
+				text-decoration: none;
+
+				&:hover {
+					text-decoration: none;
+					border-bottom: 3px solid $bgColor;
+				}
+			}
+	}
+
+
+
+
+
+// 
+// This class is added when the user is in a specific section as breadcrumb
+// 
+.is-active > a {
+	border-bottom: 3px solid $bgColor;
+}
+
+
+
+
+
+
+

@@ -1,21 +1,81 @@
 // -----------------------------------------------------------------------------
 // This file contains very basic styles.
 // -----------------------------------------------------------------------------
-
-/**
- * Set up a decent box model on the root element
- */
+// 
+// Set up a decent box model and foont-size on the root element
+//
 html {
   box-sizing: border-box;
+  font-size: 16px;
+  font-size: 1em;
 }
 
-/**
- * Make all elements from the DOM inherit from the parent box-sizing
- * Since `*` has a specificity of 0, it does not override the `html` value
- * making all elements inheriting from the root box-sizing value
- * See: https://css-tricks.com/inheriting-box-sizing-probably-slightly-better-best-practice/
- */
+
+
+// 
+// Set up the font-family, font-weight and line-height on the body 
+// 
+body {
+	font-family: $bodyFont;
+	font-weight: 400;
+  	line-height: 1.45;
+}
+
+
+
+// 
+// Make all elements from the DOM inherit from the parent box-sizing
+// Since `*` has a specificity of 0, it does not override the `html` value
+// making all elements inheriting from the root box-sizing value
+// See: https://css-tricks.com/inheriting-box-sizing-probably-slightly-better-best-practice/
+//
 *, *::before, *::after {
   box-sizing: inherit;
-} 
+}
 
+.link {
+	color: $mainColor;
+	text-decoration: none;
+	transition: all 0.2s ease-in;
+
+	&:hover {
+		color: $secondaryColor;
+		text-decoration: underline;
+	}
+}
+
+time {
+	display: block;
+	margin-bottom: 10px;
+}
+
+.search-results {
+	padding-left: 0;
+}
+
+input[type="text"] {
+	width: 100%;
+	padding: 10px;
+	margin-bottom: 1em;
+    background: $mainColor;
+    color: $bgColor;
+    border-radius: 3px;
+    border: 3px solid $mainColor;
+    @include gradient($mainColor, $secondaryColor);
+
+    &::-webkit-input-placeholder { /* Chrome/Opera/Safari */
+		color: $bgColor;
+	}
+
+	&::-moz-placeholder { /* Firefox 19+ */
+		color: $bgColor;
+	}
+
+	&:-ms-input-placeholder { /* IE 10+ */
+		color: $bgColor;
+	}
+
+	&:-moz-placeholder { /* Firefox 18- */
+		color: $bgColor;
+	}
+}

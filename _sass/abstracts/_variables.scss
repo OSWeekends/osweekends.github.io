@@ -1,3 +1,33 @@
 // -----------------------------------------------------------------------------
 // This file contains all application-wide Sass variables.
 // -----------------------------------------------------------------------------
+
+// -------------------------------------
+//	$COLORS
+// -------------------------------------
+$mainColor: 		#5200E5;
+$secondaryColor:	#0D5EFF;
+$bgColor:			white;
+$lightGrey:			#f0f0f0;
+$mediumGrey:		#a3a3a3;
+$darkGrey:			#333333;
+
+
+
+// -------------------------------------
+//	$TYPOGRAPHY
+// -------------------------------------
+$mainFont:
+	"Martel",
+	"Times New Roman",
+	Georgia,
+	serif;
+
+$bodyFont:
+	"Open Sans",
+	sans-serif;
+
+$questionMark:
+	"Times New Roman",
+	Georgia,
+	serif;

@@ -1,3 +1,20 @@
 // -----------------------------------------------------------------------------
 // This file contains all application-wide Sass mixins.
 // -----------------------------------------------------------------------------
+// 
+// Linear Gradient
+//
+@mixin gradient($from, $to) {
+	background-color: $from; /* fallback/image non-cover color */
+	background: $from; /* Old browsers */
+	background: -moz-linear-gradient(-45deg,  $from 0%, $to 100%); /* FF3.6-15 */
+	background: -webkit-linear-gradient(-45deg,  $from 0%,$to 100%); /* Chrome10-25,Safari5.1-6 */
+	background: linear-gradient(135deg,  $from 0%,$to 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='$from', endColorstr='$to',GradientType=1 ); /* IE6-9 fallback on horizontal gradient */
+}
+
+@mixin boxShador {
+	-webkit-box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+	   -moz-box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+	   		box-shadow: 0 0 15px rgba(0, 0, 0, 0.2);
+}

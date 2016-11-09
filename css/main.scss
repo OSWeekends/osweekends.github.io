@@ -12,9 +12,9 @@
 
 // 3. Base stuff
 @import  'base/base';
-@import  'base/fonts';
 @import  'base/typography';
 @import  'base/helpers';
+@import  'base/tags';
 
 // 4. Layout-related sections
 @import  'layout/header';
@@ -25,6 +25,8 @@
 
 // 6. Page-specific styles
 @import  'pages/home';
+@import  'pages/acerca';
+@import  'pages/contacto';
 
 // 7. Themes
 @import  'themes/default';

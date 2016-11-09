@@ -1,0 +1,104 @@
+// -----------------------------------------------------------------------------
+// This file contains styles that are specific to the /acerca page.
+// -----------------------------------------------------------------------------
+.card--wrapper {
+	padding-left: 0;
+	margin-bottom: 1em;
+}
+
+	.card {
+		position: relative;
+	    height: 22em;
+	    margin: 0 auto 1em;
+	    float: left;
+	    background-color: $bgColor;
+	    border-radius: 3px;
+	    @include boxShador;
+		overflow: hidden;
+		z-index: 1;
+
+		& .card__banner {
+			height: 8em;
+			margin-top: -25px;
+			@include gradient($mainColor, $secondaryColor);
+		}
+
+		& img {
+			display: block;
+			width: 10em;
+			margin: -5em auto 0;
+			border: 3px solid $mainColor;
+			border-radius: 50%;
+		}
+
+		& h3, p {
+			text-align: center;
+		}
+
+		& p {
+			margin-top: -1em;
+		}
+
+		& .card__media {
+			display: flex;
+			justify-content: center;
+			padding-left: 0; 
+			list-style-type: none;
+		}
+
+		& .icon-social {
+			width: 2.5em;
+			margin-left: 0;
+		}
+	}
+
+@media screen and (max-width: 39.375em) {
+	.card {
+		width: 100%;
+	}
+}
+
+
+@media screen and (min-width: 39.375em) {
+	.card {
+		width: calc(50% - 1em);
+		margin: 0 1em 1em;
+
+		&:nth-child(1) {
+			margin-left: 0;
+		}
+
+		&:nth-child(2) {
+			margin-right: 0;
+		}
+
+		&:nth-child(3) {
+			margin: 0;
+		}
+	}
+}
+@media screen and (min-width: 62.125em) {
+	.card {
+		width: calc(33.33333% - 2em);
+
+		&:nth-child(1) {
+			margin-left: 0;
+		}
+
+		&:nth-child(2) {
+			margin: 0 1em;
+		}
+
+		&:nth-child(3) {
+			margin: 0 0 0 1em;
+		}
+	}
+}
+
+
+
+
+
+
+
+
