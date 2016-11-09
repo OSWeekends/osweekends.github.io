@@ -2,7 +2,7 @@
 layout: default
 ---
 
-<section class="wrapper">
+<section class="wrapper  fullScreen">
     <h2>Blog</h2>
 
     <ul class="post-list">
@@ -10,6 +10,7 @@ layout: default
             <li>
                 <h3>{{ post.title }}</h3>
                 <time>{{ post.date | date: "%b %-d, %Y" }}</time>
+                <p>{{ post.excerpt }}</p>
                 <a class="btn" href="{{ post.url | prepend: site.baseurl }}">Leer más</a>
             </li>
         {% endfor %}

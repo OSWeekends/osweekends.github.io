@@ -18,38 +18,37 @@ h1, h2, h3, h4, h5 {
 	color: $mainColor;
 	font-family: $mainFont;
 	font-weight: bold;
+	margin-top: 30px;
 }
 
 //
 // Headings level 1
 //
-h1 {
+h1, {
 	font-size: 32px;
 	font-size: 2rem;
-	margin-bottom: 30px;
 }
 
 //
 // Headings level 2
 //
 h2 {
-	font-size: 28px;
-	font-size: 1.75rem;
-	margin-bottom: 26px;
+	font-size: 30px;
+	font-size: 1.875rem;
 }
 
 //
 // Headingds level 3
 //
 h3 {
-	font-size: 22px;
-	font-size: 1.375rem;
+	font-size: 26px;
+	font-size: 1.625rem;
 }
 
 //
 // Vertical rhythm
 //
-p, ul, ol, h2, li {
+p, ul, ol, li {
 	margin-top: 5px;
 	margin-bottom: 10px;
 }

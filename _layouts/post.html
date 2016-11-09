@@ -1,30 +1,35 @@
 ---
 layout: default
 ---
-<article class="post" itemscope itemtype="http://schema.org/BlogPosting">
 
-	<header class="post-header">
-		<h2 class="post-title" itemprop="name headline">{{ page.title }}</h2>
-		<p class="post-meta">
-			<time datetime="{{ page.date | date_to_xmlschema }}" itemprop="datePublished">{{ page.date | date: "%b %-d, %Y" }}</time>
-		</p>
-	</header>
-	
-	<p>{% include reading_time.html content=content %}</p>
+<section class="wrapper">
+	<article class="post" itemscope itemtype="http://schema.org/BlogPosting">
 
-    {{ content }}
+		<header class="post-header">
+			<h2 class="post-title" itemprop="name headline">{{ page.title }}</h2>
+			<p class="post-meta">
+				<time datetime="{{ page.date | date_to_xmlschema }}" itemprop="datePublished">{{ page.date | date: "%b %-d, %Y" }}</time>
+			</p>
+		</header>
+		
+		<p>{% include reading_time.html content=content %}</p>
 
-  	<ul class="tags">
-		{% for tag in page.tags %}
-			<li><a href="/tags#{{ tag }}" class="tag">{{ tag }}</a></li>
-		{% endfor %}
-	</ul>
+	    {{ content }}
 
-</article>
+	  	<ul class="tags">
+			{% for tag in page.tags %}
+				<li><a href="/tags#{{ tag }}" class="tag">{{ tag }}</a></li>
+			{% endfor %}
+		</ul>
 
-{% unless page.comments == false or page.external %}
-  <div id="disqus_thread"></div> 
-{% endunless %}
+	</article>
+
+	{% unless page.comments == false or page.external %}
+	  <div id="disqus_thread"></div> 
+	{% endunless %}
+</section>
+
+
 
 <script>
 /**

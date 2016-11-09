@@ -1,11 +1,10 @@
 ---
 layout: post
-title: "Hello World"
+title: "¡Nuestro primer evento!"
+excerpt: Parece mentira lo intensas que fueron las horas de nuestro primer evento para los organizadores. Aunque acabamos exhaustos estamos muy felices (Oswaldito incluido) de haber podido compartir y aprender tanto en un espacio tan corto de tiempo...
 tags: 
   - Blog
 ---
-
-## ¡Nuestro primer evento!
 
 Parece mentira lo intensas que fueron las horas de nuestro primer evento para los organizadores. Aunque acabamos exhaustos estamos muy felices (Oswaldito incluido) de haber podido compartir y aprender tanto en un espacio tan corto de tiempo.
 
@@ -25,24 +24,39 @@ Para la próxima sesión tendremos muchas novedades y alguna sorpresa que otra!
 
 ### PROYECTOS
 
-+ [Semillas](https://github.com/Semillas)
-+ [Swellrt](https://github.com/P2Pvalue/swellrt)
-+ [OSWaldito](https://twitter.com/OSWalditoBot)
-+ [Open Source Madrid Developers](https://github.com/OSWeekends/Open-Source-Madrid-Developers)
-+ [ADN](https://github.com/OSWeekends/know-your-SNPs)
+<a class="link" href="https://github.com/Semillas">Semillas</a>
+
+<a class="link" href="https://github.com/P2Pvalue/swellrt">Swellrt</a>
+
+<a class="link" href="https://twitter.com/OSWalditoBot">OSWaldito</a>
+
+<a class="link" href="https://github.com/OSWeekends/Open-Source-Madrid-Developers">Open Source Madrid Developers</a>
+
+<a class="link" href="https://github.com/OSWeekends/know-your-SNPs">ADN</a>
 
 ### PRESENTACIONES Y REDES SOCIALES
 
-Presentación utilizada
-Cuentas oficiales
-Hashtags usados
-Slack
+<a class="link" href="http://slides.com/ulisesgascon/deck#/">Presentación</a>
 
-FOTOS
+#### Cuentas oficiales
+
+<a class="link" href="https://github.com/OSWeekends">Github</a>
+
+<a class="link" href="https://twitter.com/os_weekends">Twitter</a>
+
+<a class="link" href="https://www.meetup.com/Open-Source-Weekends/">Meetup</a>
+
+<a class="link" href="https://invitations-osweekends.herokuapp.com/">Slack</a>
 
 
-Link a Meetup
-Link a xxxx? Flickr?
+#### Hashtags usados
 
+#OSWeekends
 
+#OSWDirecto
 
+#OSWConcurso
+
+### FOTOS
+
+<a class="link" href="https://www.meetup.com/Open-Source-Weekends/photos/27403958/">Fotos del evento</a>
