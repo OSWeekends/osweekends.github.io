@@ -7,7 +7,7 @@ layout: default
 	<h2>Próximos eventos</h2>
 
 	<ul class="card--wrapper">
-		{% for event in site.data.eventos %}
+		{% for event in site.data.eventos limit:1 %}
 		<li class="event">
 			<div class="card__banner"></div>
 	        <div class="event__img">
@@ -33,7 +33,7 @@ layout: default
 		{% endfor %}
 	</ul>
 
-	<!-- <h2>Eventos pasados</h2>
+	<h2>Eventos pasados</h2>
 
 	<ul class="card--wrapper">
 		{% for event in site.data.ultimos-eventos %}
@@ -60,5 +60,5 @@ layout: default
 			</ul>
 		</li>
 		{% endfor %}
-	</ul> -->
+	</ul>
 </section>

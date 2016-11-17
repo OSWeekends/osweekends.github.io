@@ -34,7 +34,7 @@ Para la próxima sesión tendremos muchas novedades y alguna sorpresa que otra!
 
 ### PRESENTACIONES Y REDES SOCIALES
 
-+ <a class="link" href="http://slides.com/ulisesgascon/deck#/" target="_blank">Presentación</a>
+<iframe src="//slides.com/ulisesgascon/deck/embed" width="100%" height="600" scrolling="no" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe>
 
 #### Cuentas oficiales
 
