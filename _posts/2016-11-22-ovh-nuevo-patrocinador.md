@@ -22,6 +22,6 @@ En <a href="https://www.meetup.com/Open-Source-Weekends/events/235616954/" class
 
 Para cerrar esta entrada os dejamos este mágico momento durante el OVH Summit de 2013 donde podréis conocer a su carismático fundador, <a href="https://twitter.com/olesovhcom" class="link">Octave Klaba</a> en acción.
 
-<iframe class="center" width="853" height="480" src="https://www.youtube.com/embed/ooGRoLtupQo?rel=0" frameborder="0" allowfullscreen></iframe>
+<iframe class="center" width="100%" height="480" src="https://www.youtube.com/embed/ooGRoLtupQo?rel=0" frameborder="0" allowfullscreen></iframe>
 
 **¡Paz, Amor y Open Source!**
