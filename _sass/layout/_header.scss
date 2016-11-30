@@ -31,6 +31,11 @@ h1 {
 	& a:hover {
 		text-decoration: none;
 	}
+
+	& img {
+		display: block;
+    	margin: 0 auto;
+    }
 }
 
 @media screen and (min-width: 43.75em) {
