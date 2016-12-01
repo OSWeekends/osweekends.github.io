@@ -4,6 +4,7 @@
 .hero {
     height: auto;
     margin-bottom: 2em;
+    padding: 0.5em;
     @include gradient($mainColor, $secondaryColor);
 
 	& a {
