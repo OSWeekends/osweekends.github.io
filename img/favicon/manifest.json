@@ -1,5 +1,5 @@
 {
-	"name": "OS Weekends",
+	"name": "OpenSource Weekends",
 	"icons": [
 		{
 			"src": "\/android-chrome-192x192.png",
@@ -12,6 +12,6 @@
 			"type": "image\/png"
 		}
 	],
-	"theme_color": "#2f34e7",
+	"theme_color": "#ffffff",
 	"display": "standalone"
 }
