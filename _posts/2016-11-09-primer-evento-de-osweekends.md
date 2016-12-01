@@ -22,6 +22,16 @@ Y no podemos cerrar este resumen sin dar las gracias a nuestros patrocinadores�
 
 Para la próxima sesión tendremos muchas novedades y alguna sorpresa que otra!
 
+<!-- <video class="post--masthead" controls>
+	<source src="/video/OSW_01.mp4" type="video/mp4">
+	<img src="/img/OSW_01.jpg" title="Your browser does not support the <video> tag">
+	Tu navegador no implementa el elemento <code>video</code>.
+</video>
+<p>
+	<strong>Download Video: </strong>
+	<a href="/video/OSW_01.mp4">"MP4"</a>
+</p> -->
+
 **¡Paz, Amor y Open Source!**
 
 ### PROYECTOS
