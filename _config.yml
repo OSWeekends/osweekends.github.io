@@ -6,6 +6,7 @@ facebook: https://www.facebook.com/osweekends
 github: https://github.com/OSWeekends
 url: https://osweekends.github.io
 meetup: https://www.meetup.com/Open-Source-Weekends/
+description: "OpenSource Weekends es un Meetup mensual donde cualquiera, incluso sin conocimientos, puede promover y contribuir con el #SoftwareLibre"
 baseurl: "" # the subpath of your site, e.g. /blog
 
 # Build settings
