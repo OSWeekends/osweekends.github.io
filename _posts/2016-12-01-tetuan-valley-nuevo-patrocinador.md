@@ -1,7 +1,7 @@
 ---
 layout: post
 title: "Tetuan Valley, nuevo patrocinador"
-excerpt: Estamos muy contentos de anunciar a un nuevo patrocinador que se ha unido para soportar este proyecto. Desde aquí queremos dar una calidad bienvenida a Tetuan Valley por ayudarnos a mejorar y crecer como comunidad.
+excerpt: "Estamos muy contentos de anunciar a un nuevo patrocinador que se ha unido para soportar este proyecto. Desde aquí queremos dar una calidad bienvenida a Tetuan Valley por ayudarnos a mejorar y crecer como comunidad."
 tags: 
   - Patrocinador
 ---
