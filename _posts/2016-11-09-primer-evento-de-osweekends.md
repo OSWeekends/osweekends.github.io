@@ -26,13 +26,13 @@ Para la próxima sesión tendremos muchas novedades y alguna sorpresa que otra!
 <!-- warning: playback does not work on iOS3 if you include the poster attribute! fixed in iOS4.0 -->
 <video class="post--masthead" controls>
 	<!-- MP4 must be first for iPad! -->
-	<source src="/video/OSW_01.OGV" type="video/ogg" /><!-- Modern browsers -->
-	<source src="/video/OSW_01.mp4" type="video/mp4"><!-- Safari / iOS video    -->
-	<source src="/video/OSW_01.webm" type="video/ogg" /><!-- Firefox / Opera / Chrome10 -->
+	<source src="/video/OSW_01.webm" type="video/webm">
+	<source src="/video/OSW_01.OGV" type="video/ogg">
+	<source src="/video/OSW_01.mp4" type="video/mp4">
 </video>
 <!-- you *must* offer a download link as they may be able to play the file locally. -->
 <p>	<strong>Download Video:</strong>
-	<a href="/video/OSW_01.mp4">"MP4"</a>
+	<a href="/video/OSW_01.mp4">"MP4"</a><a href="/video/OSW_01.OGV">"MP4"</a><a href="/video/OSW_01.WebM">"MP4"</a>
 </p>
 
 **¡Paz, Amor y Open Source!**
