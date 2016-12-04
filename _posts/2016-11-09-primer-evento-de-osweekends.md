@@ -31,9 +31,11 @@ Para la próxima sesión tendremos muchas novedades y alguna sorpresa que otra!
 	<source src="/video/OSW_01.mp4" type="video/mp4">
 </video>
 <!-- you *must* offer a download link as they may be able to play the file locally. -->
-<p>	<strong>Download Video:</strong>
-	<a href="/video/OSW_01.mp4">"MP4"</a><a href="/video/OSW_01.OGV">"MP4"</a><a href="/video/OSW_01.WebM">"MP4"</a>
-</p>
+<ul><strong>Download Videos:</strong>
+	<li><a href="/video/OSW_01.mp4">"MP4"</a></li>
+	<li><a href="/video/OSW_01.OGV">"OGV"</a></li>
+	<li><a href="/video/OSW_01.WebM">"WebM"</a></li>
+</ul>
 
 **¡Paz, Amor y Open Source!**
 
