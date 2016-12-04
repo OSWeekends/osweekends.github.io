@@ -22,15 +22,18 @@ Y no podemos cerrar este resumen sin dar las gracias a nuestros patrocinadores�
 
 Para la próxima sesión tendremos muchas novedades y alguna sorpresa que otra!
 
-<!-- <video class="post--masthead" controls>
-	<source src="/video/OSW_01.mp4" type="video/mp4">
-	<img src="/img/OSW_01.jpg" title="Your browser does not support the <video> tag">
-	Tu navegador no implementa el elemento <code>video</code>.
+<!-- first try HTML5 playback: if serving as XML, expand `controls` to `controls="controls"` and autoplay likewise -->
+<!-- warning: playback does not work on iOS3 if you include the poster attribute! fixed in iOS4.0 -->
+<video class="post--masthead" controls>
+	<!-- MP4 must be first for iPad! -->
+	<source src="/video/OSW_01.OGV" type="video/ogg" /><!-- Modern browsers -->
+	<source src="/video/OSW_01.mp4" type="video/mp4"><!-- Safari / iOS video    -->
+	<source src="/video/OSW_01.webm" type="video/ogg" /><!-- Firefox / Opera / Chrome10 -->
 </video>
-<p>
-	<strong>Download Video: </strong>
+<!-- you *must* offer a download link as they may be able to play the file locally. -->
+<p>	<strong>Download Video:</strong>
 	<a href="/video/OSW_01.mp4">"MP4"</a>
-</p> -->
+</p>
 
 **¡Paz, Amor y Open Source!**
 
