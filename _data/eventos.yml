@@ -1,11 +1,11 @@
-- name: ¡Reunión de diciembre!
-  desc: "<strong>¡Traed portatil, toca programar!</strong><br><br>Para esta sesión meteremos algunos cambios y presentaremos algunas novedades :-)<br><br><srong>Microtaller:</strong> Gestiona un proyecto Open Source desde cero."
+- name: ¡Reunión Enero 2017!
+  desc: "<h4>Cambios importantes:</h4><p>En las ultimas charlas hubo mucho networking, y ahora queremos generar cosas nuevas y aportar a la comunidad. Así que tendremos un tiempo extra para poder juntarnos por proyectos/grupos de interés y desarrollar.</p><h4>Proyectos:</h4><p>Como entre otras cosas queremos que Open Source Weekends sirva para contribuir en librerías Open Source se trabajará en alguno de los siguientes proyectos.</p><h4>Microtalleres:</h4><p>- Usando generadores estáticos web - Jekyll al rescate por <a class='link' href='https://twitter.com/IgnaciodeNuevo'>Ignacio Villanueva</a></p><p>- Usando IDEs virtuales por <a class='link' href='https://twitter.com/Josetekh'>José Manuel</a></p>"
   img: ../img/campus.svg
   venue-name: "Campus Madrid"
   venue-url: https://www.campus.co/madrid/es
   venue-location: https://www.google.com/maps/place/Campus+Madrid/@40.4123321,-3.720433,17z/data=!3m1!4b1!4m2!3m1!1s0xd422875fe8d546d:0xfc628be71587461f
   venue-address: Calle Moreno Nieto, 2 Madrid, Spain 28005
-  date: "3 de Diciembre, 2016"
+  date: "14 de Enero, 2016"
   hour: "10:30h - 14:30h"
-  web: https://www.meetup.com/Open-Source-Weekends/events/235616954/
+  web: https://www.meetup.com/Open-Source-Weekends/events/236190563/
   twitter: https://twitter.com/os_weekends
