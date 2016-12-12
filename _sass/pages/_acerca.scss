@@ -8,19 +8,19 @@
 
 	.card {
 		position: relative;
-	    height: 22em;
-	    margin: 0 auto 1em;
-	    float: left;
-	    background-color: $bgColor;
-	    border-radius: 3px;
-	    @include boxShador;
+    height: 22em;
+    margin: 0 auto 1em;
+    float: left;
+    background-color: $bgColor;
+    border-radius: 3px;
+    @include boxShador;
 		overflow: hidden;
 		z-index: 1;
 
 		& .card__banner {
 			height: 8em;
 			margin-top: -25px;
-			@include gradient($mainColor, $secondaryColor);
+			background-color: $mainColor;
 		}
 
 		& img {

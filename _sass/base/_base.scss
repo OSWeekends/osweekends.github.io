@@ -39,7 +39,7 @@ body {
 	transition: all 0.2s ease-in;
 
 	&:hover {
-		color: $secondaryColor;
+		color: $mainColor;
 		text-decoration: underline;
 	}
 }
@@ -57,11 +57,10 @@ input[type="text"] {
 	width: 100%;
 	padding: 10px;
 	margin-bottom: 1em;
-    background: $mainColor;
+    background-color: $mainColor;
     color: $bgColor;
     border-radius: 3px;
     border: 3px solid $mainColor;
-    @include gradient($mainColor, $secondaryColor);
 
     &::-webkit-input-placeholder { /* Chrome/Opera/Safari */
 		color: $bgColor;

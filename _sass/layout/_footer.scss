@@ -4,7 +4,7 @@
 
 .foo {
    	padding: 2.5em 15px 1em;
-    @include gradient($mainColor, $secondaryColor);
+    background-color: $mainColor;
 
 	& a {
 		color: $bgColor;	

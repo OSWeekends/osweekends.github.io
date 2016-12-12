@@ -6,10 +6,10 @@
 	display: flex;
 	align-items: center;
 	flex-direction: column;
-    margin: 0 auto 3em;
-    background-color: $bgColor;
-    border-radius: 3px;
-    @include boxShador;
+  margin: 0 auto 3em;
+  background-color: $bgColor;
+  border-radius: 3px;
+  @include boxShador;
 	overflow: hidden;
 	z-index: 1;
 
@@ -18,7 +18,7 @@
 		height: 8em;
 		width: 100%;
 		margin-top: -25px;
-		@include gradient($mainColor, $secondaryColor);
+		background-color: $mainColor;
 	}
 
 	& .event__img {
@@ -26,12 +26,12 @@
 		justify-content: center;
 		align-items: center;
 		height: calc(10em - 6px);
-	    width: calc(10em - 6px);
+	  width: calc(10em - 6px);
 		margin-top: -5em;
 		padding: 1em;
 		border: 3px solid $mainColor;
 		border-radius: 50%;
-	    background-color: $bgColor; 
+	  background-color: $bgColor; 
 	}
 
 	& img {

@@ -12,11 +12,10 @@
 	border: 3px solid $mainColor;
 	border-radius: 3px;
 	box-shadow: rgba(0, 0, 0, 0.1) 1px 2px 0 0;
-	@include gradient($mainColor, $secondaryColor);
+	background-color: $mainColor;
 
 	&:hover {
-		background-color: $bgColor;
-		@include gradient(transparent, transparent);
+		background-color: transparent;
 		color: $mainColor;
 		text-decoration: none;
 	}
