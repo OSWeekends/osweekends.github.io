@@ -65,6 +65,6 @@ Para la próxima sesión tendremos muchas novedades y alguna sorpresa que otra!
 + <a href="https://twitter.com/search?q=%23OSWDirecto&src=typd" class="link" target="_blank">#OSWDirecto</a>
 + <a href="https://twitter.com/search?q=%23OSWConcurso&src=typd" class="link" target="_blank">#OSWConcurso</a>
 
-### FOTOS
+#### Fotos
 
 + <a class="link" href="https://www.meetup.com/Open-Source-Weekends/photos/all_photos/?photoAlbumId=27403958" target="_blank">Fotos del evento</a>
