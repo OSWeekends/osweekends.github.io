@@ -1,6 +1,6 @@
 ---
 layout: post
-title: "Evento de diciembre 2017"
+title: "Evento de diciembre 2016"
 excerpt: Abrimos la sesión con dos nuevos patrocinadores. OVH y Tetuan Valley, que nos están ayudando mucho a crecer. Además hablaremos mucho de ellos en el próximo Meetup… porque tenemos algunas sorpresas reservadas :-)
 tags: 
   - Blog
