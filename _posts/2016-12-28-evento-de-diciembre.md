@@ -31,7 +31,6 @@ Borja Godoy al que mandamos un caluroso abrazo nos enseñó a domotizar una casa
 Se presentaron nuevos proyectos open source y se retomaron algunos de la edición pasada, seguimos intentando mantener vivos estos proyectos y conseguir que vean la luz tarde o temprano.
 
 <img class="post--masthead" src="https://a248.e.akamai.net/secure.meetupstatic.com/photos/event/b/d/7/1/highres_456588497.jpeg" alt="¡¡¡Comidaaa....!!!">
-<!-- <img class="post--masthead" src="https://a248.e.akamai.net/secure.meetupstatic.com/photos/event/b/d/6/9/highres_456588489.jpeg" alt="¡¡¡Comidaaa....!!!"> -->
 
 Luego llegó la comida, lo que llaman “networking” y que en definitiva es el cachondeo post-talleres, nos lo pasamos genial y se nos está haciendo larga la espera para el siguiente encuentro.
 
