@@ -6,5 +6,7 @@
 #   url: /proyectos/
 - label: Acerca
   url: /acerca/
+- label: Hackathons
+  url: /hackathon-team/
 - label: Buscar
   url: /search/

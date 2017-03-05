@@ -1,3 +1,7 @@
 _site
 .sass-cache
 .jekyll-metadata
+
+# Folder view configuration files
+.DS_Store
+Desktop.ini

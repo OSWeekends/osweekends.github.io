@@ -1,0 +1,35 @@
+---
+layout: default
+---
+
+<section class="wrapper">
+
+	<h2>Miembros del equipo de Hackathons</h2>
+
+	<ul class="card--wrapper  clearfix">
+		{% for member in site.data.teamhackathons %}
+		<li class="card">
+			<div class="card__banner"></div>
+	        <img src="{{ member.img }}" alt="Fotografía de {{ member.name }}">
+	        <h3>{{ member.name }}</h3>
+	        <p class="align-left">{{ member.desc }}</p>
+	        <div class="social-media-banner">
+			<ul class="card__media">
+				<li>
+					<a class="link" href="{{ member.web }}"">{% include web.html %}</a>
+				</li>
+				<li>
+					<a class="link" href="{{ member.twitter }}"">{% include twitter.html %}</a>
+				</li>
+				<li>
+					<a class="link" href="{{ member.github }}"">{% include github.html %}</a>
+				</li>
+				<li>
+					<a class="link" href="{{ member.linkedin }}"">{% include linkedin.html %}</a>
+				</li>
+			</ul>
+		</li>
+		{% endfor %}
+	</ul>
+
+</section>
