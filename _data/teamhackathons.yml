@@ -1,7 +1,6 @@
 - name: Antonio Olmo Titos
   desc: "Software engineer with a strong academic background and twelve years of international experience in project management, UX and web development. Some areas that interest me especially are internet standards, open systems and free software, interfaces and usability, digital imaging, 3D and data visualisation, and mobile computing."
   img: ../img/portrait-tripu.jpg
-  web: http://osweekends.com/
   twitter: https://twitter.com/tripu
   github: https://github.com/tripu
   linkedin: https://www.linkedin.com/in/aolmotitos/
@@ -9,7 +8,6 @@
 - name: Nuria Sanz García
   desc: "<p>Licenciada en biología por la UCM.</p><p>Nací en Madrid hace ya algún tiempo.</p><p>Me entusiasman los videojuegos y aprender todo el tiempo.</p><p>Tambien me gustan los gatos.</p>"
   img: ../img/portrait-nuria.jpg
-  web: http://osweekends.com/
   twitter: https://twitter.com/Nuritje
   github: https://github.com/NuriaHill
   linkedin: https://es.linkedin.com/in/nuria-sanz-hilligehekken-66808956
@@ -17,7 +15,6 @@
 - name: José Antonio Palacios
   desc: Software Engineer love Python and falling love javascript | GDG | Open Source Weekends (L) and Heart of an entrepreneur. Five years understanding Matrix.
   img: ../img/portrait-default.svg
-  web: http://osweekends.com/
   twitter: https://twitter.com/JoseAntPR
   github: https://github.com/JoseAntpr
   linkedin: https://www.linkedin.com/in/joseantpalacios
@@ -25,7 +22,6 @@
 - name: Jose Sánchez Barrio
   desc: Industrial engineer focus on hardware and physical product development. I enjoy understanding how this world works, learning new thins and sharing them with others.
   img: ../img/portrait-pepe.png
-  web: http://osweekends.com/
   twitter: https://twitter.com/pepe_sb1
   github: https://github.com/pepesb
   linkedin: https://www.linkedin.com/in/josesanchezbarrio/
@@ -33,7 +29,6 @@
 - name: Yoel Macia Delgado
   desc: Intento de desarrollador Web, por ahora centrado en el Front pero aprendiendo UX y dentro de poco empezaré como el Back, me gustan tecnologias como JS, html, CSS, python y vengo un poco de la vieja escuela de C, dinamico y culo inquieto.
   img: ../img/portrait-yoel.png
-  web: http://osweekends.com/
   twitter: https://twitter.com/____ymd____
   github: https://github.com/ymdx
   linkedin: https://www.linkedin.com/in/yoel-macia-delgado
@@ -41,7 +36,6 @@
 - name: Jesús Huerta Arrabal
   desc: Jesús joins Replit as CTO decided to improve the way people interact with each other, focused in mobile devices. Prior to joining Replit as a Technical Developer, Jesus travelled to Germany & France, looking for experience in Social Network platforms, doing an internship in Earthfaves AG, launching a platform which reached 10M german active users.
   img: ../img/portrait-default.svg
-  web: http://osweekends.com/
   twitter: https://twitter.com/DevStarlight
   github: https://github.com/DevStarlight
   linkedin: https://www.linkedin.com/in/jesushuertaarrabal
@@ -49,18 +43,16 @@
 - name: Jorge Monzón Manzano
   desc: Madrileño, aunque he descubierto el gusto por la programación un poco tarde intento ponerme al día. Aprovecho el poco tiempo libre que tengo leyendo, estudiando y programando lo poco que puedo y sé.
   img: ../img/portrait-jorge.jpg
-  web: http://osweekends.com/
   twitter: https://twitter.com/Neofito_Prog
   github: https://github.com/Monzonprog
   linkedin: https://es.linkedin.com/in/jorge-monzón-manzano-a725317a
 
-- name: 
-  desc: 
-  img: ../img/portrait-   .jpg
-  web: 
-  twitter: 
-  github: 
-  linkedin: 
+- name: Leyla Vieira
+  desc: Desarrolladora front-end y diseñadora de interfaces. Buscadora incansable del código ordenado y bonito que habla de vez en cuando con su ordenador. Lectora consumada de libros de fantasía y ciencia ficción.
+  img: ../img/portrait-leyla.jpg
+  twitter: https://twitter.com/leyla1603
+  github: https://github.com/LeylaVieira
+  linkedin: https://es.linkedin.com/in/leylavieira
 
 - name: 
   desc: 
