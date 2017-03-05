@@ -54,42 +54,45 @@
   github: https://github.com/LeylaVieira
   linkedin: https://es.linkedin.com/in/leylavieira
 
-- name: 
-  desc: 
-  img: ../img/portrait-   .jpg
-  web: 
-  twitter: 
-  github: 
-  linkedin: 
+- name: Laetitia Carquet
+  desc: "De pasaporte francés y de nacionalidad del mundo, soy surfista , bailaora de flamenco con una gran pasión por los idiomas y los viajes. Recientemente convertida al mundo del desarrollo web, no tengo miedo al desafío.Total : 'Bring it on !'"
+  img: ../img/portrait-laetitia.jpg
+  twitter: https://twitter.com/LaetitiaCarquet
+  github: https://github.com/carquet
+  linkedin: https://es.linkedin.com/in/laetitiacarquet
 
 - name: 
   desc: 
   img: ../img/portrait-   .jpg
-  web: 
   twitter: 
   github: 
   linkedin: 
-
-  - name: 
-  desc: 
-  img: ../img/portrait-   .jpg
-  web: 
-  twitter: 
-  github: 
-  linkedin: 
-
+  
 - name: 
   desc: 
   img: ../img/portrait-   .jpg
-  web: 
   twitter: 
   github: 
   linkedin: 
-
+  
 - name: 
   desc: 
   img: ../img/portrait-   .jpg
-  web: 
   twitter: 
   github: 
   linkedin: 
+  
+- name: 
+  desc: 
+  img: ../img/portrait-   .jpg
+  twitter: 
+  github: 
+  linkedin: 
+  
+- name: 
+  desc: 
+  img: ../img/portrait-   .jpg
+  twitter: 
+  github: 
+  linkedin: 
+  
