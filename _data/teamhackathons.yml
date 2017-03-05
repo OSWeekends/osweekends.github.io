@@ -68,31 +68,32 @@
   github: https://github.com/fmartingr
   linkedin: https://es.linkedin.com/in/fmartingr
 
-- name: 
-  desc: 
-  img: ../img/portrait-   .jpg
-  twitter: 
-  github: 
-  linkedin: 
+- name: Eduardo Liébana
+  desc: Ingeniero Técnico en Diseño Industrial y fundador de Ed’Art Studio, es especialista en diseño 3D paramétrico e Impresión 3D. Mezclar la ingeniería con mucha estética y creatividad es su principal objetivo a la hora de desarrollar.
+  img: ../img/portrait-eduardo.jpg
+  twitter: https://twitter.com/edart_studio
+  github: ttps://github.com/eduardolp84
+  linkedin: https//es.linkedin.com/in/eduardoliebana
   
-- name: 
-  desc: 
-  img: ../img/portrait-   .jpg
-  twitter: 
-  github: 
-  linkedin: 
-  
-- name: 
-  desc: 
-  img: ../img/portrait-   .jpg
-  twitter: 
-  github: 
-  linkedin: 
-  
-- name: 
-  desc: 
-  img: ../img/portrait-   .jpg
-  twitter: 
-  github: 
-  linkedin: 
+- name: Ulises Gascón
+  desc: Maker
+  img: ../img/portrait-ulises.jpg
+  twitter: https://twitter.com/kom_256
+  github: https://github.com/UlisesGascon
+  linedin: https://www.linkedin.com/in/ulisesgascon/
+
+- name: Ignacio Villanueva
+  desc: Front-end Developer focusing front-end architecture, front-end performance and responsive web design.
+  img: ../img/portrait-ignacio.jpg
+  twitter: https://twitter.com/ignaciodenuevo
+  github: https://github.com/ignaciodenuevo
+  linkedin: https://www.linkedin.com/in/ignaciodenuevo/
+
+- name: José Gallego
+  desc: Backend & Community Manager
+  img: ../img/portrait-jose.jpg
+  twitter: https://twitter.com/Josetekh
+  github: https://github.com/Josheriff
+  linkedin: https://www.linkedin.com/in/jos%C3%A9-manuel-gallego-chamorro-249658a4/
+
   
