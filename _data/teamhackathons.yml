@@ -22,29 +22,29 @@
   github: https://github.com/JoseAntpr
   linkedin: https://www.linkedin.com/in/joseantpalacios
 
-- name: 
-  desc: 
-  img: ../img/portrait-   .jpg
-  web: 
-  twitter: 
-  github: 
-  linkedin: 
+- name: Jose Sánchez Barrio
+  desc: Industrial engineer focus on hardware and physical product development. I enjoy understanding how this world works, learning new thins and sharing them with others.
+  img: ../img/portrait-pepe.png
+  web: http://osweekends.com/
+  twitter: https://twitter.com/pepe_sb1
+  github: https://github.com/pepesb
+  linkedin: https://www.linkedin.com/in/josesanchezbarrio/
 
-- name: 
-  desc: 
-  img: ../img/portrait-   .jpg
-  web: 
-  twitter: 
-  github: 
-  linkedin: 
+- name: Yoel Macia Delgado
+  desc: Intento de desarrollador Web, por ahora centrado en el Front pero aprendiendo UX y dentro de poco empezaré como el Back, me gustan tecnologias como JS, html, CSS, python y vengo un poco de la vieja escuela de C, dinamico y culo inquieto.
+  img: ../img/portrait-yoel.png
+  web: http://osweekends.com/
+  twitter: https://twitter.com/____ymd____
+  github: https://github.com/ymdx
+  linkedin: https://www.linkedin.com/in/yoel-macia-delgado
 
-- name: 
-  desc: 
-  img: ../img/portrait-   .jpg
-  web: 
-  twitter: 
-  github: 
-  linkedin: 
+- name: Jesús Huerta Arrabal
+  desc: Jesús joins Replit as CTO decided to improve the way people interact with each other, focused in mobile devices. Prior to joining Replit as a Technical Developer, Jesus travelled to Germany & France, looking for experience in Social Network platforms, doing an internship in Earthfaves AG, launching a platform which reached 10M german active users.
+  img: ../img/portrait-default.svg
+  web: http://osweekends.com/
+  twitter: https://twitter.com/DevStarlight
+  github: https://github.com/DevStarlight
+  linkedin: https://www.linkedin.com/in/jesushuertaarrabal
 
 - name: 
   desc: 
