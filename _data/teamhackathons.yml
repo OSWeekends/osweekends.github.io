@@ -28,7 +28,7 @@
   linkedin: dingcarlos/
 
 - name: Antonio Olmo Titos
-  desc: "Software engineer with a strong academic background and twelve years of international experience in project management, UX and web development. Some areas that interest me especially are internet standards, open systems and free software, interfaces and usability, digital imaging, 3D and data visualisation, and mobile computing."
+  desc: "Software engineer with a strong academic background and twelve years of international experience in project management, UX and web development."
   img: ../img/portrait-tripu.jpg
   twitter: https://twitter.com/tripu
   github: https://github.com/tripu
@@ -56,21 +56,21 @@
   linkedin: https://www.linkedin.com/in/josesanchezbarrio/
 
 - name: Yoel Macia Delgado
-  desc: Intento de desarrollador Web, por ahora centrado en el Front pero aprendiendo UX y dentro de poco empezaré como el Back, me gustan tecnologias como JS, html, CSS, python y vengo un poco de la vieja escuela de C, dinamico y culo inquieto.
+  desc: Intento de desarrollador Web, centrado en el Front pero aprendiendo UX y dentro de poco empezaré como el Back, me gustan tecnologias como JS, html, CSS, python. Culo inquieto.
   img: ../img/portrait-yoel.png
   twitter: https://twitter.com/____ymd____
   github: https://github.com/ymdx
   linkedin: https://www.linkedin.com/in/yoel-macia-delgado
 
 - name: Jesús Huerta Arrabal
-  desc: Jesús joins Replit as CTO decided to improve the way people interact with each other, focused in mobile devices. Prior to joining Replit as a Technical Developer, Jesus travelled to Germany & France, looking for experience in Social Network platforms, doing an internship in Earthfaves AG, launching a platform which reached 10M german active users.
+  desc: Jesús joins Replit as CTO decided to improve the way people interact with each other, focused in mobile devices. Prior to joining Replit as a Technical Developer.
   img: ../img/portrait-default.svg
   twitter: https://twitter.com/DevStarlight
   github: https://github.com/DevStarlight
   linkedin: https://www.linkedin.com/in/jesushuertaarrabal
 
 - name: Jorge Monzón Manzano
-  desc: Madrileño, aunque he descubierto el gusto por la programación un poco tarde intento ponerme al día. Aprovecho el poco tiempo libre que tengo leyendo, estudiando y programando lo poco que puedo y sé.
+  desc: He descubierto el gusto por la programación un poco tarde intento ponerme al día. Aprovecho el poco tiempo libre que tengo leyendo, estudiando y programando lo poco que puedo y sé.
   img: ../img/portrait-jorge.jpg
   twitter: https://twitter.com/Neofito_Prog
   github: https://github.com/Monzonprog
