@@ -8,7 +8,10 @@
 
 	.card {
 		position: relative;
-    margin: 0 auto 1em;
+    margin-top: 1em !important;
+    margin-right: auto;
+    margin-bottom: 1em;
+    margin-left: auto;
     float: left;
     background-color: $bgColor;
     border-radius: 3px;
@@ -37,6 +40,9 @@
 
 		& p.align-left {
 			text-align: left;
+			height: 225px;
+			overflow: hidden;
+			text-overflow: ellipsis;
 		}
 
 		& p {

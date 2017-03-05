@@ -1,3 +1,32 @@
+- name: Ulises Gascón
+  desc: Maker
+  img: ../img/portrait-ulises.jpg
+  twitter: https://twitter.com/kom_256
+  github: https://github.com/UlisesGascon
+  linedin: https://www.linkedin.com/in/ulisesgascon/
+
+- name: Ignacio Villanueva
+  desc: Front-end Developer focusing front-end architecture, front-end performance and responsive web design.
+  img: ../img/portrait-ignacio.jpg
+  twitter: https://twitter.com/ignaciodenuevo
+  github: https://github.com/ignaciodenuevo
+  linkedin: https://www.linkedin.com/in/ignaciodenuevo/
+
+- name: José Gallego
+  desc: Backend & Community Manager
+  img: ../img/portrait-jose.jpg
+  twitter: https://twitter.com/Josetekh
+  github: https://github.com/Josheriff
+  linkedin: https://www.linkedin.com/in/jos%C3%A9-manuel-gallego-chamorro-249658a4/
+
+- name: Carlos Hernández
+  desc: Full Stack Developer
+  img: ../img/portrait-carlos.jpg
+  web: http://www.gamify.es/
+  twitter: https://twitter.com/codingcarlos
+  github: https://github.com/CodingCarlos
+  linkedin: dingcarlos/
+
 - name: Antonio Olmo Titos
   desc: "Software engineer with a strong academic background and twelve years of international experience in project management, UX and web development. Some areas that interest me especially are internet standards, open systems and free software, interfaces and usability, digital imaging, 3D and data visualisation, and mobile computing."
   img: ../img/portrait-tripu.jpg
@@ -6,7 +35,7 @@
   linkedin: https://www.linkedin.com/in/aolmotitos/
 
 - name: Nuria Sanz García
-  desc: "<p>Licenciada en biología por la UCM.</p><p>Nací en Madrid hace ya algún tiempo.</p><p>Me entusiasman los videojuegos y aprender todo el tiempo.</p><p>Tambien me gustan los gatos.</p>"
+  desc: "Licenciada en biología por la UCM. Nací en Madrid hace ya algún tiempo. Me entusiasman los videojuegos y aprender todo el tiempo. Tambien me gustan los gatos."
   img: ../img/portrait-nuria.jpg
   twitter: https://twitter.com/Nuritje
   github: https://github.com/NuriaHill
@@ -21,7 +50,7 @@
 
 - name: Jose Sánchez Barrio
   desc: Industrial engineer focus on hardware and physical product development. I enjoy understanding how this world works, learning new thins and sharing them with others.
-  img: ../img/portrait-pepe.png
+  img: ../img/portrait-pepe.jpg
   twitter: https://twitter.com/pepe_sb1
   github: https://github.com/pepesb
   linkedin: https://www.linkedin.com/in/josesanchezbarrio/
@@ -74,26 +103,3 @@
   twitter: https://twitter.com/edart_studio
   github: ttps://github.com/eduardolp84
   linkedin: https//es.linkedin.com/in/eduardoliebana
-  
-- name: Ulises Gascón
-  desc: Maker
-  img: ../img/portrait-ulises.jpg
-  twitter: https://twitter.com/kom_256
-  github: https://github.com/UlisesGascon
-  linedin: https://www.linkedin.com/in/ulisesgascon/
-
-- name: Ignacio Villanueva
-  desc: Front-end Developer focusing front-end architecture, front-end performance and responsive web design.
-  img: ../img/portrait-ignacio.jpg
-  twitter: https://twitter.com/ignaciodenuevo
-  github: https://github.com/ignaciodenuevo
-  linkedin: https://www.linkedin.com/in/ignaciodenuevo/
-
-- name: José Gallego
-  desc: Backend & Community Manager
-  img: ../img/portrait-jose.jpg
-  twitter: https://twitter.com/Josetekh
-  github: https://github.com/Josheriff
-  linkedin: https://www.linkedin.com/in/jos%C3%A9-manuel-gallego-chamorro-249658a4/
-
-  
