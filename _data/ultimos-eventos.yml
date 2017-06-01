@@ -1,3 +1,27 @@
+- name: ¡Reunión Mayo 2017!
+  desc: "<p>Damos las gracias a <a class='link'' href='https://www.ironhack.com/'>Ironhack</a> por cedernos el espacio en su nuevo y genial Campus en <a class='link'' href='http://www.mataderomadrid.org/'>Matadero Madrid.</a><p>¿Cómo llegar?</p><h4><img src='https://secure.meetupstatic.com/photos/event/d/3/f/a/600_461034266.jpeg' style='width : 570px ; margin : 5px ; max-width : 700px ; max-height : 700px'></h4>Ironhack está en la Casa del Lector (9).</p><h4>Grupos de trabajo:</h4><p>Kooper.js 😉</p><h4>Microtalleres/Charlas:</h4><p>- Charla de Polymer2 con Borja Godoy (<a class='link' href='https://twitter.com/gody11'>@gody11</a>)</p><p>- Charla de Electrónica con Node.js con Ulises Gascón (<a class='link' href='https://twitter.com/kom_256'>@kom_256</a>)</p>"
+  img: ../img/logo-ironhack.png
+  venue-name: "Campus Ironhack Madrid"
+  venue-url: https://www.ironhack.com/
+  venue-location: https://maps.google.com/maps?f=q&hl=en&q=28045%2C+Madrid%2C+es
+  venue-address: Paseo de la Chopera, 14 Madrid, Spain 28045
+  date: "20 de Mayo, 2017"
+  hour: "10:30h - 14:30h"
+  web: https://www.meetup.com/Open-Source-Weekends/events/239491681/
+  twitter: https://twitter.com/os_weekends
+
+- name: ¡Reunión Abril 2017!
+  desc: "<h4>Grupos de trabajo:</h4><p>Para todos aquellos que queréis aprender este es vuestro sitio.</p><h4>Microtalleres:</h4><p>- Flexbox por <a class='link' href='https://twitter.com/ancoar'>Ángel Corral Arias</a></p><p>- Arduino por... (sorpresa)</p>"
+  img: ../img/campus.svg
+  venue-name: "Campus Madrid"
+  venue-url: https://www.campus.co/madrid/es
+  venue-location: https://www.google.com/maps/place/Campus+Madrid/@40.4123321,-3.720433,17z/data=!3m1!4b1!4m2!3m1!1s0xd422875fe8d546d:0xfc628be71587461f
+  venue-address: Calle Moreno Nieto, 2 Madrid, Spain 28005
+  date: "8 de Abril, 2017"
+  hour: "10:30h - 14:30h"
+  web: https://www.meetup.com/Open-Source-Weekends/events/238442295/
+  twitter: https://twitter.com/os_weekends
+
 - name: ¡Reunión Marzo 2017!
   desc: "<h4>Cambios importantes:</h4><p>¡Ya somos 600!. Tuvimos la suerte de quedar un viernes para irnos de bares, siguió la fiesta y nos fuimos a cenar. ¡Han nacido los grupos de trabajo! ¿Queréis saber más preguntando?</p><h4>Proyectos:</h4><p>Eventpoints, GoblinDB, Ginger Code, MTLive, The Scraping Machine, CodingCarlos as a Service, .</p><h4>Microtalleres:</h4><p>- React por <a class='link' href='https://twitter.com/xDae'>José Miguel Bejarano</a></p><p>- Github por Carlos Bravo</p>"
   img: ../img/campus.svg
