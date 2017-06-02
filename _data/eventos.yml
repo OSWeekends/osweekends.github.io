@@ -1,11 +1,11 @@
-- name: ¡Reunión Abril 2017!
-  desc: "<h4>Grupos de trabajo:</h4><p>Para todos aquellos que queréis aprender este es vuestro sitio.</p><h4>Microtalleres:</h4><p>- Flexbox por <a class='link' href='https://twitter.com/ancoar'>Ángel Corral Arias</a></p><p>- Arduino por... (sorpresa)</p>"
+- name: ¡Reunión Junio 2017!
+  desc: "<h4>Grupos de trabajo:</h4><p>Kooper.js 😉</p><h4>Microtalleres/Charlas:</h4><p>- Charla de CSS Grid Layout con Ignacio Villanueva (<a class='link' href='https://twitter.com/IgnaciodeNuevo'>@IgnaciodeNuevo</a>)</p><p>- Charla de RabbitMQ con Yoel Macia (<a class='link' href='https://twitter.com/____ymd____'>@____ymd____</a>)</p><p>- Charla R Lang con Bea (<a class='link' href='https://twitter.com/Chucheria'>@Chucheria</a>)</p>"
   img: ../img/campus.svg
   venue-name: "Campus Madrid"
   venue-url: https://www.campus.co/madrid/es
   venue-location: https://www.google.com/maps/place/Campus+Madrid/@40.4123321,-3.720433,17z/data=!3m1!4b1!4m2!3m1!1s0xd422875fe8d546d:0xfc628be71587461f
   venue-address: Calle Moreno Nieto, 2 Madrid, Spain 28005
-  date: "8 de Abril, 2017"
+  date: "10 de Junio, 2017"
   hour: "10:30h - 14:30h"
-  web: https://www.meetup.com/Open-Source-Weekends/events/238442295/
+  web: https://www.meetup.com/Open-Source-Weekends/events/240131792/
   twitter: https://twitter.com/os_weekends
