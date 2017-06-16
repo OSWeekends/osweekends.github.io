@@ -1,0 +1,409 @@
+@import url('https://fonts.googleapis.com/css?family=Open+Sans:400,700');
+@import url('https://fonts.googleapis.com/css?family=Droid+Sans+Mono');
+
+html,body,div,span,applet,object,iframe,h1,h2,h3,h4,h5,h6,p,blockquote,pre,a,abbr,acronym,address,big,cite,code,del,dfn,em,img,ins,kbd,q,s,samp,small,strike,strong,sub,sup,tt,var,b,u,i,center,dl,dt,dd,ol,ul,li,fieldset,form,label,legend,table,caption,tbody,tfoot,thead,tr,th,td,article,aside,canvas,details,embed,figure,figcaption,footer,header,hgroup,menu,nav,output,ruby,section,summary,time,mark,audio,video{margin:0;padding:0;border:0;font-size:100%;font:inherit;vertical-align:baseline}article,aside,details,figcaption,figure,footer,header,hgroup,menu,nav,section{display:block}body{line-height:1}ol,ul{list-style-type:none}blockquote,q{quotes:none}blockquote:before,blockquote:after,q:before,q:after{content:'';content:none}table{border-collapse:collapse;border-spacing:0}
+
+html {
+    font-size: 100% ;
+    }
+
+body {
+    background-color: #003da5 ;
+    font-family: "Open Sans" , sans-serif ;
+    font-size: 1rem ;
+    line-height: 1.5 ;
+    }
+
+.video-bg {
+    position: fixed;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    overflow: hidden;
+    z-index: -100;
+    filter: blur(2px) ;
+    -webkit-filter: blur(2px) ;
+    background-color: #003da5 ;
+    }
+
+.video-bg > video {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    width: auto;
+    height: auto;
+	min-width: 100%;
+	min-height: 100%;
+    transform: translate(-50%, -50%);
+    opacity: .3 ;
+    }
+
+    @supports ( mix-blend-mode: overlay ) {
+
+        .video-bg > video {
+            opacity: 1 ;
+            mix-blend-mode: overlay ;
+            }
+    }
+
+
+.logo{
+    width: 38.2% ;
+    position: absolute ;
+    top: 45% ;
+    left: 50% ;
+    transform: translate(-50%,-50%) ;
+    z-index: 1 ;
+    }
+
+
+@media (max-width: 767px) {
+    .video-bg {
+        background-blend-mode: overlay;
+        background-image: url('../media/open-source-weekends.jpg') ;
+        background-position: center ;
+        background-size: cover ;
+        background-repeat: no-repeat ;
+        }
+
+    .video-bg > video {
+        display: none;
+        }
+}
+
+.mainNav {
+    width: 16em;
+    font-size: .8rem ;
+    margin-top: 3em ;
+    position: absolute ;
+    top: 2% ;
+    left: 0 ;
+    font-size: 1rem ;
+    z-index: 1 ;
+    transform-origin: left ;
+    user-select: none ;
+    }
+
+.mainNav ul {
+    list-style-type: none ;
+    transform: perspective(400px) rotateY(25deg) ;
+    }
+
+.mainNav li {
+    display: inline-block ;
+    letter-spacing: -.02em ;
+    margin: .5em 0 ;
+    }
+
+.mainNav a {
+    height: 3em ;
+    line-height: 3em ;
+    padding: 0 2em ;
+    display: inline-block ;
+    text-decoration: none ;
+    color: #fff ;
+    font-size: 1rem ;
+    white-space: nowrap ;
+    transform-origin: left ;
+    background-color: #111 ;
+    position: relative ;
+    font-weight: bold ;
+    transition: all .15s ease-out ;
+    }
+
+    .mainNav a::after {
+        content: "➵" ;
+        position: absolute ;
+        width: 1.5em ;
+        height: 1em ;
+        top: 0 ;
+        right: -1em ;
+        background-color: rgba(255,255,255,.3) ;
+        font-size: 3rem ;
+        color: #003da5 ;
+        text-align: center ;
+        opacity: 0 ;
+        z-index: -1 ;
+        transition: all .15s ;
+        }
+
+        .mainNav a:hover::after {
+            right: -1.5em ;
+            opacity: 1 ;
+            background-color: rgba(255,255,255,1) ;
+            }
+
+    .mainNav:hover a {
+        opacity: 1 ;
+        }
+
+    .mainNav a:hover {
+        background-color: #fff ;
+        color: #003da5 ;
+        }
+
+.terminal {
+    width: 38.2% ;
+    width: 90% ;
+    box-sizing: border-box ;
+    padding: 1em 3em ;
+    font-family: 'Droid Sans Mono' , serif, monospace ;
+    color: white ;
+    font-size: 1rem ;
+    line-height: normal ;
+    background-color: #111 ;
+    color: #ddd ;
+    position: absolute ;
+    bottom: 0 ;
+    left: 5% ;
+    border-top: 1px solid #223 ;
+    }
+
+    .terminal::before {
+        content: "1" ;
+        width: 2em ;
+        height: 100% ;
+        color: #445 ;
+        line-height: 3.5em ;
+        vertical-align: top ;
+        background-color: #223 ;
+        text-align: center ;
+        position: absolute ;
+        top: 0 ;
+        left: 0 ;
+        }
+
+    .motto::after {
+        content: "_" ;
+        position: absolute ;
+        width: 1ch ;
+        height: 1em ;
+        color: white ;
+        bottom: 0 ;
+        right: -1ch ;
+        font-weight: bold ;
+        animation: blink 1s step-start infinite;
+        }
+        @keyframes blink {
+            50% {
+                opacity: 0.0;
+                }
+        }
+
+.motto {
+    display: inline ;
+    vertical-align: top ;
+    position: relative ;
+    }
+
+.motto span {
+    color: #8F72C8 ;
+    font-weight: bold ;
+    }
+
+.sponsors {
+    position: absolute ;
+    width: 100% ;
+    bottom: 6rem ;     
+    }
+
+.sponsors ul {
+    padding: 0 5em ;
+    display: flex ;
+    justify-content: space-around ;
+    flex-wrap: wrap ;
+    }
+
+.sponsors li {
+    margin: 1.5rem 1rem ;
+    }
+
+.sponsors a {
+    display: block ;
+    opacity: .4 ;
+    transition: all .15s ;
+    }
+    
+    .sponsors a:hover {
+        opacity: 1 ;
+        transform: scale(1.1)
+        }
+
+.sponsors li:nth-child(1) img {
+    transform: scale(1.25)
+    }
+.sponsors li:nth-child(3) img{
+    transform: scale(1.5) translateY(-5%)
+    }
+
+.sponsors li:nth-child(4) img{
+    transform: scale(.75) translateY(-10%)
+    }
+.sponsors li:nth-child(5) img{
+    transform: translateY(-5%)
+    }
+
+.sponsors img {
+    display: block ;
+    height: 3rem ;
+    margin: 0 auto ;
+    }
+
+
+
+
+@media (max-width:1920px) {
+    
+    .sponsors ul {
+        padding: 0 3em ;
+        }
+    
+    .sponsors li {
+        transform: scale(.8) ;
+        } 
+}
+
+
+
+
+@media (max-width:1450px) {
+    
+    .mainNav {
+        transform: scale(.9)
+        }
+    
+    .sponsors ul {
+        padding: 0 2em ;
+        }
+    
+    .sponsors li {
+        width: 25% ;
+        }  
+}
+
+
+
+
+#toggleMenu-chk , .toggleMenu-btn {
+    position: absolute ;
+    top: -999rem ;
+    left: -999rem ;
+    display: none ;
+    }
+
+@media (max-width:1024px) {
+    
+    .logo {
+        top: 35% ;
+        }
+    
+    .sponsors li {
+        width: 40% ;
+        }
+    
+    .toggleMenu-btn {
+        font-size: .8rem ;
+        display: block ;
+        height: 4em ;
+        width:  4em ;
+        text-align: center ;
+        line-height: 4em ;
+        top: 1rem ;
+        left: 1rem ;
+        padding: 1em ;
+        background-color: rgba(17,17,17,.9) ;
+        color: #ddd ;
+        border-radius: 100% ;
+        font-weight: bold ;
+        letter-spacing: .2em ;
+        text-indent: .2em ;
+        -webkit-font-smoothing: antialiased ;
+        cursor: pointer ;
+        user-select: none ;
+        }
+    
+    .mainNav {
+        width: 100% ;
+        transform: translate(-300%) ;
+        top: 7% ;
+        }
+    
+    .mainNav a {
+        display: block ;
+        font-size: 1rem ;
+        padding: 1em 2em ;
+        background-color: rgba(255,255,255,.9) ;
+        color: #003da5 ;
+        transition: all .35s ;
+        }
+    
+        .mainNav a::after {
+            display: none ;
+            }
+    
+    .mainNav ul {
+        transform: perspective(400px) rotateY(0) ;
+        }
+    
+    .mainNav li {
+        display: block ;
+        margin: 0 ;
+        }
+    
+    .mainNav li + li {
+        border-top: 2px solid #224 ;
+        border-top: 2px solid #ccd ;
+        }
+    
+    #toggleMenu-chk:checked ~ .toggleMenu-btn {
+        background-color: rgba(255,255,255,.9) ;
+        color: #003da5 ;
+        transition: all .35s ;
+        }
+    
+    #toggleMenu-chk:checked ~ .mainNav {
+        transform: translate(0) ;
+        transition: all .35s ;
+        }
+
+}
+
+
+
+
+@media (max-height:950px) {
+    
+    .sponsors li {
+        margin: .7rem 1rem ;
+        transform: scale(.7) ;
+        //background: red ;
+        }
+    
+    .sponsors img {
+        display: inline ;
+        margin: 0
+        }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
