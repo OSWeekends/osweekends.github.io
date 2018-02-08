@@ -157,6 +157,7 @@ body {
     cursor: pointer ;
     transform-origin: right ;
     transition: all .3s ;
+    text-decoration: none ;
     display: none ;
 }
 
