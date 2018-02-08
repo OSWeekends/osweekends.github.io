@@ -143,6 +143,62 @@ body {
         color: #003da5 ;
         }
 
+.agendaBtn {
+    background-color: #fff ;
+    position: absolute ;
+    top: 1em ;
+    right: 0 ;
+    color: #003da5 ;
+    font-weight: bold ;
+    letter-spacing: -1px ;
+    font-size: 2rem ;
+    padding: 1em 1.75em 1em 2.25em ;
+    border-radius: 10em 0 0 10em ;
+    cursor: pointer ;
+    transform-origin: right ;
+    transition: all .3s ;
+    display: none ;
+}
+
+.agendaBtn:hover {
+    background-color: #000 ;
+    color: #fff ;
+    transform: scale(1.05) ;
+    }
+
+.ico    {
+    display: inline-block ;
+    vertical-align: middle ;
+    line-height: normal ;
+    width: 1.4em ;
+    height: 1.4em ;
+    position: relative ;
+    }
+
+.bigIco {
+    font-size: 3rem ;
+    margin-right: .75em ;
+    top: -.09em ;
+}
+
+.arrow {
+    font-size: .8em ;
+    margin-left: .5em ;
+    }
+
+.arrow > svg {
+    fill: currentColor ;
+}
+
+.ico > svg   {
+    height: 100% ;
+    width: 100% ;
+    }
+
+    .agendaBtn:hover svg {
+        fill: white ;
+    }
+
 .terminal {
     width: 38.2% ;
     width: 90% ;
