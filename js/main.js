@@ -1,7 +1,7 @@
 
 const agendaBtn = document.querySelector(".agendaBtn") ;
-const showDate  = new Date("Thu Feb 10 2018 08:00:00 GMT+0100 (CET)")
-const hideDate  = new Date("Thu Feb 10 2018 18:00:00 GMT+0100 (CET)")
+const showDate  = new Date("Feb 8 2018 21:22:00 GMT+0100 (CET)")
+const hideDate  = new Date("Feb 8 2018 21:22:10 GMT+0100 (CET)")
 
 window.setInterval( function()  {
 
