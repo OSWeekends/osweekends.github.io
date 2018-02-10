@@ -206,12 +206,13 @@ body {
     @media all and (max-width:780px){
 
         .agendaBtn {
-            padding: 1.4em 2em 1.5em 4.5em ;
+            padding: 1em 2em 1em 4em ;
             font-size: .9rem ;
             text-align: center ;
         }
 
         .ico.bigIco {
+            font-size: 1.8rem ;
             display: block;
             margin: 0 auto .1em;
         }
