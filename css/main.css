@@ -162,6 +162,7 @@ body {
     z-index: 9999;
 }
 
+
 .agendaBtn:hover {
     background-color: #000 ;
     color: #fff ;
@@ -200,6 +201,26 @@ body {
     .agendaBtn:hover svg {
         fill: white ;
     }
+
+
+    @media all and (max-width:680px){
+
+        .agendaBtn {
+            padding: 1.25em 2em 1.5em 4.5em ;
+            font-size: .85rem ;
+            text-align: center ;
+        }
+
+        .ico.bigIco {
+            display: block;
+            margin: 0 auto .25em;
+        }
+
+        .arrow {
+            display: none ;
+        }
+    }
+
 
 .terminal {
     width: 38.2% ;
