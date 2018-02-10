@@ -159,6 +159,7 @@ body {
     transition: all .3s ;
     text-decoration: none ;
     display: none ;
+    z-index: 9999;
 }
 
 .agendaBtn:hover {
