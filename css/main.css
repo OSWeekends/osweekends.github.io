@@ -158,7 +158,6 @@ body {
     transform-origin: right ;
     transition: all .3s ;
     text-decoration: none ;
-    display: none ;
     z-index: 9999;
 }
 
