@@ -1,7 +1,7 @@
 {
   "name": "osw-website",
   "version": "1.0.0",
-  "description": "My tiptop Nuxt.js project",
+  "description": "My grand Nuxt.js project",
   "author": "Jorge Baumann",
   "private": true,
   "scripts": {
@@ -16,6 +16,7 @@
     "cross-env": "^5.2.0",
     "nuxt": "^2.0.0",
     "express": "^4.16.3",
+    "vuetify": "^1.2.4",
     "@nuxtjs/axios": "^5.0.0"
   },
   "devDependencies": {
@@ -23,6 +24,8 @@
     "babel-eslint": "^8.2.1",
     "eslint": "^5.0.1",
     "eslint-loader": "^2.0.0",
-    "eslint-plugin-vue": "^4.0.0"
+    "eslint-plugin-vue": "^4.0.0",
+    "stylus": "^0.54.5",
+    "stylus-loader": "^3.0.2"
   }
 }
