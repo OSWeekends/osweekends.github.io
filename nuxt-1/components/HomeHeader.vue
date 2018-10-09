@@ -27,7 +27,7 @@
       z-index 1
 
   .header-content
-    position absolute
+    /*position absolute*/
     margin-top 64px
     width 100%
     z-index 10
