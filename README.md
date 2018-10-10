@@ -1,10 +1,13 @@
 # OSWeekends.github.io
 OSW [Nuxt](https://nuxtjs.org) powered Website
 
+> 👉 Always assume you are in the `new-website` branch
+
 ##  To get started:
 
     cd src
-    yarn dev
+    git checkout new-website
+    yarn dev 
 
 ##  To build & start for production (server):
 
@@ -35,3 +38,6 @@ OSW [Nuxt](https://nuxtjs.org) powered Website
 ? Author name: Jorge Baumann
 ? Choose a package manager: yarn
 ```
+
+## Contributing 🦄
+Read more [here](./CONTRIBUTING.md)

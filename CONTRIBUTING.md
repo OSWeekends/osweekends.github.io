@@ -2,6 +2,9 @@
 
 ### Git Commit Messages
 
+* Always create branchs from `new-website` branch
+* Make pull requests and assign it to @baumannzone 
+---
 * Use the present tense ("Add feature" not "Added feature")
 * Use the imperative mood ("Move cursor to..." not "Moves cursor to...")
 * Limit the first line to 72 characters or less
