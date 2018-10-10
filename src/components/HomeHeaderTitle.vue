@@ -1,0 +1,27 @@
+<template>
+  <v-flex
+    md7
+    sm12>
+    <h1 class="hero-title display-3">
+      {{ msg }}
+    </h1>
+  </v-flex>
+</template>
+<script>
+  export default {
+    name: 'HomeHeaderTitle',
+    props: {
+      msg: {
+        required: false,
+        type: String,
+        default: 'Lmao dude',
+      },
+    },
+  }
+</script>
+
+<style scoped lang="stylus">
+  .hero-title
+    color white
+    font-weight bolder
+</style>
