@@ -15,17 +15,17 @@
 export default {
   props: {
     icon: {
-      type:String,
+      type: String,
       required: true,
       default: 'far fa-sticky-note'
       },
     text: {
-      type:String,
+      type: String,
       required: true,
       default: 'Lorem ipsun text'
       },
     title: {
-      type:String,
+      type: String,
       required: true,
       default: 'Title'
       }
