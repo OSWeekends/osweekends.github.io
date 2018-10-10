@@ -52,11 +52,13 @@
       v-if="isHome"
       msg="La comunidad de software libre que hace cosas 😎"
     />
-    <v-content>
-      <v-container>
-        <nuxt/>
+    <!-- <v-content>
+      <v-container fluid>
       </v-container>
-    </v-content>
+    </v-content> -->
+    
+    <nuxt/>
+
     <br>
     <v-footer
       fixed
