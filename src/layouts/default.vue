@@ -58,6 +58,7 @@
     </v-toolbar>
     <v-content>
       <v-container>
+        <H1>HOLA ----->!!!</H1>
         <nuxt />
       </v-container>
     </v-content>

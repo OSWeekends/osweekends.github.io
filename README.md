@@ -6,14 +6,16 @@ OSW [Nuxt](https://nuxtjs.org) powered Website
     cd src
     yarn run dev
 
-##  To build & start for production:
+##  To build & start for production (server):
 
     cd src
     yarn run build
     yarn start
 
-  
-  
+##  To build & start for production (Static):
+
+    cd src
+    yarn run generate       // src/dist
   ----
 
 ```
