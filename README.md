@@ -4,18 +4,19 @@ OSW [Nuxt](https://nuxtjs.org) powered Website
 ##  To get started:
 
     cd src
-    yarn run dev
+    yarn dev
 
 ##  To build & start for production (server):
 
     cd src
-    yarn run build
+    yarn build
     yarn start
 
 ##  To build & start for production (Static):
 
     cd src
-    yarn run generate       // src/dist
+    yarn generate       // => src/dist
+  
   ----
 
 ```
