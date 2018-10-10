@@ -29,6 +29,7 @@
       :dark="isHome"
       class="elevation-0"
       color="transparent"
+      absolute
       fixed
       app
     >
@@ -56,7 +57,7 @@
       <v-container fluid>
       </v-container>
     </v-content> -->
-    
+
     <nuxt/>
 
     <br>
