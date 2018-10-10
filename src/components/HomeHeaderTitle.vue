@@ -14,7 +14,7 @@
       msg: {
         required: false,
         type: String,
-        default: 'Lmao dude',
+        default: 'La comunidad más molona de todas ;)',
       },
     },
   }
