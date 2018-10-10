@@ -77,12 +77,4 @@ dist
 .serverless
 
 # IDE
-.idea/*
 .idea/
-.idea
-.idea/inspectionProfiles
-.idea/misc.xml
-.idea/modules.xml
-.idea/osweekends.github.io.iml
-.idea/vcs.xml
-.idea/workspace.xml
