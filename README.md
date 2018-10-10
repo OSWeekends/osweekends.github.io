@@ -1,5 +1,8 @@
 # OSWeekends.github.io
-OSW [Nuxt](https://nuxtjs.org) powered Website
+OSW [Nuxt](https://nuxtjs.org) powered Website 
+
+## 👾 Live Demo: https://osw.netlify.com/
+
 
 > 👉 Always assume you are in the `new-website` branch
 
