@@ -1,5 +1,5 @@
 # OSWeekends.github.io
-OSWeekends Nuxt Powered Website
+OSW [Nuxt](https://nuxtjs.org) powered Website
 
 ##  To get started:
 
@@ -11,6 +11,10 @@ OSWeekends Nuxt Powered Website
     cd src
     yarn run build
     yarn start
+
+  
+  
+  ----
 
 ```
 > yarn create nuxt-app src
