@@ -4,17 +4,21 @@
     sm12
     class="meetup-info">
     <h2>Meetup Info</h2>
-    <pre>{{ meetupData }}</pre>
+    <pre>{{ getMeetupData }}</pre>
   </v-flex>
 </template>
 <script>
+  import { mapGetters } from 'vuex'
+
   export default {
     name: 'HomeHeaderMeetup',
     data() {
       return {
         project: 'default',
-        meetupData: {},
       }
+    },
+    computed: {
+      ...mapGetters( [ 'getMeetupData' ] ),
     },
   }
 </script>
