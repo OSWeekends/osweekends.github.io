@@ -50,7 +50,7 @@ export default {
   &__title
     color #003ea5
     text-transform uppercase
-    margin-bottom 10px
+    margin-bottom 15px
   
   &__text
     text-align justify

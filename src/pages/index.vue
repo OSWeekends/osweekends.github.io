@@ -1,16 +1,20 @@
 <template>
-  <section class="content">
-    <v-container
-      fluid
-      class="features-section">
+  <div class="content">
+    <!-- FEATURES -->
+    <section class="features-section">
       <home-features/>
-    </v-container>
+    </section>
 
-  </section>
+    <!-- Projects -->
+    <section class="projects-section">
+      <home-projects/>
+    </section>
+  </div>
 </template>
 
 <script>
   import HomeFeatures from '~/components/HomeFeatures/Index.vue'
+  import HomeProjects from '~/components/HomeProjects/Index.vue'
 
   export default {
     fetch( { store, params } ) {
@@ -29,6 +33,7 @@
     },
     components: {
       HomeFeatures,
+      HomeProjects
     },
     data() {
       return {}
@@ -40,5 +45,10 @@
 <style lang="stylus" scoped>
   .features-section
     background-color #f7f7f7
+    padding 60px 0 80px
+
+  .projects-section
+    background-color #003ea5
+    padding 60px 0 80px
 
 </style>
