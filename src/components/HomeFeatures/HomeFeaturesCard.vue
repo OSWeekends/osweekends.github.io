@@ -1,11 +1,6 @@
 <template>
   <div class="feature-card">
-    <v-icon
-      color="indigo"
-      size="80px"
-      class="feature-card__icon">
-      {{ icon }}
-    </v-icon>
+    <i class="feature-card__icon material-icons">  {{ icon }} </i>
     <h3 class="feature-card__title">{{ title }}</h3>
     <p class="feature-card__text"> {{ text }}</p>
   </div>
@@ -17,7 +12,7 @@ export default {
     icon: {
       type: String,
       required: true,
-      default: 'far fa-sticky-note'
+      default: 'worknpm'
       },
     text: {
       type: String,
@@ -47,8 +42,12 @@ export default {
     transform translateY(-10px) scale(1.03)
     box-shadow 0 15px 40px rgba(#000, .25)
 
+  &__icon
+    font-size 72px
+    color #333
+
   &__title
-    color #003ea5
+    color #333
     text-transform uppercase
     margin-bottom 15px
   
