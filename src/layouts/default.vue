@@ -51,12 +51,7 @@
     </v-toolbar>
     <HomeHeader
       v-if="isHome"
-      msg="La comunidad de software libre que hace cosas 😎"
-    />
-    <!-- <v-content>
-      <v-container fluid>
-      </v-container>
-    </v-content> -->
+      msg="La comunidad de software libre que hace cosas 😎"/>
 
     <nuxt/>
 
@@ -66,7 +61,7 @@
       app
       mt-5
     >
-      <span class="ml-1">&copy; 2017</span>
+      <span class="ml-1">&copy; 2018</span>
     </v-footer>
   </v-app>
 </template>
