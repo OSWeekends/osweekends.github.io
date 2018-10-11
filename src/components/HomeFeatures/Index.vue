@@ -11,8 +11,8 @@
       <v-flex
         v-for="(feature, index) in features"
         :key="index"
-        xs12
-        sm4
+        sm12
+        md4
         class="text-xs-center">
         <home-features-card
           :title="feature.title"
