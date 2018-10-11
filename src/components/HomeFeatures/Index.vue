@@ -61,7 +61,7 @@ import HomeFeaturesCard from '~/components/HomeFeatures/HomeFeaturesCard.vue'
     color #003ea5
     margin 0 auto
     font-size 40px
-    margin-bottom 15px
+    margin-bottom 40px
     animation moveInLeft 1s ease-out .75s
     animation-fill-mode backwards
 
