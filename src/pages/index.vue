@@ -9,12 +9,17 @@
     <section class="projects-section">
       <home-projects/>
     </section>
+    <!-- Sponsors -->
+    <section class="sponsors-section">
+      <home-Sponsors/>
+    </section>
   </div>
 </template>
 
 <script>
   import HomeFeatures from '~/components/HomeFeatures/Index.vue'
   import HomeProjects from '~/components/HomeProjects/Index.vue'
+  import HomeSponsors from '~/components/HomeSponsors/Index.vue'
 
   export default {
     fetch( { store, params } ) {
@@ -33,7 +38,8 @@
     },
     components: {
       HomeFeatures,
-      HomeProjects
+      HomeProjects,
+      HomeSponsors
     },
     data() {
       return {}
@@ -49,6 +55,10 @@
 
   .projects-section
     background-color #003ea5
+    padding 60px 0 80px
+  
+  .sponsors-section
+    background-color #BBB
     padding 60px 0 80px
 
 </style>
