@@ -37,7 +37,7 @@ import HomeSponsorCard from '~/components/HomeSponsors/HomeSponsorsCard.vue'
           {
             img: '/img/sponsor/fictizia-logo.svg',
             website: 'https://www.fictizia.com/',
-            atl: 'Fictizia'
+            alt: 'Fictizia'
           },
           {
             img: '/img/sponsor/pillarsJS-logo.svg',
