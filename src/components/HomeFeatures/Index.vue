@@ -62,41 +62,5 @@ import HomeFeaturesCard from '~/components/HomeFeatures/HomeFeaturesCard.vue'
     margin 0 auto
     font-size 40px
     margin-bottom 40px
-    animation moveInLeft 1s ease-out .75s
-    animation-fill-mode backwards
 
-  &__card
-    // opacity 0
-    animation moveInBottom 1s ease-out .75s
-    animation-fill-mode backwards
-
-// ANIMATIONS
-@keyframes moveInLeft {
-  0% {
-    opacity: 0;
-    transform: translateX(-100px)
-  }
-  
-  80% {
-    transform: translateX(-10px);
-  }
-
-  100% {
-    opacity: 1;
-    transform: translate(0);
-  }
-}
-
-
-@keyframes moveInBottom {
-  0% {
-    opacity: 0;
-    transform: translateY(30px);
-  }
-
-  100% {
-    opacity: 1;
-    transform: translate(0);
-  }
-}
 </style>

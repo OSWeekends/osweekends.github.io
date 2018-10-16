@@ -1,5 +1,6 @@
 <template>
   <div
+    :alt="title"
     :style="{ backgroundImage: 'url(' + img + ')' }"
     class="project-card">
     <div class="project-card__details">
@@ -9,11 +10,13 @@
         <a
           v-if="website"
           :href="website"
+          title="website"
           class="project-card__btn"
           target="_blank">Website </a>
         <a
           v-if="github"
           :href="github"
+          title="github"
           class="project-card__btn"
           target="_blank">Github </a>
       </div>
@@ -64,6 +67,7 @@ export default {
   background-position top
   position relative
   border-radius 5px
+  overflow hidden
 
   &:hover &__details
     opacity: 1
@@ -120,18 +124,4 @@ export default {
       outline none;
       box-shadow 0 5px 10px rgba(#000, .2)
 
-
-
-
-@keyframes moveInBottom {
-  0% {
-    opacity: 0;
-    transform: translateY(30px);
-  }
-
-  100% {
-    opacity: 1;
-    transform: translate(0);
-  }
-}
 </style>

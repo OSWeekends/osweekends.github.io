@@ -3,6 +3,7 @@
     class="sponsor-card align-center">
     <a
       :href="website"
+      :title="alt"
       target="_blank">
       <img
         :src="img"
@@ -38,9 +39,10 @@ export default {
   width 90%
   margin 10px auto
   background-size cover
+  transition all .5s
+
   &:hover
-    width 95%
-    transition all .5s
+    transform scale(1.03)
   img
     width 80%
     
