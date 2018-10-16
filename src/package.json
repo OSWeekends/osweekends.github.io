@@ -1,7 +1,7 @@
 {
-  "name": "src",
+  "name": "open-source-weekends-website",
   "version": "1.0.0",
-  "description": "My first-rate Nuxt.js project",
+  "description": "Open Source Weekends - The community of communities",
   "author": "Jorge Baumann",
   "private": true,
   "scripts": {
