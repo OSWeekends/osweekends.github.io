@@ -39,8 +39,8 @@ export default {
   box-shadow 0 15px 40px rgba(#000, .15);
   transition all .3s;
   &:hover
-    transform translateY(-10px) scale(1.03)
-    box-shadow 0 15px 40px rgba(#000, .25)
+    // transform translateY(-10px) scale(1.03)
+    // box-shadow 0 15px 40px rgba(#000, .25)
 
   &__icon
     font-size 72px

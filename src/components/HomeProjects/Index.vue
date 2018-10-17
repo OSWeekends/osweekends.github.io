@@ -52,21 +52,21 @@ import HomeProjectsCard from '~/components/HomeProjects/HomeProjectsCard.vue'
           {
             title: 'Ginger Code',
             description: 'Un sistema de aprendizaje sencillo para todos, ¡cualquiera puede aprender a programar!',
-            img: '/img/ginger.png',
+            img: '/img/projects/ginger.png',
             website: '',
             github: 'https://github.com/GingerCode'
           },
           {
             title: 'GoblinDB',
             description: 'Fear the Goblin! - An amazing, simple and fun database for humans',
-            img: '/img/goblin.jpg',
+            img: '/img/projects/goblin.jpg',
             website: 'http://goblindb.osweekends.com/',
             github: 'https://github.com/GoblinDBRocks/GoblinDB'
           },
           {
             title: 'Pillars',
             description: 'Pillars.js is a modular framework for web development in Node.js',
-            img: '/img/pillars.png',
+            img: '/img/projects/pillars.png',
             website: 'http://pillarsjs.com/',
             github: 'https://github.com/pillarsjs/pillars'
           }

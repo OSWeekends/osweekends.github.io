@@ -42,7 +42,7 @@ export default {
   transition all .5s
 
   &:hover
-    transform scale(1.03)
+    // transform scale(1.03)
   img
     width 80%
     
