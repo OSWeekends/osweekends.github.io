@@ -9,15 +9,30 @@
     <section class="projects-section">
       <home-projects/>
     </section>
+  
+    <!-- Guilds -->
+    <section class="guilds-section">
+      <home-guilds/>
+    </section>
+
+    <!-- Slack -->
+    <section class="slack-section">
+      <home-slack/>
+    </section>
+
+    <!-- Team -->
+    <section class="team-section">
+      <home-team/>
+    </section>
 
     <!-- Sponsors -->
     <section class="sponsors-section">
       <home-sponsors/>
     </section>
 
-    <!-- Slack -->
-    <section class="slack-section">
-      <home-slack/>
+    <!-- Video -->
+    <section class="video-section">
+      <home-video/>
     </section>
   </div>
 </template>
@@ -25,8 +40,12 @@
 <script>
   import HomeFeatures from '~/components/HomeFeatures/Index.vue'
   import HomeProjects from '~/components/HomeProjects/Index.vue'
-  import HomeSponsors from '~/components/HomeSponsors/Index.vue'
+  import HomeGuilds from '~/components/HomeGuilds/Index.vue'
   import HomeSlack from '~/components/HomeSlack/Index.vue'
+  import HomeTeam from '~/components/HomeTeam/Index.vue'
+  import HomeSponsors from '~/components/HomeSponsors/Index.vue'
+  import HomeVideo from '~/components/HomeVideo/Index.vue'
+
 
   export default {
     fetch( { store, params } ) {
@@ -46,8 +65,11 @@
     components: {
       HomeFeatures,
       HomeProjects,
+      HomeGuilds,
+      HomeSlack,
+      HomeTeam,
       HomeSponsors,
-      HomeSlack
+      HomeVideo
     },
     data() {
       return {}
@@ -64,13 +86,24 @@
   .projects-section
     background-color #003ea5
     padding 60px 0 80px
-  
-  .sponsors-section
-    background-color #BBB
+
+  .guilds-section
+    background-color #f7f7f7
     padding 60px 0 80px
 
   .slack-section
     background-color #003ea5
     padding 60px 0 60px
 
+  .team-section
+    background-color #f7f7f7
+    padding 60px 0 80px
+
+   .sponsors-section
+    background-color #003ea5
+    padding 60px 0 80px
+
+  .video-section
+    background-color #f7f7f7
+    padding 60px 0 80px
 </style>

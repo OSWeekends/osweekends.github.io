@@ -73,13 +73,12 @@ import HomeSponsorCard from '~/components/HomeSponsors/HomeSponsorsCard.vue'
 <style lang="stylus" scoped>
 
 .home-sponsor
-  background-color rgba(#BBB)
   &__title-row
     padding-left 20px
     margin-bottom 40px
 
   &__title
-    color #003ea5
+    color #fff
     font-size 40px
 
 </style>

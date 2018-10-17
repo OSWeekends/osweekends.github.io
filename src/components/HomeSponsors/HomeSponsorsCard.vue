@@ -35,7 +35,6 @@ export default {
 
 <style lang="stylus" scoped>
 .sponsor-card
-  background-color rgba(#BBB)
   width 90%
   margin 10px auto
   background-size cover

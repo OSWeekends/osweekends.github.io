@@ -21,8 +21,9 @@
         <br>
         <a
           href="http://invitations-osweekends.herokuapp.com/"
+          title="Únete al Slack"
           class="home-slack__btn"
-          target="_black">únete al slack</a>
+          target="_black">únete al Slack</a>
       </v-flex>
     </v-layout>
   </v-container>
