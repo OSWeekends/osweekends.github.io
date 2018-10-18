@@ -56,21 +56,22 @@
     <nuxt/>
 
     <br>
-    <v-footer
-      fixed
-      app
-      mt-5
-    >
-      <span class="ml-1">&copy; 2018</span>
-    </v-footer>
+    <footer class="footer-section">
+      <home-footer />
+    </footer>
   </v-app>
 </template>
 
 <script>
   import HomeHeader from '~/components/HomeHeader/Index.vue'
+  import HomeFooter from '~/components/HomeFooter/Index.vue'
+
 
   export default {
-    components: { HomeHeader },
+    components: { 
+      HomeHeader,
+      HomeFooter
+    },
     data() {
       return {
         clipped: false,
@@ -90,3 +91,11 @@
     },
   }
 </script>
+
+<style lang="stylus" scoped>
+
+
+.footer-section
+  background-color #121212
+</style>
+
