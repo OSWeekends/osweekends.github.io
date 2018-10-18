@@ -54,11 +54,11 @@ import HomeTeamCard from '~/components/HomeTeam/HomeTeamCard.vue'
             name: 'Teba Gómez',
             role: 'Co-Founder'
           },
-          {
+          /*{
             img: '/img/team/borja.jpg',
             name: 'Borja Godoy',
             role: 'Co-Founder'
-          },
+          },*/
           {
             img: '/img/team/baumann.jpg',
             name: 'Jorge Baumann',
