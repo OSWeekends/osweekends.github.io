@@ -5,8 +5,8 @@
       wrap
       class="home-slack__title-row text-xs-center">
       <v-flex 
-        xs12
-        sm2
+        sm12
+        md2
         class="home-slack__icon-wrapper" >
         <!-- <img
           alt="slack"
@@ -14,13 +14,13 @@
         <i class="fab fa-slack-hash home-slack__icon" />
       </v-flex>
       <v-flex
-        xs12
-        sm10>
+        sm12
+        md10>
         <h2 class="home-slack__title">Conversamos sobre Open Source en Slack</h2>
         <h3 class="home-slack__subtitle">Únete a +2k personas</h3>
         <br>
         <a
-          href="http://invitations-osweekends.herokuapp.com/"
+          href="http://invitations-osweekends.herokuapp.com/?ref=OSWLanding"
           title="Únete al Slack"
           class="home-slack__btn"
           target="_black">únete al Slack</a>

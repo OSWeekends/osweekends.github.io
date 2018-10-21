@@ -6,7 +6,7 @@
       :style="{ backgroundImage: 'url(' + img + ')' }"
       class="team-card__img"/>
     <h3 class="team-card__name"> {{ name }} </h3>
-    <h4 class="team-card__role"> {{ role }} </h4>
+    <p class="team-card__role"> {{ role }} </p>
   </div>
 </template>
 
