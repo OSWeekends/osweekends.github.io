@@ -26,32 +26,19 @@
 
 <script>
 import HomeFeaturesCard from '~/components/HomeFeatures/HomeFeaturesCard.vue'
+import { mapGetters } from 'vuex'
+
   export default {
     components: {
       HomeFeaturesCard
     },
     data () {
       return {
-        features: [
-          {
-            icon: 'today',
-            title: 'Eventos mensuales',
-            text: 'Lorem ipsum dolor sit amet consectetur adipiscing elit conubia tincidunt augue, dictum dis nisl pretium leo aliquam hac per nascetur vehicula ornare, cursus senectus tempor tortor himenaeos ridiculus fermentum metus proin. Montes hac ultricies faucibus laoreet vel purus non et cursus ornare, convallis sapien semper mus luctus primis magna cubilia interdum est, scelerisque enim suscipit habitant porta duis lacus pretium hendrerit. Eros platea eleifend ut viverra montes nisl non, ultricies curae pulvinar eget sem convallis conubia, odio habitant accumsan commodo vestibulum velit.'
-          },
-          {
-            icon: 'code',
-            title: 'Poryectos Open Source',
-            text: 'Lorem ipsum dolor sit amet consectetur adipiscing elit conubia tincidunt augue, dictum dis nisl pretium leo aliquam hac per nascetur vehicula ornare, cursus senectus tempor tortor himenaeos ridiculus fermentum metus proin. Montes hac ultricies faucibus laoreet vel purus non et cursus ornare, convallis sapien semper mus luctus primis magna cubilia interdum est, scelerisque enim suscipit habitant porta duis lacus pretium hendrerit. Eros platea eleifend ut viverra montes nisl non, ultricies curae pulvinar eget sem convallis conubia, odio habitant accumsan commodo vestibulum velit.'
-         
-          },
-          {
-            icon: 'place',
-            title: 'Titulo 3',
-            text: 'Lorem ipsum dolor sit amet consectetur adipiscing elit conubia tincidunt augue, dictum dis nisl pretium leo aliquam hac per nascetur vehicula ornare, cursus senectus tempor tortor himenaeos ridiculus fermentum metus proin. Montes hac ultricies faucibus laoreet vel purus non et cursus ornare, convallis sapien semper mus luctus primis magna cubilia interdum est, scelerisque enim suscipit habitant porta duis lacus pretium hendrerit. Eros platea eleifend ut viverra montes nisl non, ultricies curae pulvinar eget sem convallis conubia, odio habitant accumsan commodo vestibulum velit.'
-          }
-        ]
       }
-    }
+    },
+    computed: {
+      ...mapGetters( [ 'features' ] ),
+    } 
   }
 </script>
 

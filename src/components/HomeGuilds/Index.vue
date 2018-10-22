@@ -39,6 +39,7 @@
 
 <script>
 import HomeGuildsCard from '~/components/HomeGuilds/HomeGuildsCard.vue'
+import { mapGetters } from 'vuex'
 
   export default {
     components: {
@@ -46,28 +47,11 @@ import HomeGuildsCard from '~/components/HomeGuilds/HomeGuildsCard.vue'
     },
     data () {
       return {
-        guilds: [
-          {
-            title: 'Guild 1',
-            description: 'decripción Guild 1. Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ',
-            img: '/img/guilds/anvil.jpg',
-            github: 'https://github.com/OSWeekends'
-          },
-          {
-            title: 'Guild 2',
-            description: 'Descripcion Guild 2. Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur',
-            img: '/img/guilds/anvil.jpg',
-            github: 'https://github.com/OSWeekends'
-          },
-          {
-            title: 'Guild 3',
-            description: 'Descripcion Guild 3. Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur',
-            img: '/img/guilds/anvil.jpg',
-            github: 'https://github.com/OSWeekends'
-          }
-        ]
       }
-    }
+    },
+    computed: {
+      ...mapGetters( [ 'guilds' ] ),
+    } 
   }
 </script>
 
@@ -76,7 +60,7 @@ import HomeGuildsCard from '~/components/HomeGuilds/HomeGuildsCard.vue'
   &__title-row
     padding-left 20px
     margin-bottom 40px
-    color #003ea5
+    color #fff
 
   &__icon-wrapper
     display flex

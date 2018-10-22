@@ -5,16 +5,16 @@
       <home-features/>
     </section>
 
-    <!-- Projects -->
-    <section class="projects-section">
-      <home-projects/>
-    </section>
-  
     <!-- Guilds -->
     <section class="guilds-section">
       <home-guilds/>
     </section>
 
+    <!-- Projects -->
+    <section class="projects-section">
+      <home-projects/>
+    </section>
+  
     <!-- Slack -->
     <section class="slack-section">
       <home-slack/>
@@ -46,21 +46,40 @@
   import HomeSponsors from '~/components/HomeSponsors/Index.vue'
   import HomeVideo from '~/components/HomeVideo/Index.vue'
 
+  import { mapActions, mapGetters } from 'vuex'
+
 
   export default {
     fetch( { store, params } ) {
       // If no meetup data
       if ( store.state.meetupData.length === 0 ) {
-        return store.dispatch( 'getMeetupData' )
-          .then( ( res ) => {
-            // Save data in store
-            store.commit( 'setMeetupData', res.data )
-          } )
-          .catch( ( err ) => {
-            console.log( '😰 Err: [getMeetupData]' )
-            console.log( { err } )
-          } )
+        store.dispatch( 'getMeetupData' )
       }
+      // TEAM MEMBERS
+      if( store.state.teamMembers.length === 0) {
+        store.dispatch('getTeamMembersData')
+      }
+
+      // GUiLDS
+      if( store.state.guilds.length === 0) {
+        store.dispatch('getGuildsData')
+      }
+
+       // Projects
+      if( store.state.projects.length === 0) {
+        store.dispatch('getProjectsData')
+      }
+
+       // Sponsors
+      if( store.state.sponsors.length === 0) {
+        store.dispatch('getSponsorsData')
+      }
+
+       // Sponsors
+      if( store.state.features.length === 0) {
+        store.dispatch('getFeaturesData')
+      }
+
     },
     components: {
       HomeFeatures,
@@ -73,7 +92,7 @@
     },
     data() {
       return {}
-    },
+    }
   }
 </script>
 
@@ -84,11 +103,11 @@
     padding 60px 0 80px
 
   .projects-section
-    background-color #003ea5
+    background-color #f7f7f7
     padding 60px 0 80px
 
   .guilds-section
-    background-color #f7f7f7
+    background-color #003ea5
     padding 60px 0 80px
 
   .slack-section
