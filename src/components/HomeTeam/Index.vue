@@ -26,7 +26,7 @@
 
 <script>
 import HomeTeamCard from '~/components/HomeTeam/HomeTeamCard.vue'
-import { mapGetters } from 'vuex'
+import { mapGetters, mapActions } from 'vuex'
 
   export default {
     components: {
@@ -38,8 +38,8 @@ import { mapGetters } from 'vuex'
     },
     computed: {
       ...mapGetters( [ 'teamMembers' ] ),
-    } 
-  }
+    }
+   }
 </script>
 
 <style lang="stylus" scoped>

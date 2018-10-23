@@ -50,42 +50,35 @@
   import axios from 'axios'
 
   export default {
-    fetch( { store, params, req} ) {
-      // If no meetup data
+    async fetch( { store, params, req} ) {
+      // console.log(axios)
+      //If no meetup data
       if ( store.state.meetupData.length === 0 ) {
-        store.dispatch( 'getMeetupData' )
-          .then( ( res ) => {
-          // Save data in store
-          store.commit( 'setMeetupData', res.data )
-        } )
-        .catch( ( err ) => {
-          console.log( '😰 Err: [getMeetupData]' )
-          console.log( { err } )
-        } )
+        await store.dispatch( 'getMeetupData' )
       }
       // TEAM MEMBERS
       if( store.state.teamMembers.length === 0) {
-        store.dispatch('getTeamMembersData', req.headers.referer)
+        await store.dispatch('getTeamMembersData', req.headers.host)
       }
 
       // GUiLDS
       if( store.state.guilds.length === 0) {
-        store.dispatch('getGuildsData', req.headers.referer)
+        await store.dispatch('getGuildsData', req.headers.host)
       }
 
        // Projects
       if( store.state.projects.length === 0) {
-        store.dispatch('getProjectsData', req.headers.referer)
+        await await store.dispatch('getProjectsData', req.headers.host)
       }
 
        // Sponsors
       if( store.state.sponsors.length === 0) {
-        store.dispatch('getSponsorsData', req.headers.referer)
+        await store.dispatch('getSponsorsData', req.headers.host)
       }
 
        // Sponsors
       if( store.state.features.length === 0) {
-        store.dispatch('getFeaturesData', req.headers.referer)
+        await store.dispatch('getFeaturesData', req.headers.host)
       }
 
     },
