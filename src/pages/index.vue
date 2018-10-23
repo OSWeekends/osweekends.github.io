@@ -51,32 +51,37 @@
 
   export default {
     async fetch( { store, params, req} ) {
-      // console.log(axios)
       //If no meetup data
+      // Dispatch action to fetch meetupdata
       if ( store.state.meetupData.length === 0 ) {
         await store.dispatch( 'getMeetupData' )
       }
       // TEAM MEMBERS
+      // Dispatch action to fetch members data
       if( store.state.teamMembers.length === 0) {
         await store.dispatch('getTeamMembersData', req.headers.host)
       }
 
       // GUiLDS
+      // Dispatch action to fetch guilds data
       if( store.state.guilds.length === 0) {
         await store.dispatch('getGuildsData', req.headers.host)
       }
 
-       // Projects
+      // Projects
+      // Dispatch action to fetch projects data
       if( store.state.projects.length === 0) {
         await await store.dispatch('getProjectsData', req.headers.host)
       }
 
-       // Sponsors
+      // Sponsors
+      // Dispatch action to fetch sponsors data
       if( store.state.sponsors.length === 0) {
         await store.dispatch('getSponsorsData', req.headers.host)
       }
 
-       // Sponsors
+      // Sponsors
+      // Dispatch action to fetch features data
       if( store.state.features.length === 0) {
         await store.dispatch('getFeaturesData', req.headers.host)
       }
