@@ -47,37 +47,45 @@
   import HomeVideo from '~/components/HomeVideo/Index.vue'
 
   import { mapActions, mapGetters } from 'vuex'
-
+  import axios from 'axios'
 
   export default {
-    fetch( { store, params } ) {
+    fetch( { store, params, req} ) {
       // If no meetup data
       if ( store.state.meetupData.length === 0 ) {
         store.dispatch( 'getMeetupData' )
+          .then( ( res ) => {
+          // Save data in store
+          store.commit( 'setMeetupData', res.data )
+        } )
+        .catch( ( err ) => {
+          console.log( '😰 Err: [getMeetupData]' )
+          console.log( { err } )
+        } )
       }
       // TEAM MEMBERS
       if( store.state.teamMembers.length === 0) {
-        store.dispatch('getTeamMembersData')
+        store.dispatch('getTeamMembersData', req.headers.referer)
       }
 
       // GUiLDS
       if( store.state.guilds.length === 0) {
-        store.dispatch('getGuildsData')
+        store.dispatch('getGuildsData', req.headers.referer)
       }
 
        // Projects
       if( store.state.projects.length === 0) {
-        store.dispatch('getProjectsData')
+        store.dispatch('getProjectsData', req.headers.referer)
       }
 
        // Sponsors
       if( store.state.sponsors.length === 0) {
-        store.dispatch('getSponsorsData')
+        store.dispatch('getSponsorsData', req.headers.referer)
       }
 
        // Sponsors
       if( store.state.features.length === 0) {
-        store.dispatch('getFeaturesData')
+        store.dispatch('getFeaturesData', req.headers.referer)
       }
 
     },
@@ -93,7 +101,7 @@
     data() {
       return {}
     }
-  }
+  } 
 </script>
 
 
