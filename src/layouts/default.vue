@@ -38,10 +38,12 @@
         @click="drawer = !drawer"
       />
       <v-toolbar-title>
-        <img
-          src="/logo-osw.png"
-          height="35px"
-          alt="OSWeekends Logo">
+        <nuxt-link to="/">
+          <img
+            src="/logo-osw.png"
+            height="35px"
+            alt="OSWeekends Logo">
+        </nuxt-link>
       </v-toolbar-title>
 
       <v-spacer/>
