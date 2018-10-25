@@ -26,7 +26,6 @@
 
 <script>
 import HomeSponsorCard from '~/components/HomeSponsors/HomeSponsorsCard.vue'
-import { mapGetters } from 'vuex'
 
   export default {
     components: {
@@ -34,11 +33,40 @@ import { mapGetters } from 'vuex'
     },
     data () {
       return {
+        sponsors: [
+          {
+            img: '/img/sponsor/fictizia-logo.svg',
+            website: 'https://www.fictizia.com/',
+            alt: 'Fictizia'
+          },
+          {
+            img: '/img/sponsor/pillarsJS-logo.svg',
+            website: 'http://pillarsjs.com/',
+            alt: 'Pillars'
+          },
+          {
+            img:'/img/sponsor/ovh-logo.png',
+            website: 'https://www.ovh.es/',
+            alt: 'ovh'
+          },
+          {
+            img: '/img/sponsor/gamify-logo.png',
+            website: 'http://www.gamify.com/',
+            alt: 'Gamify'
+          },
+          {
+            img: '/img/sponsor/tecnicrea-logo.png',
+            website: 'http://tecnicrea.es/',
+            alt: 'Tecnicrea'
+          },
+          {
+            img: '/img/sponsor/tetuan-valley-logo.png',
+            website: 'https://www.tetuanvalley.com/',
+            alt: 'Tetuanvalley'
+          },
+        ]
       }
-    },
-    computed: {
-      ...mapGetters( [ 'sponsors' ] ),
-    } 
+    }
   }
 </script>
 

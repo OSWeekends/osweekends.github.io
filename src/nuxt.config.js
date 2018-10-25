@@ -55,7 +55,7 @@ module.exports = {
     proxyHeaders: false,
     credentials: false,
   },
-  credentials: false,
+
   /*
   ** Build configuration
   */

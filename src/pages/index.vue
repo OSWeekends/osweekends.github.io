@@ -5,16 +5,16 @@
       <home-features/>
     </section>
 
-    <!-- Guilds -->
-    <section class="guilds-section">
-      <home-guilds/>
-    </section>
-
     <!-- Projects -->
     <section class="projects-section">
       <home-projects/>
     </section>
   
+    <!-- Guilds -->
+    <section class="guilds-section">
+      <home-guilds/>
+    </section>
+
     <!-- Slack -->
     <section class="slack-section">
       <home-slack/>
@@ -46,46 +46,21 @@
   import HomeSponsors from '~/components/HomeSponsors/Index.vue'
   import HomeVideo from '~/components/HomeVideo/Index.vue'
 
-  import { mapActions, mapGetters } from 'vuex'
-  import axios from 'axios'
 
   export default {
-    async fetch( { store, params, req} ) {
-      //If no meetup data
-      // Dispatch action to fetch meetupdata
+    fetch( { store, params } ) {
+      // If no meetup data
       if ( store.state.meetupData.length === 0 ) {
-        await store.dispatch( 'getMeetupData' )
+        return store.dispatch( 'getMeetupData' )
+          .then( ( res ) => {
+            // Save data in store
+            store.commit( 'setMeetupData', res.data )
+          } )
+          .catch( ( err ) => {
+            console.log( '😰 Err: [getMeetupData]' )
+            console.log( { err } )
+          } )
       }
-      // TEAM MEMBERS
-      // Dispatch action to fetch members data
-      if( store.state.teamMembers.length === 0) {
-        await store.dispatch('getTeamMembersData', req.headers.host)
-      }
-
-      // GUiLDS
-      // Dispatch action to fetch guilds data
-      if( store.state.guilds.length === 0) {
-        await store.dispatch('getGuildsData', req.headers.host)
-      }
-
-      // Projects
-      // Dispatch action to fetch projects data
-      if( store.state.projects.length === 0) {
-        await await store.dispatch('getProjectsData', req.headers.host)
-      }
-
-      // Sponsors
-      // Dispatch action to fetch sponsors data
-      if( store.state.sponsors.length === 0) {
-        await store.dispatch('getSponsorsData', req.headers.host)
-      }
-
-      // Sponsors
-      // Dispatch action to fetch features data
-      if( store.state.features.length === 0) {
-        await store.dispatch('getFeaturesData', req.headers.host)
-      }
-
     },
     components: {
       HomeFeatures,
@@ -98,8 +73,8 @@
     },
     data() {
       return {}
-    }
-  } 
+    },
+  }
 </script>
 
 
@@ -109,11 +84,11 @@
     padding 60px 0 80px
 
   .projects-section
-    background-color #f7f7f7
+    background-color #003ea5
     padding 60px 0 80px
 
   .guilds-section
-    background-color #003ea5
+    background-color #f7f7f7
     padding 60px 0 80px
 
   .slack-section
