@@ -4,7 +4,7 @@
       row
       wrap
       class="home-projects__title-row text-xs-center text-sm-left">
-      <v-flex 
+      <v-flex
         xs12
         sm1
         class="home-projects__icon-wrapper" >
@@ -83,7 +83,7 @@ import HomeProjectsCard from '~/components/HomeProjects/HomeProjectsCard.vue'
   &__title-row
     padding-left 20px
     margin-bottom 40px
-    color #fff
+    color #003ea5
 
   &__icon-wrapper
     display flex

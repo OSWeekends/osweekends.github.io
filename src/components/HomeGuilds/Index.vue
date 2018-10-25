@@ -4,7 +4,7 @@
       row
       wrap
       class="home-guilds__title-row text-xs-center text-sm-left">
-      <v-flex 
+      <v-flex
         xs12
         sm1
         class="home-guilds__icon-wrapper" >
@@ -76,11 +76,11 @@ import HomeGuildsCard from '~/components/HomeGuilds/HomeGuildsCard.vue'
   &__title-row
     padding-left 20px
     margin-bottom 40px
-    color #003ea5
+    color #f7f7f7
 
   &__icon-wrapper
     display flex
-    align-items  center
+    align-items center
     justify-content center
 
   &__icon

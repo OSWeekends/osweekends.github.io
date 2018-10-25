@@ -5,14 +5,14 @@
       <home-features/>
     </section>
 
-    <!-- Projects -->
-    <section class="projects-section">
-      <home-projects/>
-    </section>
-  
     <!-- Guilds -->
     <section class="guilds-section">
       <home-guilds/>
+    </section>
+
+    <!-- Projects -->
+    <section class="projects-section">
+      <home-projects/>
     </section>
 
     <!-- Slack -->
@@ -79,20 +79,22 @@
 
 
 <style lang="stylus" scoped>
+  color-blue = #003ea5
+  color-white = #f7f7f7
   .features-section
     background-color #f7f7f7
     padding 60px 0 80px
 
   .projects-section
-    background-color #003ea5
+    background-color color-white
     padding 60px 0 80px
 
   .guilds-section
-    background-color #f7f7f7
+    background-color color-blue
     padding 60px 0 80px
 
   .slack-section
-    background-color #003ea5
+    background-color color-blue
     padding 60px 0 60px
 
   .team-section
@@ -100,7 +102,7 @@
     padding 60px 0 80px
 
    .sponsors-section
-    background-color #003ea5
+    background-color color-blue
     padding 60px 0 80px
 
   .video-section

@@ -6,11 +6,13 @@
       <h2 class="home-features__title">Open Source Weekends</h2>
     </v-layout>
     <v-layout
+      fill-height
       row
       wrap>
       <v-flex
         v-for="(feature, index) in features"
         :key="index"
+        fill-height
         sm12
         md4
         class="text-xs-center">
@@ -35,19 +37,19 @@ import HomeFeaturesCard from '~/components/HomeFeatures/HomeFeaturesCard.vue'
         features: [
           {
             icon: 'today',
-            title: 'Eventos mensuales',
-            text: 'Lorem ipsum dolor sit amet consectetur adipiscing elit conubia tincidunt augue, dictum dis nisl pretium leo aliquam hac per nascetur vehicula ornare, cursus senectus tempor tortor himenaeos ridiculus fermentum metus proin. Montes hac ultricies faucibus laoreet vel purus non et cursus ornare, convallis sapien semper mus luctus primis magna cubilia interdum est, scelerisque enim suscipit habitant porta duis lacus pretium hendrerit. Eros platea eleifend ut viverra montes nisl non, ultricies curae pulvinar eget sem convallis conubia, odio habitant accumsan commodo vestibulum velit.'
+            title: 'Welcome',
+            text: 'Open Source Weekends somos una comunidad que trabajamos en proyectos y construimos tecnología Open Source, y vamos más allá de dar charlas o hacer workshops. Nos reunimos un sábado al mes y todos los perfiles y niveles de conocimiento son bienvenidos. Lo que está por encima de todo son las ganas de aprender y de compartir lo que sabemos. Para que conocer todo lo que hacemos, hemos creado nuestra guía Welcome. Y cualquier pregunta que tengas, ¡contáctanos por Slack o vente a nuestro próximo evento!.'
+          },
+          {
+            icon: 'group',
+            title: 'Guilds',
+            text: 'OSW es una organización que quiere hacer realidad proyectos Open Source de todo tipo con personas del mundo de la tecnología y otras áreas. Para ello fomentamos la creación de Guilds, que son equipos especializados y multi disciplinares que trabajan desarrollando proyectos para fomentar la Cultura Libre y FOSS. Queremos hacer que todo el mundo acceda más fácilmente a la comunidad Open Source y hacer posible que los contributors de hoy sean los líderes del futuro. Contribuir está al alcance de todo el mundo y no siempre tiene que ser a través de código. Existen muchas formas de contribuir, ¡encuentra la tuya!.'
+
           },
           {
             icon: 'code',
-            title: 'Poryectos Open Source',
-            text: 'Lorem ipsum dolor sit amet consectetur adipiscing elit conubia tincidunt augue, dictum dis nisl pretium leo aliquam hac per nascetur vehicula ornare, cursus senectus tempor tortor himenaeos ridiculus fermentum metus proin. Montes hac ultricies faucibus laoreet vel purus non et cursus ornare, convallis sapien semper mus luctus primis magna cubilia interdum est, scelerisque enim suscipit habitant porta duis lacus pretium hendrerit. Eros platea eleifend ut viverra montes nisl non, ultricies curae pulvinar eget sem convallis conubia, odio habitant accumsan commodo vestibulum velit.'
-         
-          },
-          {
-            icon: 'place',
-            title: 'Titulo 3',
-            text: 'Lorem ipsum dolor sit amet consectetur adipiscing elit conubia tincidunt augue, dictum dis nisl pretium leo aliquam hac per nascetur vehicula ornare, cursus senectus tempor tortor himenaeos ridiculus fermentum metus proin. Montes hac ultricies faucibus laoreet vel purus non et cursus ornare, convallis sapien semper mus luctus primis magna cubilia interdum est, scelerisque enim suscipit habitant porta duis lacus pretium hendrerit. Eros platea eleifend ut viverra montes nisl non, ultricies curae pulvinar eget sem convallis conubia, odio habitant accumsan commodo vestibulum velit.'
+            title: 'Proyectos',
+            text: 'Un proyecto es la puesta en marcha de una idea sobre la que trabaja un Guild. Abarcamos áreas en el que el soporte de la tecnología y el Open Source es indispensable. Queremos aportar más valor a la sociedad. La mejor oportunidad es promocionar y cuidar los Guilds y que surjan más ideas que se convierten en proyectos hacia sectores como la Educación, Sanidad, Blockchain, Software y Hardware libre, Legal, Calidad de Empleo, Medio Ambiente, etc. OSW pone a la disposición de los Guilds repositorios, subdominios, cloud, formación, mentoría...y muchos recursos más!'
           }
         ]
       }

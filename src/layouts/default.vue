@@ -85,9 +85,9 @@
         clipped: false,
         drawer: false,
         items: [
-          // { icon: 'home', title: 'Home', to: '/' },
-          { icon: 'apps', title: 'Guilds', to: '/guilds' },
           { icon: 'bubble_chart', title: 'Welcome', to: '/Welcome' },
+          { icon: 'apps', title: 'Guilds', to: '/guilds' },
+          { icon: 'code', title: 'Proyectos', to: '/proyectos' },
         ],
         title: 'OSWeekends',
       }
