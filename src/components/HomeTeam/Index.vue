@@ -26,48 +26,20 @@
 
 <script>
 import HomeTeamCard from '~/components/HomeTeam/HomeTeamCard.vue'
+import { mapGetters, mapActions } from 'vuex'
+
   export default {
     components: {
       HomeTeamCard
     },
     data () {
       return {
-        teamMembers: [
-          {
-            img: '/img/team/ulises.jpg',
-            name: 'Ulises Gascón',
-            role: 'Co-Founder'
-          },
-          {
-            img: '/img/team/jose.jpg',
-            name: 'José Manuel Gallego',
-            role: 'Co-Founder'
-         
-          },
-          {
-            img: '/img/team/carlos.jpg',
-            name: 'Carlos Hernández',
-            role: 'Co-Founder'
-          },
-          {
-            img: '/img/team/teba.jpg',
-            name: 'Teba Gómez',
-            role: 'Co-Founder'
-          },
-          {
-            img: '/img/team/ivo.png',
-            name: 'Ivo Vilches',
-            role: 'Dev to human translator'
-          },
-          {
-            img: '/img/team/baumann.jpg',
-            name: 'Jorge Baumann',
-            role: 'Embajador'
-          }
-        ]
       }
+    },
+    computed: {
+      ...mapGetters( [ 'teamMembers' ] ),
     }
-  }
+   }
 </script>
 
 <style lang="stylus" scoped>
