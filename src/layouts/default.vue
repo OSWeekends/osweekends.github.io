@@ -37,7 +37,13 @@
         class="hidden-md-and-up"
         @click="drawer = !drawer"
       />
-      <v-toolbar-title v-text="title"/>
+      <v-toolbar-title>
+        <img
+          src="/logo-osw.png"
+          height="35px"
+          alt="OSWeekends Logo">
+      </v-toolbar-title>
+
       <v-spacer/>
       <v-toolbar-items class="hidden-sm-and-down">
         <v-btn
@@ -57,7 +63,7 @@
 
     <br>
     <footer class="footer-section">
-      <home-footer />
+      <home-footer/>
     </footer>
   </v-app>
 </template>
@@ -68,16 +74,16 @@
 
 
   export default {
-    components: { 
+    components: {
       HomeHeader,
-      HomeFooter
+      HomeFooter,
     },
     data() {
       return {
         clipped: false,
         drawer: false,
         items: [
-          { icon: 'home', title: 'Home', to: '/' },
+          // { icon: 'home', title: 'Home', to: '/' },
           { icon: 'apps', title: 'Guilds', to: '/guilds' },
           { icon: 'bubble_chart', title: 'Welcome', to: '/Welcome' },
         ],
@@ -95,7 +101,7 @@
 <style lang="stylus" scoped>
 
 
-.footer-section
-  background-color #121212
+  .footer-section
+    background-color #121212
 </style>
 
