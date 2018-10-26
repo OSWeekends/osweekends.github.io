@@ -1,6 +1,7 @@
 <template>
   <div class="content">
     <!-- FEATURES -->
+    <!--FIXME-->
     <section class="features-section">
       <home-features/>
     </section>
