@@ -67,6 +67,7 @@ export default {
   background-position top
   position relative
   border-radius 5px
+  box-shadow 0 15px 40px rgba(#000, .15);
   overflow hidden
 
   &:hover &__details

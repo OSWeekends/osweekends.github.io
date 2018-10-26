@@ -3,16 +3,17 @@
     <v-layout
       row
       wrap
-      class="home-guilds__title-row text-xs-center text-sm-left">
+      class="home-guilds__title-row text-xs-center text-md-left">
       <v-flex
-        xs12
-        sm1
+        sm12
+        md1
         class="home-guilds__icon-wrapper" >
-        <i class="home-guilds__icon material-icons"> build </i>
+        <i class="home-guilds__icon material-icons"> group </i>
       </v-flex>
       <v-flex
-        xs12
-        sm11>
+        sm12
+        md11
+        class="home-guilds__title-wrapper ">
         <h2 class="home-guilds__title">Guilds</h2>
         <h3 class="home-guilds__subtitle">Equipos de trabajo de la comunidad: </h3>
       </v-flex>
@@ -86,6 +87,8 @@ import HomeGuildsCard from '~/components/HomeGuilds/HomeGuildsCard.vue'
   &__icon
     font-size 72px
 
+  &__title-wrapper 
+    padding 0 15px
 
   &__title
     font-size 40px

@@ -31,6 +31,16 @@
       <home-sponsors/>
     </section>
 
+    <!-- Comunidades -->
+    <section class="communities-section">
+      <home-communities/>
+    </section>
+
+    <!-- Slack -->
+    <section class="slack-section">
+      <home-slack/>
+    </section>
+
     <!-- Video -->
     <section class="video-section">
       <home-video/>
@@ -44,6 +54,7 @@
   import HomeGuilds from '~/components/HomeGuilds/Index.vue'
   import HomeSlack from '~/components/HomeSlack/Index.vue'
   import HomeTeam from '~/components/HomeTeam/Index.vue'
+  import HomeCommunities from '~/components/HomeCommunities/Index.vue'
   import HomeSponsors from '~/components/HomeSponsors/Index.vue'
   import HomeVideo from '~/components/HomeVideo/Index.vue'
 
@@ -69,7 +80,8 @@
       HomeGuilds,
       HomeSlack,
       HomeTeam,
-      HomeSponsors,
+      HomeCommunities,
+      HomeSponsors,      
       HomeVideo
     },
     data() {
@@ -102,10 +114,14 @@
     background-color #f7f7f7
     padding 60px 0 80px
 
-   .sponsors-section
+  .sponsors-section
     background-color color-blue
     padding 60px 0 80px
 
+  .communities-section
+    background-color #f7f7f7
+    padding 60px 0 80px
+  
   .video-section
     background-color #f7f7f7
     padding 60px 0 80px
