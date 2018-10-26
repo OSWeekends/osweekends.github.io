@@ -40,18 +40,34 @@ export default {
 
 <style lang="stylus" scoped>
 .sponsor-card
+  display: flex;
+  justify-content: center;
+  align-items: center;
   width 90%
   margin 10px auto
   background-size cover
+  background-position top
   transition all .5s
-  max-height 100px
+  height 150px
+
+  padding 30px
+  border 1px solid #fff
+  border-radius 5px
 
   &:hover
     // transform scale(1.03)
+    background-color rgba(#000, .8)
+    border 1px solid rgba(#000, .8)
+    cursor pointer
+
+  &:hover img 
+    transform scale(1.05)
+
   img
     // FIXME
-    width 80%
+    width 75%
     max-height 100px
     max-width 100%
+    transition all .5s
 
 </style>

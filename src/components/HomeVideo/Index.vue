@@ -30,6 +30,7 @@
     padding-bottom 56.25%
     position relative
     text-align center
+    box-shadow 0 15px 40px rgba(#000, .15);
 
   &__video
     position absolute

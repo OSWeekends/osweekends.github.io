@@ -3,16 +3,17 @@
     <v-layout
       row
       wrap
-      class="home-projects__title-row text-xs-center text-sm-left">
+      class="home-projects__title-row text-xs-center text-md-left">
       <v-flex
-        xs12
-        sm1
+        sm12
+        md1
         class="home-projects__icon-wrapper" >
         <i class="home-projects__icon material-icons"> code </i>
       </v-flex>
       <v-flex
-        xs12
-        sm11>
+        sm12
+        md11
+        class="home-projects__title-wrapper">
         <h2 class="home-projects__title">Proyectos</h2>
         <h3 class="home-projects__subtitle">Proyectos que se han hecho en la comunidad: </h3>
       </v-flex>
@@ -93,6 +94,8 @@ import HomeProjectsCard from '~/components/HomeProjects/HomeProjectsCard.vue'
   &__icon
     font-size 72px
 
+  &__title-wrapper 
+    padding 0 15px
 
   &__title
     font-size 40px
