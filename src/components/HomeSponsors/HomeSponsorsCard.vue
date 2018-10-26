@@ -2,12 +2,12 @@
   <div
     class="sponsor-card align-center">
     <a
-      :href="website"
-      :title="alt"
+      :href="url"
+      :title="name"
       target="_blank">
       <img
         :src="img"
-        :alt="alt">
+        :alt="name">
     </a>
   </div>
 </template>
@@ -24,10 +24,15 @@ export default {
       required: false,
       default: ''
     },
-    alt: {
+    name: {
       type: String,
-      required: false,
+      required: true,
       default: ''
+    }
+  },
+  computed: {
+    url() {
+      return `${this.website}?ref=OSWeekends`
     }
   }
 }
@@ -39,10 +44,14 @@ export default {
   margin 10px auto
   background-size cover
   transition all .5s
+  max-height 100px
 
   &:hover
     // transform scale(1.03)
   img
+    // FIXME
     width 80%
-    
+    max-height 100px
+    max-width 100%
+
 </style>

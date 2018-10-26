@@ -18,6 +18,8 @@
           :name="member.name"
           :img="member.avatar"
           :role="member.role"
+          :twitter="member.twitter"
+          :github="member.github"
           class="home-team__card"/>
       </v-flex>
     </v-layout>
