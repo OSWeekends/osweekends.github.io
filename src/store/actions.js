@@ -12,20 +12,7 @@ const actions = {
       console.log( '😰 Err: [getMeetupData]' )
       console.log( { error } )
     }
-  },
-   // getGuildsData
-  // Call to guilds.json Api to retrieve the guilds information
-  async getGuildsData (context , req) {
-    console.log(req)
-    try {
-      let res = await axios.get( 'http://' + req.headers.host + '/db/guilds.json')
-      let data = res.data
-      context.commit( 'setGuilds', res.data )
-    } catch (error) {
-      console.log( '😰 Err: [getGuildsData]' )
-      console.log( { error } )
-    }
-  },
+  }   
 }
 
 export default actions

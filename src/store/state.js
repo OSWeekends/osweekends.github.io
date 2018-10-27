@@ -1,11 +1,5 @@
 const state = {
-  meetupData: [],
-  teamMembers: [],
-  guilds: [],
-  projects: [],
-  sponsors: [],
-  features: []
-
+  meetupData: []
 }
 
 export default state

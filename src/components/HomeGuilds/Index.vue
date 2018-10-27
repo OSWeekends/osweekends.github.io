@@ -40,8 +40,7 @@
 
 <script>
 import HomeGuildsCard from '~/components/HomeGuilds/HomeGuildsCard.vue'
-import { mapGetters } from 'vuex'
-
+import guilds from '../../db/guilds.json'
 
   export default {
     components: {
@@ -49,10 +48,11 @@ import { mapGetters } from 'vuex'
     },
     data () {
       return {
+        guilds
       }
     },
     computed: {
-      ...mapGetters( [ 'guilds' ] ),
+
     } 
   }
 </script>

@@ -65,10 +65,6 @@
       if ( store.state.meetupData.length === 0 ) {
         await store.dispatch( 'getMeetupData' )
       }
-
-      if ( store.state.guilds.length === 0 ) {
-        await store.dispatch( 'getGuildsData', req )
-      }
     },
     components: {
       HomeFeatures,
