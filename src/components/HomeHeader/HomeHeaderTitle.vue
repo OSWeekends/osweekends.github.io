@@ -2,7 +2,7 @@
   <v-flex
     md7
     sm12>
-    <h1 class="hero-title display-3">
+    <h1 class="hero-title display-3 text-xs-center mb-3">
       {{ msg }}
     </h1>
   </v-flex>

@@ -37,7 +37,15 @@
         class="hidden-md-and-up"
         @click="drawer = !drawer"
       />
-      <v-toolbar-title v-text="title"/>
+      <v-toolbar-title>
+        <nuxt-link to="/">
+          <img
+            src="/logo-osw.png"
+            height="35px"
+            alt="OSWeekends Logo">
+        </nuxt-link>
+      </v-toolbar-title>
+
       <v-spacer/>
       <v-toolbar-items class="hidden-sm-and-down">
         <v-btn
@@ -51,39 +59,35 @@
     </v-toolbar>
     <HomeHeader
       v-if="isHome"
-      msg="La comunidad de software libre que hace cosas 😎"
-    />
-    <!-- <v-content>
-      <v-container fluid>
-      </v-container>
-    </v-content> -->
+      msg="La comunidad de software libre que hace cosas 😎"/>
 
     <nuxt/>
 
     <br>
-    <v-footer
-      fixed
-      app
-      mt-5
-    >
-      <span class="ml-1">&copy; 2017</span>
-    </v-footer>
+    <footer class="footer-section">
+      <home-footer/>
+    </footer>
   </v-app>
 </template>
 
 <script>
-  import HomeHeader from '~/components/HomeHeader.vue'
+  import HomeHeader from '~/components/HomeHeader/Index.vue'
+  import HomeFooter from '~/components/HomeFooter/Index.vue'
+
 
   export default {
-    components: { HomeHeader },
+    components: {
+      HomeHeader,
+      HomeFooter,
+    },
     data() {
       return {
         clipped: false,
         drawer: false,
         items: [
-          { icon: 'home', title: 'Home', to: '/' },
-          { icon: 'apps', title: 'Guilds', to: '/guilds' },
           { icon: 'bubble_chart', title: 'Welcome', to: '/Welcome' },
+          { icon: 'apps', title: 'Guilds', to: '/guilds' },
+          { icon: 'code', title: 'Proyectos', to: '/proyectos' },
         ],
         title: 'OSWeekends',
       }
@@ -95,3 +99,11 @@
     },
   }
 </script>
+
+<style lang="stylus" scoped>
+
+
+  .footer-section
+    background-color #121212
+</style>
+

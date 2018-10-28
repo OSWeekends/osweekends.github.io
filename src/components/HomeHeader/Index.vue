@@ -24,6 +24,7 @@
 
 <style scoped lang="stylus">
   .header-hero
+    min-height 80vh
     position relative
     background-image url("/img/main.jpg")
     background-position center center
