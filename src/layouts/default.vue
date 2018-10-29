@@ -89,6 +89,9 @@
         clipped: false,
         drawer: false,
         items: [
+          /*{ icon: 'bubble_chart', title: 'Welcome', to: '/Welcome' },
+          { icon: 'apps', title: 'Guilds', to: '/guilds' },
+          { icon: 'code', title: 'Proyectos', to: '/proyectos' },*/
           { icon: 'bubble_chart', title: 'Welcome', to: 'https://osweekends.gitbook.io/community-manual/'},
           { icon: 'apps', title: 'Guilds', to: 'https://osweekends.gitbook.io/community-manual/#guilds' },
           { icon: 'code', title: 'Proyectos', to: 'https://osweekends.gitbook.io/community-manual/#proyectos' },
