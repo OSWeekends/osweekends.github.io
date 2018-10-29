@@ -9,6 +9,7 @@
     >
       <v-list>
         <a
+          class="nav-item"
           v-for="(item,i) in items"
           :key="i"
           :href= "item.to">
@@ -109,7 +110,7 @@
 
 <style lang="stylus" scoped>
 
-  a
+  a.nav-item
     text-decoration none
     margin-top 15px
 
