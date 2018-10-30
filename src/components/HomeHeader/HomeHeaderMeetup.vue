@@ -17,8 +17,8 @@
         >
           <section class="d-flex">
             <span class="date-display">
-              <span class="day">27</span>
-              <span class="month">Oct</span>
+              <span class="day">{{ ev.daySimple }}</span>
+              <span class="month">{{ ev.monthSimple }}</span>
             </span>
             <div class="ml-4">
               <div class="body-1 blue-grey--text mb-1">{{ ev.fullDate }}</div>
@@ -50,30 +50,23 @@
 
 <script>
   import moment from 'moment'
-  import { mapGetters } from 'vuex'
 
   export default {
     name: 'HomeHeaderMeetup',
-    data() {
-      return {
-        ev: null,
-      }
-    },
-    computed: {
-      ...mapGetters( [ 'getMeetupData' ] ),
-      // fullDate () {
-      //   return this.getMeetupData.length
-      // }
+    props: {
+      ev: {
+        required: true,
+        type: Object,
+      },
     },
     created() {
       moment.locale( 'es' )
-      if ( this.getMeetupData.length > 0 ) {
-        const format = 'YYYY-MM-DD'
-        this.ev = this.getMeetupData[ 0 ]
-        const hour = moment( this.ev.local_time, 'hh:mm' ).format( 'hh' )
-        const minutes = moment( this.ev.local_time, 'hh:mm' ).format( 'mm' )
-        this.ev.fullDate = moment( this.ev.local_date, format ).hour( hour ).minutes( minutes ).format( 'LLL' )
-      }
+      const format = 'YYYY-MM-DD'
+      const hour = moment( this.ev.local_time, 'hh:mm' ).format( 'hh' )
+      const minutes = moment( this.ev.local_time, 'hh:mm' ).format( 'mm' )
+      this.ev.fullDate = moment( this.ev.local_date, format ).hour( hour ).minutes( minutes ).format( 'LLL' )
+      this.ev.daySimple = moment(this.ev.local_date, format).format('DD') // 02
+      this.ev.monthSimple = moment(this.ev.local_date, format).format('MMM')  // dic
     },
     methods: {
       goToEvent() {
@@ -111,6 +104,8 @@
           display block
           font-weight bolder
           line-height 1.1
+        .month
+          text-transform capitalize
 
       .name
         position relative

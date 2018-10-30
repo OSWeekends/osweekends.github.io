@@ -1,6 +1,6 @@
 <template>
   <v-flex
-    md7
+    :class="flexClass"
     sm12>
     <h1 class="hero-title display-3 text-xs-center mb-3">
       {{ msg }}
@@ -15,6 +15,15 @@
         required: false,
         type: String,
         default: 'La comunidad más molona de todas ;)',
+      },
+      "is-full-width": {
+        required: true,
+        type: Boolean,
+      },
+    },
+    computed: {
+      flexClass() {
+        return this.isFullWidth ? 'md12' : 'md7'
       },
     },
   }

@@ -1,5 +1,4 @@
 import Vuex from 'vuex'
-import axios from 'axios'
 
 import state from './state'
 import getters from './getters'
@@ -11,7 +10,7 @@ const createStore = () => {
     state,
     getters,
     actions,
-    mutations 
+    mutations
   })
 }
 
