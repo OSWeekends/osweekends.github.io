@@ -8,23 +8,20 @@
       app
     >
       <v-list>
-        <a
-          class="nav-item"
-          v-for="(item,i) in items"
+        <v-list-tile
+          v-for="(item, i) in items"
+          :to="item.to"
           :key="i"
-          :href= "item.to">
-          <v-list-tile
-            router
-            exact
-          >
-            <v-list-tile-action>
-              <v-icon v-html="item.icon"/>
-            </v-list-tile-action>
-            <v-list-tile-content>
-              <v-list-tile-title v-text="item.title"/>
-            </v-list-tile-content>
-          </v-list-tile>
-        </a>
+          router
+          exact
+        >
+          <v-list-tile-action>
+            <v-icon v-html="item.icon"/>
+          </v-list-tile-action>
+          <v-list-tile-content>
+            <v-list-tile-title v-text="item.title"/>
+          </v-list-tile-content>
+        </v-list-tile>
       </v-list>
     </v-navigation-drawer>
     <v-toolbar
@@ -51,15 +48,13 @@
 
       <v-spacer/>
       <v-toolbar-items class="hidden-sm-and-down">
-        <a
+        <v-btn
           v-for="(item,i) in items"
+          :to="item.to"
           :key="i"
-          :href= "item.to">
-          <v-btn
-            flat>
-            {{ item.title }}
-          </v-btn>
-        </a>
+          flat>
+          {{ item.title }}
+        </v-btn>
       </v-toolbar-items>
     </v-toolbar>
     <HomeHeader
@@ -90,12 +85,9 @@
         clipped: false,
         drawer: false,
         items: [
-          /*{ icon: 'bubble_chart', title: 'Welcome', to: '/Welcome' },
+          { icon: 'bubble_chart', title: 'Welcome', to: '/Welcome' },
           { icon: 'apps', title: 'Guilds', to: '/guilds' },
-          { icon: 'code', title: 'Proyectos', to: '/proyectos' },*/
-          { icon: 'bubble_chart', title: 'Welcome', to: 'https://osweekends.gitbook.io/community-manual/'},
-          { icon: 'apps', title: 'Guilds', to: 'https://osweekends.gitbook.io/community-manual/#guilds' },
-          { icon: 'code', title: 'Proyectos', to: 'https://osweekends.gitbook.io/community-manual/#proyectos' },
+          { icon: 'code', title: 'Proyectos', to: '/proyectos' },
         ],
         title: 'OSWeekends',
       }
@@ -110,10 +102,8 @@
 
 <style lang="stylus" scoped>
 
-  a.nav-item
-    text-decoration none
-    margin-top 15px
 
   .footer-section
     background-color #121212
 </style>
+
