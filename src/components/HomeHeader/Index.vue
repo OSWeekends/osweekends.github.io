@@ -5,8 +5,12 @@
         <v-layout
           row
           wrap>
-          <HomeHeaderTitle msg="La comunidad de software libre que hace cosas 🦄"/>
-          <HomeHeaderMeetup/>
+          <HomeHeaderTitle
+            :is-full-width="!hasMeetupData"
+            msg="La comunidad de software libre que hace cosas 🦄"/>
+          <template v-if="hasMeetupData">
+            <HomeHeaderMeetup :ev="ev"/>
+          </template>
         </v-layout>
       </v-container>
     </v-content>
@@ -14,17 +18,27 @@
 </template>
 
 <script>
+  import { mapGetters } from 'vuex'
   import HomeHeaderTitle from './HomeHeaderTitle'
   import HomeHeaderMeetup from './HomeHeaderMeetup'
 
   export default {
     components: { HomeHeaderMeetup, HomeHeaderTitle },
+    computed: {
+      ...mapGetters( [ 'getMeetupData' ] ),
+      hasMeetupData() {
+        return this.getMeetupData.length > 0
+      },
+      ev() {
+        return this.getMeetupData[ 1 ]
+      },
+    },
   }
 </script>
 
 <style scoped lang="stylus">
   .header-hero
-    min-height 80vh
+    min-height 450px
     position relative
     background-image url("/img/main.jpg")
     background-position center center

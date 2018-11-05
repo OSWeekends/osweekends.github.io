@@ -1,0 +1,43 @@
+[
+  {
+    "name": "Fictizia",
+    "url": "https://www.fictizia.com/",
+    "img": "/img/sponsor/fictizia.svg"
+  }, {
+    "name": "Hiwook",
+    "url": "https://hiwook.com/",
+    "img": "/img/sponsor/hiwook.png"
+  }, {
+    "name": "OVH",
+    "url": "https://www.ovh.es/",
+    "img": "/img/sponsor/ovh.png"
+  }, {
+    "name": "Google Developers",
+    "url": "https://developers.google.com/",
+    "img": "/img/sponsor/google-developers.png"
+  }, {
+    "name": "Github",
+    "url": "https://github.com/",
+    "img": "/img/sponsor/github.png"
+  }, {
+    "name": "Github for Education",
+    "url": "https://education.github.com/",
+    "img": "/img/sponsor/github-ed.png"
+  }, {
+    "name": "Tetuan Valley",
+    "url": "https://www.tetuanvalley.com/",
+    "img": "/img/sponsor/tetuan-valley.png"
+  }, {
+    "name": "Tecnicrea",
+    "url": "http://tecnicrea.es/",
+    "img": "/img/sponsor/tecnicrea.png"
+  }, {
+    "name": "Pillarsjs",
+    "url": "http://pillarsjs.com/",
+    "img": "/img/sponsor/pillars.svg"
+  }, {
+    "name": "Slowlife Glamping",
+    "url": "https://www.slowlifeglamping.com/",
+    "img": "/img/sponsor/slowlife.png"
+  }
+]
