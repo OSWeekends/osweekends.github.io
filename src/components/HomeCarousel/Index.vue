@@ -42,7 +42,7 @@
             sm12
             md4>
             <home-carousel-card
-              :title="guild.title"
+              :title="guilds[ guilds.length - i].title"
               :description="guild.description"
               :img="guild.img"
               :github="guild.github"
@@ -77,6 +77,7 @@ import guilds from '../../db/guilds.json'
     data () {
       let i = Math.random() * (0 , (guilds.length -1))
       i= Math.round(i)
+      console.log(guilds.length)
       console.log(i)
       return {
         guilds,
