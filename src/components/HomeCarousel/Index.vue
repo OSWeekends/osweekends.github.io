@@ -29,6 +29,8 @@
           row
           wrap>
           <v-flex
+            v-for="(guilds, index) in 3"
+            :key="index"
             sm12
             md4>
             <home-carousel-card
@@ -38,11 +40,11 @@
               :github="guild.github"
               class="home-guilds__card" />
           </v-flex>
-          <v-flex
+          <!--  <v-flex
             sm12
             md4>
             <home-carousel-card
-              :title="guilds[ guilds.length - i].title"
+              :title="guilds[index].title"
               :description="guild.description"
               :img="guild.img"
               :github="guild.github"
@@ -57,7 +59,7 @@
               :img="guild.img"
               :github="guild.github"
               class="guilds__card" />
-          </v-flex>
+          </v-flex> -->
         </v-layout>
       </v-carousel-item>
     </v-carousel>
@@ -86,7 +88,7 @@ import guilds from '../../db/guilds.json'
     },
     computed: {
 
-    } 
+    }
   }
 </script>
 
@@ -105,17 +107,17 @@ import guilds from '../../db/guilds.json'
   &__icon
     font-size 72px
 
-  &__title-wrapper 
+  &__title-wrapper
     padding 0 15px
 
   &__title
     font-size 40px
 
 .guilds-carusel
-  background-color rgba(#003ea5, 0.75) 
+  background-color rgba(#003ea5, 0.75)
   margin 10px 10px 10px
   border: none !important
-  
+
 
   &__img
     min-height 200px

@@ -57,10 +57,10 @@ export default {
 
 <style lang="stylus" scoped>
 .guilds-card
-  background-color rgba(#fff, 0.75) 
-  margin 10px 20px 
-  border-radius 3px 
-  overflow hidden 
+  background-color rgba(#fff, 0.75)
+  margin 10px 20px
+  border-radius 3px
+  overflow hidden
   box-shadow 0 15px 40px rgba(#000, .15)
 
   &__img
