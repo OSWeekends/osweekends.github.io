@@ -29,18 +29,16 @@
           row
           wrap>
           <v-flex
-            v-for="(guilds, index) in 3"
-            :key="index"
             sm12
             md4>
             <home-carousel-card
-              :title="guild.title"
+              :title="guilds[i].title"
               :description="guild.description"
               :img="guild.img"
               :github="guild.github"
               class="home-guilds__card" />
           </v-flex>
-          <!--  <v-flex
+          <v-flex
             sm12
             md4>
             <home-carousel-card
@@ -54,12 +52,12 @@
             sm12
             md4>
             <home-carousel-card
-              :title="guild.title"
+              :title="guilds[i-1].title"
               :description="guild.description"
               :img="guild.img"
               :github="guild.github"
               class="guilds__card" />
-          </v-flex> -->
+          </v-flex>
         </v-layout>
       </v-carousel-item>
     </v-carousel>
@@ -77,16 +75,20 @@ import guilds from '../../db/guilds.json'
       HomeCarouselCard
     },
     data () {
-      let i = Math.random() * (0 , (guilds.length -1))
+      let i = Math.random() * (0 , (guilds.length -2))
       i= Math.round(i)
-      console.log(guilds.length)
-      console.log(i)
       return {
         guilds,
         i
       }
     },
     computed: {
+
+      index: function (index){
+        let index1
+
+        return index1
+      }
 
     }
   }
