@@ -10,6 +10,10 @@
     <section class="guilds-section">
       <home-guilds/>
     </section>
+    <!-- Carousel -->
+    <section class="guilds-section">
+      <home-carousel/>
+    </section>
 
     <!-- Projects -->
     <section class="projects-section">
@@ -57,6 +61,7 @@
   import HomeCommunities from '~/components/HomeCommunities/Index.vue'
   import HomeSponsors from '~/components/HomeSponsors/Index.vue'
   import HomeVideo from '~/components/HomeVideo/Index.vue'
+  import HomeCarousel from '~/components/HomeCarousel/Index.vue'
 
 
   export default {
@@ -74,7 +79,8 @@
       HomeTeam,
       HomeCommunities,
       HomeSponsors,      
-      HomeVideo
+      HomeVideo,
+      HomeCarousel
     },
     data() {
       return {}
