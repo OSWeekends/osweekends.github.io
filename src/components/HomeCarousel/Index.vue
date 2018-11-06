@@ -18,7 +18,10 @@
         <h3 class="home-guilds__subtitle">Equipos de trabajo de la comunidad: </h3>
       </v-flex>
     </v-layout>
-    <v-carousel>
+    <v-carousel
+      hide-delimiters
+      class="guilds-carusel"
+    >
       <v-carousel-item
         v-for="(guild, index) in guilds"
         :key="index">
@@ -39,7 +42,7 @@
             sm12
             md4>
             <home-carousel-card
-              :title="guilds[i].title"
+              :title="guild.title"
               :description="guild.description"
               :img="guild.img"
               :github="guild.github"
@@ -53,7 +56,7 @@
               :description="guild.description"
               :img="guild.img"
               :github="guild.github"
-              class="home-guilds__card" />
+              class="guilds__card" />
           </v-flex>
         </v-layout>
       </v-carousel-item>
@@ -106,5 +109,15 @@ import guilds from '../../db/guilds.json'
 
   &__title
     font-size 40px
+
+.guilds-carusel
+  background-color rgba(#003ea5, 0.75) 
+  margin 10px 10px 10px
+  border: none !important
+  
+
+  &__img
+    min-height 200px
+
 
 </style>
