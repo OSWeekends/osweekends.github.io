@@ -5,11 +5,6 @@
     <section class="features-section">
       <home-features/>
     </section>
-
-    <!-- Guilds -->
-    <section class="guilds-section">
-      <home-guilds/>
-    </section>
     <!-- Carousel -->
     <section class="guilds-section">
       <home-carousel/>
