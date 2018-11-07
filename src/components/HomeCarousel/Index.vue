@@ -43,9 +43,9 @@
             md4>
             <home-carousel-card
               :title="guilds[index + 1].name"
-              :description="guilds[i].description"
-              :img="guilds[i].avatar"
-              :github="guilds[i].github_repo"
+              :description="guilds[index + 1].description"
+              :img="guilds[index + 1].avatar"
+              :github="guilds[index + 1].github_repo"
               class="home-guilds__card" />
           </v-flex>
           <v-flex
@@ -54,9 +54,9 @@
             md4>
             <home-carousel-card
               :title="guilds[index + 2].name"
-              :description="guilds[x].description"
-              :img="guilds[x].avatar"
-              :github="guilds[x].github_repo"
+              :description="guilds[index + 2].description"
+              :img="guilds[index + 2].avatar"
+              :github="guilds[index + 2].github_repo"
               class="guilds__card" />
           </v-flex>
         </v-layout>
@@ -105,11 +105,6 @@ import guilds from '../../db/guilds.json'
     font-size 40px
 
 .guilds-carusel
-<<<<<<< HEAD
-
-=======
-
->>>>>>> ac2682e9b40b4e99225c20086eb024a5cd92d8a7
   margin 10px 10px 10px
   border: none !important
 
@@ -118,5 +113,4 @@ import guilds from '../../db/guilds.json'
 
 .v-carousel
     box-shadow none
-
 </style>
