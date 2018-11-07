@@ -17,19 +17,19 @@ const actions = {
       console.log( { error } )
     }
   },
-  getTeamMembersData (context, data ) {
+  async getTeamMembersData (context, data ) {
     context.commit( 'setTeamMembers', data )
   },
-  getGuildsData (context, data ) {
+  async getGuildsData (context, data ) {
     context.commit( 'setGuilds', data )
   },
-  getProjectsData (context, data ) {
+  async getProjectsData (context, data ) {
     context.commit( 'setProjects', data )
   },
-  getSponsorsData (context, data ) {
+  async getSponsorsData (context, data ) {
     context.commit( 'setSponsors', data )
   },
-  getCommunititesData (context, data ) {
+  async getCommunitiesData (context, data ) {
     context.commit( 'setCommunities', data )
   },
 }
