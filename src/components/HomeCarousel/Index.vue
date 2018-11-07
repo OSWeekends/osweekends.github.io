@@ -20,7 +20,6 @@
     </v-layout>
     <v-carousel
       hide-delimiters
-      class="guilds-carusel"
     >
       <v-carousel-item
         v-for="(guild, index) in guilds"
@@ -32,30 +31,32 @@
             sm12
             md4>
             <home-carousel-card
-              :title="guilds[i].title"
+              :title="guild.name"
               :description="guild.description"
-              :img="guild.img"
-              :github="guild.github"
+              :img="guild.avatar"
+              :github="guild.github_repo"
               class="home-guilds__card" />
           </v-flex>
           <v-flex
+            v-if="index + 1 < guilds.length"
             sm12
             md4>
             <home-carousel-card
-              :title="guilds[index].title"
-              :description="guild.description"
-              :img="guild.img"
-              :github="guild.github"
+              :title="guilds[index + 1].name"
+              :description="guilds[i].description"
+              :img="guilds[i].avatar"
+              :github="guilds[i].github_repo"
               class="home-guilds__card" />
           </v-flex>
           <v-flex
+            v-if="index + 2 < guilds.length"
             sm12
             md4>
             <home-carousel-card
-              :title="guilds[i-1].title"
-              :description="guild.description"
-              :img="guild.img"
-              :github="guild.github"
+              :title="guilds[index + 2].name"
+              :description="guilds[x].description"
+              :img="guilds[x].avatar"
+              :github="guilds[x].github_repo"
               class="guilds__card" />
           </v-flex>
         </v-layout>
@@ -75,21 +76,38 @@ import guilds from '../../db/guilds.json'
       HomeCarouselCard
     },
     data () {
-      let i = Math.random() * (0 , (guilds.length -2))
+      let i
+      let x
+      i = Math.random() * (0 , (guilds.length -2))
       i= Math.round(i)
+      if (i === 0){
+        x = i+1
+      }else{
+        x = i-1
+      }
+
       return {
         guilds,
-        i
+        i,
+        x,
       }
     },
-    computed: {
-
-      index: function (index){
-        let index1
-
-        return index1
+    beforeMount() {
+     /* this.i = Math.random() * (0 , (guilds.length -2))
+      this.i= Math.round(this.i)
+      if (this.i === 0){
+        this.x = this.i+1
+      }else{
+        this.x = this.i-1
       }
+      */
+    },
+    methods: {
+      getIndex(i) {
+        i = Math.random() * (0 , (guilds.length -2))
 
+        return i
+      }
     }
   }
 </script>
@@ -116,13 +134,14 @@ import guilds from '../../db/guilds.json'
     font-size 40px
 
 .guilds-carusel
-  background-color rgba(#003ea5, 0.75)
+
   margin 10px 10px 10px
   border: none !important
-
 
   &__img
     min-height 200px
 
+.v-carousel
+    box-shadow none
 
 </style>

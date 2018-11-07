@@ -1,15 +1,14 @@
 <template>
   <div class="guilds-card">
-    <v-card >
+    <v-card>
       <v-img
-        :src="img"
+        :src="avatar"
         aspect-ratio="2.75"
         class="guilds-card__img"
       />
-
       <v-card-title primary-title>
         <div>
-          <h3 class="headline mb-0">{{ title }}</h3>
+          <h3 class="headline mb-0">{{ name }}</h3>
           <div> {{ description }}</div>
         </div>
       </v-card-title>
@@ -17,7 +16,7 @@
       <v-card-actions>
         <v-btn
           v-if="github"
-          :href="github"
+          :href="'https://github.com/OSWeekends/'+github_repo"
           title="github"
           target="_blank"
           flat
@@ -30,7 +29,7 @@
 <script>
 export default {
   props: {
-    title: {
+    name: {
       type: String,
       required: true,
       default: 'worknpm'
@@ -40,12 +39,17 @@ export default {
       required: true,
       default: 'Lorem ipsun text'
       },
-    img: {
+    avatar: {
       type: String,
       required: true,
-      default: 'Title'
+      default: 'name'
       },
-    github: {
+    github_repo: {
+      type:  String,
+      required: false,
+      default: ''
+    },
+    website: {
       type: String,
       required: false,
       default: ''
@@ -65,5 +69,8 @@ export default {
 
   &__img
     min-height 200px
+
+  v-card theme--dark
+   background-color rgba(#fff, 0.75)
 
 </style>
