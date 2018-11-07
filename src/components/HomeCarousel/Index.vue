@@ -76,39 +76,10 @@ import guilds from '../../db/guilds.json'
       HomeCarouselCard
     },
     data () {
-      let i
-      let x
-      i = Math.random() * (0 , (guilds.length -2))
-      i= Math.round(i)
-      if (i === 0){
-        x = i+1
-      }else{
-        x = i-1
-      }
-
       return {
         guilds,
-        i,
-        x,
       }
     },
-    beforeMount() {
-     /* this.i = Math.random() * (0 , (guilds.length -2))
-      this.i= Math.round(this.i)
-      if (this.i === 0){
-        this.x = this.i+1
-      }else{
-        this.x = this.i-1
-      }
-      */
-    },
-    methods: {
-      getIndex(i) {
-        i = Math.random() * (0 , (guilds.length -2))
-
-        return i
-      }
-    }
   }
 </script>
 
@@ -134,7 +105,11 @@ import guilds from '../../db/guilds.json'
     font-size 40px
 
 .guilds-carusel
+<<<<<<< HEAD
 
+=======
+
+>>>>>>> ac2682e9b40b4e99225c20086eb024a5cd92d8a7
   margin 10px 10px 10px
   border: none !important
 

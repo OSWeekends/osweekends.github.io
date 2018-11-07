@@ -69,6 +69,9 @@ export default {
 
   &__img
     min-height 200px
+  
+  v-card theme--dark
+   background-color rgba(#fff, 0.75)
 
   v-card theme--dark
    background-color rgba(#fff, 0.75)
