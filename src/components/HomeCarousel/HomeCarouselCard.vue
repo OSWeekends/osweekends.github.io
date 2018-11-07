@@ -45,7 +45,7 @@ export default {
       default: 'name'
       },
     github_repo: {
-      type: String,
+      type:  String,
       required: false,
       default: ''
     },

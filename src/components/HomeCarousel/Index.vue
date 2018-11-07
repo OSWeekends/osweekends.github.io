@@ -74,23 +74,31 @@ import guilds from '../../db/guilds.json'
       HomeCarouselCard
     },
     data () {
-      let i = 0
-      let x = 1
+      let i
+      let x 
+      i = Math.random() * (0 , (guilds.length -2))
+      i= Math.round(i)
+      if (i === 0){
+        x = i+1
+      }else{
+        x = i-1
+      }
+      
       return {
         guilds,
         i,
         x,
       }
     },
-    beforeCreate() {
-      this.i = Math.random() * (0 , (guilds.length -2))
+    beforeMount() {
+     /* this.i = Math.random() * (0 , (guilds.length -2))
       this.i= Math.round(this.i)
       if (this.i === 0){
         this.x = this.i+1
       }else{
         this.x = this.i-1
       }
-      
+      */
     },
   }
 </script>
