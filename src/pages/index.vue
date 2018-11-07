@@ -62,17 +62,36 @@
 
   export default {
     async asyncData ({store}) {
-      let  teamMembers  = await axios.get('https://raw.githubusercontent.com/OSWeekends/Organizacion/master/data/team.json')
-      let  guilds  = await axios.get('https://raw.githubusercontent.com/OSWeekends/Organizacion/master/data/guilds.json')
-      let  projects  = await axios.get('https://raw.githubusercontent.com/OSWeekends/Organizacion/master/data/projects.json')
-      let  sponsors  = await axios.get('https://raw.githubusercontent.com/OSWeekends/Organizacion/master/data/sponsors.json')
-      let  communities  = await axios.get('https://raw.githubusercontent.com/OSWeekends/Organizacion/master/data/communities.json')
-      
-      await store.dispatch('getTeamMembersData', teamMembers.data)
-      await store.dispatch('getGuildsData', guilds.data)
-      await store.dispatch('getProjectsData', projects.data)
-      await store.dispatch('getSponsorsData', sponsors.data)
-      await store.dispatch('getCommunititesData', communities.data)
+      axios.get('https://raw.githubusercontent.com/OSWeekends/Organizacion/master/data/team.json').then((res) => {
+        store.dispatch('getTeamMembersData', res.data)
+      }).catch((err)=> {
+        console.log( '😰 Err: [getTeamMembersData]' )
+        console.log( { error } )
+      })
+      axios.get('https://raw.githubusercontent.com/OSWeekends/Organizacion/master/data/guilds.json').then((res) => {
+        store.dispatch('getGuildsData', res.data)
+      }).catch((err)=> {
+        console.log( '😰 Err: [getGuildsData]' )
+        console.log( { error } )
+      })
+      axios.get('https://raw.githubusercontent.com/OSWeekends/Organizacion/master/data/projects.json').then((res) => {
+        store.dispatch('getProjectsData', res.data)
+      }).catch((err)=> {
+        console.log( '😰 Err: [getProjectsData]' )
+        console.log( { error } )
+      })
+      axios.get('https://raw.githubusercontent.com/OSWeekends/Organizacion/master/data/sponsors.json').then((res) => {
+        store.dispatch('getSponsorsData', res.data)
+      }).catch((err)=> {
+        console.log( '😰 Err: [getSponsorsData]' )
+        console.log( { error } )
+      })
+      axios.get('https://raw.githubusercontent.com/OSWeekends/Organizacion/master/data/communities.json').then((res) => {
+        store.dispatch('getCommunititesData', res.data)
+      }).catch((err)=> {
+        console.log( '😰 Err: [getCommunititesData]' )
+        console.log( { error } )
+      })
     },
     async fetch( { store, params, req } ) {
       // If no meetup data
