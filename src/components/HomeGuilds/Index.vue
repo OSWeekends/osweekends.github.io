@@ -27,9 +27,9 @@
         sm12
         md4>
         <home-guilds-card
-          :title="guild.title"
+          :title="guild.name"
           :description="guild.description"
-          :img="guild.img"
+          :img="guild.avatar"
           :github="guild.github"
           class="home-guilds__card" />
       </v-flex>
@@ -40,7 +40,8 @@
 
 <script>
 import HomeGuildsCard from '~/components/HomeGuilds/HomeGuildsCard.vue'
-import guilds from '../../db/guilds.json'
+import { mapGetters } from 'vuex'
+
 
   export default {
     components: {
@@ -48,12 +49,12 @@ import guilds from '../../db/guilds.json'
     },
     data () {
       return {
-        guilds
+        
       }
     },
     computed: {
-
-    } 
+      ...mapGetters( [ 'guilds' ] ),
+    }
   }
 </script>
 

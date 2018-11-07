@@ -58,8 +58,22 @@
   import HomeSponsors from '~/components/HomeSponsors/Index.vue'
   import HomeVideo from '~/components/HomeVideo/Index.vue'
 
+  import axios from 'axios'
 
   export default {
+    async asyncData ({store}) {
+      let  teamMembers  = await axios.get('https://raw.githubusercontent.com/OSWeekends/Organizacion/master/data/team.json')
+      let  guilds  = await axios.get('https://raw.githubusercontent.com/OSWeekends/Organizacion/master/data/guilds.json')
+      let  projects  = await axios.get('https://raw.githubusercontent.com/OSWeekends/Organizacion/master/data/projects.json')
+      let  sponsors  = await axios.get('https://raw.githubusercontent.com/OSWeekends/Organizacion/master/data/sponsors.json')
+      let  communities  = await axios.get('https://raw.githubusercontent.com/OSWeekends/Organizacion/master/data/communities.json')
+      
+      await store.dispatch('getTeamMembersData', teamMembers.data)
+      await store.dispatch('getGuildsData', guilds.data)
+      await store.dispatch('getProjectsData', projects.data)
+      await store.dispatch('getSponsorsData', sponsors.data)
+      await store.dispatch('getCommunititesData', communities.data)
+    },
     async fetch( { store, params, req } ) {
       // If no meetup data
       if ( store.state.meetupData.length === 0 ) {

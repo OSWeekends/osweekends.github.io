@@ -17,6 +17,21 @@ const actions = {
       console.log( { error } )
     }
   },
+  async getTeamMembersData (context, data ) {
+    context.commit( 'setTeamMembers', data )
+  },
+  async getGuildsData (context, data ) {
+    context.commit( 'setGuilds', data )
+  },
+  async getProjectsData (context, data ) {
+    context.commit( 'setProjects', data )
+  },
+  async getSponsorsData (context, data ) {
+    context.commit( 'setSponsors', data )
+  },
+  async getCommunititesData (context, data ) {
+    context.commit( 'setCommunities', data )
+  },
 }
 
 export default actions

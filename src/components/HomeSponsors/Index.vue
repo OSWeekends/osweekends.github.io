@@ -15,7 +15,7 @@
         md4
         class="text-xs-center justify-space-around home-sponsor__cards">
         <home-sponsor-card
-          :img="sponsor.img"
+          :img="sponsor.imgLocalName"
           :website="sponsor.url"
           :name="sponsor.name"
           class="home-sponsor__card"/>
@@ -27,7 +27,8 @@
 
 <script>
   import HomeSponsorCard from '~/components/HomeSponsors/HomeSponsorsCard.vue'
-  import sponsors from '../../db/sponsors.json'
+  import { mapGetters } from 'vuex'
+
 
   export default {
     components: {
@@ -35,9 +36,12 @@
     },
     data() {
       return {
-        sponsors
+        
       }
     },
+    computed: {
+      ...mapGetters( [ 'sponsors' ] ),
+    }
   }
 </script>
 

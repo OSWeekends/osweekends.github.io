@@ -18,7 +18,7 @@
         <home-communities-card
           :name="community.name"
           :url="community.url"
-          :image_url="community.image_url"
+          :image_url="community.imgLocalName"
           class="home-team__card"/>
       </v-flex>
     </v-layout>
@@ -27,7 +27,8 @@
 
 <script>
   import HomeCommunitiesCard from '~/components/HomeCommunities/HomeCommunitiesCard.vue'
-  import communities from '../../db/communities.json'
+  import { mapGetters } from 'vuex'
+
 
   export default {
     components: {
@@ -35,9 +36,11 @@
     },
     data() {
         return {
-            communities
         } 
     },
+    computed: {
+      ...mapGetters( [ 'communities' ] ),
+    }
   }
 </script>
 
