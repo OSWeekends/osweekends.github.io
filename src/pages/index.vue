@@ -5,11 +5,6 @@
     <section class="features-section">
       <home-features/>
     </section>
-
-    <!-- Guilds -->
-    <section class="guilds-section">
-      <home-guilds/>
-    </section>
     <!-- Carousel -->
     <section class="guilds-section">
       <home-carousel/>
@@ -78,7 +73,7 @@
       HomeSlack,
       HomeTeam,
       HomeCommunities,
-      HomeSponsors,      
+      HomeSponsors,
       HomeVideo,
       HomeCarousel
     },
@@ -119,7 +114,7 @@
   .communities-section
     background-color #f7f7f7
     padding 60px 0 80px
-  
+
   .video-section
     background-color #f7f7f7
     padding 60px 0 80px
