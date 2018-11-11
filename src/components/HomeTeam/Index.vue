@@ -18,7 +18,7 @@
           :name="member.name"
           :img="member.avatar"
           :role="member.role"
-          :twitter="member.twitter"
+          :twitter="member.Twitter"
           :github="member.github"
           class="home-team__card"/>
       </v-flex>
@@ -28,7 +28,8 @@
 
 <script>
   import HomeTeamCard from '~/components/HomeTeam/HomeTeamCard.vue'
-  import teamMembers from '../../db/teamMembers.json'
+  import { mapGetters } from 'vuex'
+
 
   export default {
     components: {
@@ -36,9 +37,11 @@
     },
     data() {
       return {
-        teamMembers
       }
     },
+    computed: {
+      ...mapGetters( [ 'teamMembers' ] ),
+    }
   }
 </script>
 

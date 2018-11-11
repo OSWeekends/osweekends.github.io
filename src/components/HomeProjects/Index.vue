@@ -42,7 +42,7 @@
 
 <script>
 import HomeProjectsCard from '~/components/HomeProjects/HomeProjectsCard.vue'
-import projects from '../../db/projects.json'
+import { mapGetters } from 'vuex'
 
   export default {
     components: {
@@ -50,8 +50,10 @@ import projects from '../../db/projects.json'
     },
     data () {
       return {
-        projects
       }
+    },
+    computed: {
+      ...mapGetters( [ 'projects' ] ),
     }
   }
 </script>
