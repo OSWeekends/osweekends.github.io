@@ -18,50 +18,22 @@
         <h3 class="home-guilds__subtitle">Equipos de trabajo de la comunidad: </h3>
       </v-flex>
     </v-layout>
-    <v-carousel
-      light
-      hide-delimiters>
-      <v-carousel-item
+    <v-layout
+      row
+      wrap>
+      <v-flex
         v-for="(guild, index) in guilds"
-        :key="index">
-        <v-layout
-          row
-          wrap>
-          <v-flex
-            sm12
-            md4>
-            <home-guilds-card
-              :title="guild.name"
-              :description="guild.description"
-              :img="guild.avatar"
-              :github="guild.github"
-              class="home-guilds__card" />
-          </v-flex>
-          <v-flex
-            v-if="index < guilds.lenght -1"
-            sm12
-            md4>
-            <home-guilds-card
-              :title="guilds[index + 1].name"
-              :description="guild.description"
-              :img="guild.avatar"
-              :github="guild.github"
-              class="home-guilds__card" />
-          </v-flex>
-          <v-flex
-            v-if="index < guilds.lenght -2"
-            sm12
-            md4>
-            <home-guilds-card
-              :title="guilds[index + 2].name"
-              :description="guild.description"
-              :img="guild.avatar"
-              :github="guild.github"
-              class="home-guilds__card" />
-          </v-flex>
-        </v-layout>
-      </v-carousel-item>
-    </v-carousel>
+        :key="index"
+        sm12
+        md4>
+        <home-guilds-card
+          :title="guild.name"
+          :description="guild.description"
+          :img="guild.avatar"
+          :github="guild.github"
+          class="home-guilds__card" />
+      </v-flex>
+    </v-layout>
   </v-container>
 </template>
 
@@ -77,7 +49,7 @@ import { mapGetters } from 'vuex'
     },
     data () {
       return {
-
+        
       }
     },
     computed: {
@@ -101,7 +73,7 @@ import { mapGetters } from 'vuex'
   &__icon
     font-size 72px
 
-  &__title-wrapper
+  &__title-wrapper 
     padding 0 15px
 
   &__title

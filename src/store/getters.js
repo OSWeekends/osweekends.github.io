@@ -10,7 +10,7 @@ const getters = {
   },
   allGuilds (state) {
     return state.guilds
-  },  
+  },
   projects( state ) {
     return state.projects
   },
