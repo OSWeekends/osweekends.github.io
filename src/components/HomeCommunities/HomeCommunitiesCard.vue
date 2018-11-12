@@ -4,7 +4,7 @@
       <div
         :alt="name"
         :title="name"
-        :style="{ backgroundImage: 'url(' + image_url + ')' }"
+        :style="{ backgroundImage: 'url(/img/communities/' + image_url + ')' }"
         class="community-card__img"/>
       <h3 class="community-card__name"> {{ name }} </h3>
     </a>
