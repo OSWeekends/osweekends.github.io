@@ -6,7 +6,7 @@
       :title="name"
       target="_blank">
       <img
-        :src="img"
+        :src="'/img/sponsor/' + img"
         :alt="name">
     </a>
   </div>
