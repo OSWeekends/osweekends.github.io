@@ -22,7 +22,7 @@
       light
       hide-delimiters>
       <v-carousel-item
-        v-for="(guild, index) in guilds"
+        v-for="(guild, index) in allGuilds"
         :key="index">
         <v-layout
           row
@@ -38,25 +38,25 @@
               class="home-guilds__card" />
           </v-flex>
           <v-flex
-            v-if="index < guilds.lenght -1"
+            v-if="index + 1 < allGuilds.lenght"
             sm12
             md4>
             <home-guilds-card
-              :title="guilds[index + 1].name"
-              :description="guild.description"
-              :img="guild.avatar"
-              :github="guild.github"
+              :title="allGuilds[index + 1].name"
+              :description="allGuilds[index + 1].description"
+              :img="allGuilds[index + 1].avatar"
+              :github="allGuilds[index + 1].github"
               class="home-guilds__card" />
           </v-flex>
           <v-flex
-            v-if="index < guilds.lenght -2"
+            v-if="index + 2 > allGuilds.lenght"
             sm12
             md4>
             <home-guilds-card
-              :title="guilds[index + 2].name"
-              :description="guild.description"
-              :img="guild.avatar"
-              :github="guild.github"
+              :title="allGuilds[index + 2].name"
+              :description="allGuilds[index + 2].description"
+              :img="allGuilds[index + 2].avatar"
+              :github="allGuilds[index + 2].github"
               class="home-guilds__card" />
           </v-flex>
         </v-layout>
@@ -81,7 +81,7 @@ import { mapGetters } from 'vuex'
       }
     },
     computed: {
-      ...mapGetters( [ 'guilds' ] ),
+      ...mapGetters( [ 'allGuilds' ] ),
     }
   }
 </script>
