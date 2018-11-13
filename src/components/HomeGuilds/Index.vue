@@ -38,7 +38,7 @@
               class="home-guilds__card" />
           </v-flex>
           <v-flex
-            v-if="index + 1 < allGuilds.lenght"
+            v-if="index + 1 < allGuilds.length"
             sm12
             md4>
             <home-guilds-card
@@ -49,7 +49,7 @@
               class="home-guilds__card" />
           </v-flex>
           <v-flex
-            v-if="index + 2 > allGuilds.lenght"
+            v-if="index + 2 < allGuilds.length"
             sm12
             md4>
             <home-guilds-card
@@ -76,7 +76,9 @@ import { mapGetters } from 'vuex'
       HomeGuildsCard
     },
     data () {
+
       return {
+
 
       }
     },
