@@ -1,5 +1,5 @@
 <template>
-  <v-app>
+  <v-app id="app">
     <v-navigation-drawer
       :clipped="clipped"
       v-model="drawer"
@@ -71,39 +71,65 @@
 </template>
 
 <script>
-  import HomeHeader from '~/components/HomeHeader/Index.vue'
-  import HomeFooter from '~/components/HomeFooter/Index.vue'
+import HomeHeader from "~/components/HomeHeader/Index.vue";
+import HomeFooter from "~/components/HomeFooter/Index.vue";
 
-
-  export default {
-    components: {
-      HomeHeader,
-      HomeFooter,
-    },
-    data() {
-      return {
-        clipped: false,
-        drawer: false,
-        items: [
-          { icon: 'bubble_chart', title: 'Welcome', to: '/Welcome' },
-          { icon: 'apps', title: 'Guilds', to: '/guilds' },
-          { icon: 'code', title: 'Proyectos', to: '/proyectos' },
-        ],
-        title: 'OSWeekends',
+export default {
+  components: {
+    HomeHeader,
+    HomeFooter
+  },
+  data() {
+    return {
+      clipped: false,
+      drawer: false,
+      items: [
+        { icon: "bubble_chart", title: "Welcome", to: "/Welcome" },
+        { icon: "apps", title: "Guilds", to: "/guilds" },
+        { icon: "code", title: "Proyectos", to: "/proyectos" }
+      ],
+      title: "OSWeekends"
+    };
+  },
+  computed: {
+    isHome() {
+      return this.$nuxt.$route.path === "/";
+    }
+  },
+  created() {
+    this.cookies();
+  },
+  methods: {
+    cookies() {
+      // Este if previene que se ejecute en server render para poder tener acceso al objeto window del browser
+      if (process.browser) {
+        window.cookieconsent.initialise({
+        container: document.getElementById("app"),
+        palette: {
+          popup: { background: "#003ea5" },
+          button: { background: "transparent", border: "#fff", text: "#fff", padding: '5px 40px' }
+        },
+        revokable: true,
+        onStatusChange: function(status) {
+          console.log(
+            this.hasConsented() ? "enable cookies" : "disable cookies"
+          );
+        },
+        law: {
+          regionalLaw: false
+        },
+        location: true
+      });
       }
-    },
-    computed: {
-      isHome() {
-        return this.$nuxt.$route.path === '/'
-      },
-    },
+      
+    }
   }
+};
 </script>
 
 <style lang="stylus" scoped>
-
-
-  .footer-section
-    background-color #121212
+.footer-section {
+  background-color: #121212;
+}
 </style>
 
