@@ -18,42 +18,73 @@
         <h3 class="home-guilds__subtitle">Equipos de trabajo de la comunidad: </h3>
       </v-flex>
     </v-layout>
-    <v-layout
-      row
-      wrap>
-      <v-flex
-        v-for="(guild, index) in guilds"
-        :key="index"
-        sm12
-        md4>
-        <home-guilds-card
-          :title="guild.title"
-          :description="guild.description"
-          :img="guild.img"
-          :github="guild.github"
-          class="home-guilds__card" />
-      </v-flex>
-    </v-layout>
+    <v-carousel
+      light
+      hide-delimiters>
+      <v-carousel-item
+        v-for="(guild, index) in allGuilds"
+        :key="index">
+        <v-layout
+          row
+          wrap>
+          <v-flex
+            sm12
+            md4>
+            <home-guilds-card
+              :title="guild.name"
+              :description="guild.description"
+              :img="guild.avatar"
+              :github="guild.github"
+              class="home-guilds__card" />
+          </v-flex>
+          <v-flex
+            v-if="index + 1 < allGuilds.length"
+            sm12
+            md4>
+            <home-guilds-card
+              :title="allGuilds[index + 1].name"
+              :description="allGuilds[index + 1].description"
+              :img="allGuilds[index + 1].avatar"
+              :github="allGuilds[index + 1].github"
+              class="home-guilds__card" />
+          </v-flex>
+          <v-flex
+            v-if="index + 2 < allGuilds.length"
+            sm12
+            md4>
+            <home-guilds-card
+              :title="allGuilds[index + 2].name"
+              :description="allGuilds[index + 2].description"
+              :img="allGuilds[index + 2].avatar"
+              :github="allGuilds[index + 2].github"
+              class="home-guilds__card" />
+          </v-flex>
+        </v-layout>
+      </v-carousel-item>
+    </v-carousel>
   </v-container>
 </template>
 
 
 <script>
 import HomeGuildsCard from '~/components/HomeGuilds/HomeGuildsCard.vue'
-import guilds from '../../db/guilds.json'
+import { mapGetters } from 'vuex'
+
 
   export default {
     components: {
       HomeGuildsCard
     },
     data () {
+
       return {
-        guilds
+
+
       }
     },
     computed: {
-
-    } 
+      ...mapGetters( [ 'allGuilds' ] ),
+    }
   }
 </script>
 
@@ -72,7 +103,7 @@ import guilds from '../../db/guilds.json'
   &__icon
     font-size 72px
 
-  &__title-wrapper 
+  &__title-wrapper
     padding 0 15px
 
   &__title
