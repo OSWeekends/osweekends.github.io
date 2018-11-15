@@ -1,7 +1,7 @@
 import axios from 'axios'
 
 const actions = {
-  async getMeetupData( context ) {
+  async getMeetupData( { commit } ) {
     const key = '765c716753752b6f42355a45103155'
     const status = {
       past: 'past',
@@ -11,7 +11,7 @@ const actions = {
     try {
       let res = await axios.get( url )
       let data = res.data
-      context.commit( 'setMeetupData', data )
+      commit( 'setMeetupData', data )
     } catch ( error ) {
       console.log( '😰 Err: [getMeetupData]' )
       console.log( { error } )

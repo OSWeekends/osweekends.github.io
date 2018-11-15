@@ -73,7 +73,7 @@
       HomeSlack,
       HomeTeam,
       HomeCommunities,
-      HomeSponsors,      
+      HomeSponsors,
       HomeVideo
     },
     data() {
@@ -113,7 +113,7 @@
   .communities-section
     background-color #f7f7f7
     padding 60px 0 80px
-  
+
   .video-section
     background-color #f7f7f7
     padding 60px 0 80px
