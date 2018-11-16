@@ -20,7 +20,8 @@
     </v-layout>
     <v-carousel
       light
-      hide-delimiters>
+      hide-delimiters
+      class="carousel">
       <v-carousel-item
         v-for="(guild, index) in allGuilds"
         :key="index">
@@ -40,7 +41,8 @@
           <v-flex
             v-if="index + 1 < allGuilds.length"
             sm12
-            md4>
+            md4
+            class="search_and_share">
             <home-guilds-card
               :title="allGuilds[index + 1].name"
               :description="allGuilds[index + 1].description"
@@ -51,7 +53,8 @@
           <v-flex
             v-if="index + 2 < allGuilds.length"
             sm12
-            md4>
+            md4
+            class="search_and_share">
             <home-guilds-card
               :title="allGuilds[index + 2].name"
               :description="allGuilds[index + 2].description"
@@ -78,8 +81,6 @@ import { mapGetters } from 'vuex'
     data () {
 
       return {
-
-
       }
     },
     computed: {
@@ -89,6 +90,11 @@ import { mapGetters } from 'vuex'
 </script>
 
 <style lang="stylus" scoped>
+
+@media handheld, only screen and (max-width: 768px)
+  .search_and_share
+    display:none
+
 .home-guilds
   &__title-row
     padding-left 20px
@@ -108,5 +114,8 @@ import { mapGetters } from 'vuex'
 
   &__title
     font-size 40px
+
+.carousel
+  box-shadow none
 
 </style>
