@@ -22,7 +22,7 @@
       row
       wrap>
       <v-flex
-        v-for="(guild, index) in guilds"
+        v-for="(guild, index) in getGuilds"
         :key="index"
         sm12
         md4>
@@ -49,30 +49,24 @@ import { mapGetters } from 'vuex'
     },
     data () {
       return {
-        guilds: []
+
       }
     },
     computed: {
       ...mapGetters( [ 'allGuilds' ] ),
 
+      getGuilds(){
+        let guilds= []
+
+        for(let x=0; x<= 2;x++){
+          let i = Math.random() * (0 - (this.allGuilds.length -1))
+          i = Math.round(i)
+          i = Math.abs(i)
+          guilds.push(this.allGuilds[i])
+        }
+        return guilds
+      }
     },
-    created() {
-      this.guilds.splice(0, this.guilds.length)
-      console.log("*******************")
-      console.log(this.guilds)
-      for(let x=0; x<= 2;x++){
-
-      let i = Math.random() * (0 - this.allGuilds.length)
-      i = Math.round(i)
-      i = Math.abs(i)
-      this.guilds.push(this.allGuilds[x])
-      console.log(i)
-      //this.guilds.push(this.allGuilds[i])
-      }
-      console.log(this.guilds)
-
-
-      }
   }
 
 </script>
