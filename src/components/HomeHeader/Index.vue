@@ -30,7 +30,7 @@
         return this.getMeetupData.length > 0
       },
       ev() {
-        return this.getMeetupData[ 1 ]
+        return this.getMeetupData[ 0 ]
       },
     },
   }
