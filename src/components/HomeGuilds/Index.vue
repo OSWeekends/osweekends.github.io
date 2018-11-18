@@ -18,53 +18,22 @@
         <h3 class="home-guilds__subtitle">Equipos de trabajo de la comunidad: </h3>
       </v-flex>
     </v-layout>
-    <v-carousel
-      light
-      hide-delimiters
-      class="carousel">
-      <v-carousel-item
-        v-for="(guild, index) in allGuilds"
-        :key="index">
-        <v-layout
-          row
-          wrap>
-          <v-flex
-            sm12
-            md4>
-            <home-guilds-card
-              :title="guild.name"
-              :description="guild.description"
-              :img="guild.avatar"
-              :github="guild.github"
-              class="home-guilds__card" />
-          </v-flex>
-          <v-flex
-            v-if="index + 1 < allGuilds.length"
-            sm12
-            md4
-            class="search_and_share">
-            <home-guilds-card
-              :title="allGuilds[index + 1].name"
-              :description="allGuilds[index + 1].description"
-              :img="allGuilds[index + 1].avatar"
-              :github="allGuilds[index + 1].github"
-              class="home-guilds__card" />
-          </v-flex>
-          <v-flex
-            v-if="index + 2 < allGuilds.length"
-            sm12
-            md4
-            class="search_and_share">
-            <home-guilds-card
-              :title="allGuilds[index + 2].name"
-              :description="allGuilds[index + 2].description"
-              :img="allGuilds[index + 2].avatar"
-              :github="allGuilds[index + 2].github"
-              class="home-guilds__card" />
-          </v-flex>
-        </v-layout>
-      </v-carousel-item>
-    </v-carousel>
+    <v-layout
+      row
+      wrap>
+      <v-flex
+        v-for="(guild, index) in getGuilds"
+        :key="index"
+        sm12
+        md4>
+        <home-guilds-card
+          :title="guild.name"
+          :description="guild.description"
+          :img="guild.avatar"
+          :github="guild.github"
+          class="home-guilds__card" />
+      </v-flex>
+    </v-layout>
   </v-container>
 </template>
 
@@ -79,22 +48,30 @@ import { mapGetters } from 'vuex'
       HomeGuildsCard
     },
     data () {
-
       return {
+
       }
     },
     computed: {
       ...mapGetters( [ 'allGuilds' ] ),
-    }
+
+      getGuilds(){
+        let guilds= []
+
+        for(let x=0; x<= 2;x++){
+          let i = Math.random() * (0 - (this.allGuilds.length -1))
+          i = Math.round(i)
+          i = Math.abs(i)
+          guilds.push(this.allGuilds[i])
+        }
+        return guilds
+      }
+    },
   }
+
 </script>
 
 <style lang="stylus" scoped>
-
-@media handheld, only screen and (max-width: 768px)
-  .search_and_share
-    display:none
-
 .home-guilds
   &__title-row
     padding-left 20px
@@ -114,8 +91,5 @@ import { mapGetters } from 'vuex'
 
   &__title
     font-size 40px
-
-.carousel
-  box-shadow none
 
 </style>
