@@ -62,12 +62,13 @@
 
   export default {
     async asyncData ({store}) {
-      let  teamMembers  = await axios.get('https://raw.githubusercontent.com/OSWeekends/Organizacion/master/data/team.json')
-      let  guilds  = await axios.get('https://raw.githubusercontent.com/OSWeekends/Organizacion/master/data/guilds.json')
-      let  projects  = await axios.get('https://raw.githubusercontent.com/OSWeekends/Organizacion/master/data/projects.json')
-      let  sponsors  = await axios.get('https://raw.githubusercontent.com/OSWeekends/Organizacion/master/data/sponsors.json')
-      let  communities  = await axios.get('https://raw.githubusercontent.com/OSWeekends/Organizacion/master/data/communities.json')
-      
+      const url = 'https://raw.githubusercontent.com/OSWeekends/Organizacion/master/data/';
+      let  teamMembers  = await axios.get(`${url}team.json`)
+      let  guilds  = await axios.get(`${url}guilds.json`)
+      let  projects  = await axios.get(`${url}projects.json`)
+      let  sponsors  = await axios.get(`${url}sponsors.json`)
+      let  communities  = await axios.get(`${url}communities.json`)
+
       await store.dispatch('getTeamMembersData', teamMembers.data)
       await store.dispatch('getGuildsData', guilds.data)
       await store.dispatch('getProjectsData', projects.data)
