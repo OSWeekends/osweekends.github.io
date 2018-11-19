@@ -1,6 +1,6 @@
 <template>
   <div class="guilds-card">
-    <v-card>
+    <v-card class="guilds-card__wrapper">
       <v-img
         :src="img"
         aspect-ratio="2.75"
@@ -14,9 +14,8 @@
         </div>
       </v-card-title>
 
-      <v-card-actions>
+      <v-card-actions v-if="github">
         <v-btn
-          v-if="github"
           :href="github"
           title="github"
           target="_blank"
@@ -57,11 +56,15 @@ export default {
 
 <style lang="stylus" scoped>
 .guilds-card
+  height 95%
   background-color rgba(#fff, 0.75)
   margin 10px 20px
   border-radius 3px
   overflow hidden
   box-shadow 0 15px 40px rgba(#000, .15)
+
+  &__wrapper 
+    height 100%
 
   &__img
     min-height 200px

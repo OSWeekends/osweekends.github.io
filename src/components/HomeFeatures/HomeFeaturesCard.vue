@@ -31,6 +31,7 @@ export default {
 
 <style lang="stylus" scoped>
 .feature-card
+  height 95%
   background-color rgba(#fff, 0.75)
   margin 10px 20px
   padding 25px
