@@ -9,7 +9,8 @@
 
       <v-card-title primary-title>
         <div>
-          <h3 class="headline mb-0">{{ title }}</h3>
+          <h3 class="headline mb-0 text-sm-center">{{ title }}</h3>
+          <hr class="mb-2">
           <div> {{ description }}</div>
         </div>
       </v-card-title>
@@ -55,6 +56,7 @@ export default {
 
 
 <style lang="stylus" scoped>
+
 .guilds-card
   height 95%
   background-color rgba(#fff, 0.75)
@@ -68,5 +70,6 @@ export default {
 
   &__img
     min-height 200px
+    box-shadow 0px 5px 15px rgba(0,0,0, .25)
 
 </style>

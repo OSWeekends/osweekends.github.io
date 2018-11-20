@@ -1,5 +1,6 @@
 <template>
   <v-app id="app">
+    <cookie-consent />
     <v-navigation-drawer
       :clipped="clipped"
       v-model="drawer"
@@ -73,11 +74,13 @@
 <script>
 import HomeHeader from "~/components/HomeHeader/Index.vue";
 import HomeFooter from "~/components/HomeFooter/Index.vue";
+import CookieConsent from "~/components/CookieConsent/Index.vue";
 
 export default {
   components: {
     HomeHeader,
-    HomeFooter
+    HomeFooter,
+    CookieConsent
   },
   data() {
     return {
@@ -97,32 +100,8 @@ export default {
     }
   },
   created() {
-    this.cookies();
   },
   methods: {
-    cookies() {
-      // Este if previene que se ejecute en server render para poder tener acceso al objeto window del browser
-      if (process.browser) {
-        window.cookieconsent.initialise({
-        container: document.getElementById("app"),
-        palette: {
-          popup: { background: "#003ea5" },
-          button: { background: "transparent", border: "#fff", text: "#fff", padding: '5px 40px' }
-        },
-        revokable: true,
-        onStatusChange: function(status) {
-          console.log(
-            this.hasConsented() ? "enable cookies" : "disable cookies"
-          );
-        },
-        law: {
-          regionalLaw: false
-        },
-        location: true
-      });
-      }
-      
-    }
   }
 };
 </script>
