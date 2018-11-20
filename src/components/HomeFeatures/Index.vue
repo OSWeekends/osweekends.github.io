@@ -6,16 +6,16 @@
       <h2 class="home-features__title">Open Source Weekends</h2>
     </v-layout>
     <v-layout
-      fill-height
       row
-      wrap>
+      wrap
+      justify-space-around
+    >
       <v-flex
         v-for="(feature, index) in features"
         :key="index"
-        fill-height
         sm12
         md4
-        class="text-xs-center">
+        class="home-features__wrapper text-xs-center">
         <home-features-card
           :title="feature.title"
           :icon="feature.icon"
@@ -48,5 +48,9 @@ import features from '../../db/features.json'
     margin 0 auto
     font-size 40px
     margin-bottom 40px
+
+    &__wrapper{
+      height auto
+    }
 
 </style>

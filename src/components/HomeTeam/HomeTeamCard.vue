@@ -11,10 +11,12 @@
       <a
         v-if="github"
         :href="github"
+        title="github"
         target="_blank"> <i class="fab fa-github team-card__icon" /></a>
       <a
         v-if="twitter"
         :href="twitter"
+        title="twitter"
         target="_blank"><i class="fab fa-twitter team-card__icon" /></a>
     </div>
   </div>
