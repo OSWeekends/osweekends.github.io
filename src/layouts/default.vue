@@ -1,5 +1,6 @@
 <template>
   <v-app id="app">
+    <cookie-consent />
     <v-navigation-drawer
       :clipped="clipped"
       v-model="drawer"
@@ -73,11 +74,13 @@
 <script>
 import HomeHeader from "~/components/HomeHeader/Index.vue";
 import HomeFooter from "~/components/HomeFooter/Index.vue";
+import CookieConsent from "~/components/Cookieconsent/Index.vue";
 
 export default {
   components: {
     HomeHeader,
-    HomeFooter
+    HomeFooter,
+    CookieConsent
   },
   data() {
     return {
@@ -97,7 +100,7 @@ export default {
     }
   },
   created() {
-    this.cookies();
+    // this.cookies();
   },
   methods: {
     cookies() {
