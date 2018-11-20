@@ -100,32 +100,8 @@ export default {
     }
   },
   created() {
-    // this.cookies();
   },
   methods: {
-    cookies() {
-      // Este if previene que se ejecute en server render para poder tener acceso al objeto window del browser
-      if (process.browser) {
-        window.cookieconsent.initialise({
-        container: document.getElementById("app"),
-        palette: {
-          popup: { background: "#003ea5" },
-          button: { background: "transparent", border: "#fff", text: "#fff", padding: '5px 40px' }
-        },
-        revokable: true,
-        onStatusChange: function(status) {
-          console.log(
-            this.hasConsented() ? "enable cookies" : "disable cookies"
-          );
-        },
-        law: {
-          regionalLaw: false
-        },
-        location: true
-      });
-      }
-      
-    }
   }
 };
 </script>
