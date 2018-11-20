@@ -74,7 +74,7 @@
 <script>
 import HomeHeader from "~/components/HomeHeader/Index.vue";
 import HomeFooter from "~/components/HomeFooter/Index.vue";
-import CookieConsent from "~/components/Cookieconsent/Index.vue";
+import CookieConsent from "~/components/CookieConsent/Index.vue";
 
 export default {
   components: {
