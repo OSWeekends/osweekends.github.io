@@ -7,7 +7,9 @@
     </v-layout>
     <v-layout
       row
-      wrap>
+      wrap
+      justify-space-around
+    >
       <v-flex
         v-for="(community, index) in communities"
         :key="index"
@@ -26,30 +28,30 @@
 </template>
 
 <script>
-  import HomeCommunitiesCard from '~/components/HomeCommunities/HomeCommunitiesCard.vue'
-  import { mapGetters } from 'vuex'
+import HomeCommunitiesCard from "~/components/HomeCommunities/HomeCommunitiesCard.vue";
+import { mapGetters } from "vuex";
 
-
-  export default {
-    components: {
-      HomeCommunitiesCard,
-    },
-    data() {
-        return {
-        } 
-    },
-    computed: {
-      ...mapGetters( [ 'communities' ] ),
-    }
+export default {
+  components: {
+    HomeCommunitiesCard
+  },
+  data() {
+    return {};
+  },
+  computed: {
+    ...mapGetters(["communities"])
   }
+};
 </script>
 
 <style lang="stylus" scoped>
-  .home-communities
-    &__title
-      color #003ea5
-      margin 0 auto
-      font-size 40px
-      margin-bottom 40px
+.home-communities {
+  &__title {
+    color: #003ea5;
+    margin: 0 auto;
+    font-size: 40px;
+    margin-bottom: 40px;
+  }
+}
 </style>
 

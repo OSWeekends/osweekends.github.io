@@ -25,13 +25,13 @@
         v-for="(guild, index) in getGuilds"
         :key="index"
         sm12
-        md4>
+        md4
+        class="home-guilds__wrapper">
         <home-guilds-card
           :title="guild.name"
           :description="guild.description"
           :img="guild.avatar"
-          :github="guild.github"
-          class="home-guilds__card" />
+          :github="guild.github"/>
       </v-flex>
     </v-layout>
   </v-container>
@@ -39,57 +39,62 @@
 
 
 <script>
-import HomeGuildsCard from '~/components/HomeGuilds/HomeGuildsCard.vue'
-import { mapGetters } from 'vuex'
+import HomeGuildsCard from "~/components/HomeGuilds/HomeGuildsCard.vue";
+import { mapGetters } from "vuex";
 
+export default {
+  components: {
+    HomeGuildsCard
+  },
+  data() {
+    return {};
+  },
+  computed: {
+    ...mapGetters(["allGuilds"]),
 
-  export default {
-    components: {
-      HomeGuildsCard
-    },
-    data () {
-      return {
+    getGuilds() {
+      let guilds = [];
 
+      for (let x = 0; x <= 2; x++) {
+        let i = Math.random() * (0 - (this.allGuilds.length - 1));
+        i = Math.round(i);
+        i = Math.abs(i);
+        guilds.push(this.allGuilds[i]);
       }
-    },
-    computed: {
-      ...mapGetters( [ 'allGuilds' ] ),
-
-      getGuilds(){
-        let guilds= []
-
-        for(let x=0; x<= 2;x++){
-          let i = Math.random() * (0 - (this.allGuilds.length -1))
-          i = Math.round(i)
-          i = Math.abs(i)
-          guilds.push(this.allGuilds[i])
-        }
-        return guilds
-      }
-    },
+      return guilds;
+    }
   }
-
+};
 </script>
 
 <style lang="stylus" scoped>
-.home-guilds
-  &__title-row
-    padding-left 20px
-    margin-bottom 40px
-    color #f7f7f7
+.home-guilds {
+  &__title-row {
+    padding-left: 20px;
+    margin-bottom: 40px;
+    color: #f7f7f7;
+  }
 
-  &__icon-wrapper
-    display flex
-    align-items center
-    justify-content center
+  &__icon-wrapper {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
 
-  &__icon
-    font-size 72px
+  &__icon {
+    font-size: 72px;
+  }
 
-  &__title-wrapper
-    padding 0 15px
+  &__title-wrapper {
+    padding: 0 15px;
+  }
 
-  &__title
-    font-size 40px
+  &__title {
+    font-size: 40px;
+  }
 
+  &__wrapper {
+    height: auto;
+  }
+}
 </style>

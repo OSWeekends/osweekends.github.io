@@ -6,7 +6,9 @@
     </div>
     <v-layout
       row
-      wrap>
+      wrap
+      justify-space-around
+    >
       <v-flex
         v-for="(sponsor, index) in sponsors"
         :key="index"
