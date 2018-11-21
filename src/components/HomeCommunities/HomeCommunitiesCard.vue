@@ -1,6 +1,8 @@
 <template>
   <div class="community-card">
-    <a :href="url">
+    <a
+      :href="url"
+      target="_blank">
       <div
         :alt="name"
         :title="name"

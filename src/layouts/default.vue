@@ -87,9 +87,9 @@ export default {
       clipped: false,
       drawer: false,
       items: [
-        { icon: "bubble_chart", title: "Welcome", to: "/Welcome" },
-        { icon: "apps", title: "Guilds", to: "/guilds" },
-        { icon: "code", title: "Proyectos", to: "/proyectos" }
+        { icon: "bubble_chart", title: "Welcome", to: "#welcome" },
+        { icon: "apps", title: "Guilds", to: "#guilds" },
+        { icon: "code", title: "Proyectos", to: "#proyectos" }
       ],
       title: "OSWeekends"
     };

@@ -2,17 +2,23 @@
   <div class="content">
     <!-- FEATURES -->
     <!--FIXME-->
-    <section class="features-section">
+    <section
+      id="welcome"
+      class="features-section">
       <home-features/>
     </section>
 
     <!-- Guilds -->
-    <section class="guilds-section">
+    <section
+      id="guilds"
+      class="guilds-section">
       <home-guilds/>
     </section>
 
     <!-- Projects -->
-    <section class="projects-section">
+    <section
+      id="proyectos"
+      class="projects-section">
       <home-projects/>
     </section>
 
