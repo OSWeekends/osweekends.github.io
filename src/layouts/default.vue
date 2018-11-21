@@ -51,9 +51,9 @@
       <v-toolbar-items class="hidden-sm-and-down">
         <v-btn
           v-for="(item,i) in items"
-          :to="item.to"
           :key="i"
-          flat>
+          flat
+          @click="scrollTo(item.to)">
           {{ item.title }}
         </v-btn>
       </v-toolbar-items>
@@ -102,6 +102,9 @@ export default {
   created() {
   },
   methods: {
+    scrollTo(id) {
+      this.$scrollTo(id)
+    }
   }
 };
 </script>
