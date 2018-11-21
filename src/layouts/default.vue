@@ -51,9 +51,9 @@
       <v-toolbar-items class="hidden-sm-and-down">
         <v-btn
           v-for="(item,i) in items"
-          :to="item.to"
           :key="i"
-          flat>
+          flat
+          @click="scrollTo(item.to)">
           {{ item.title }}
         </v-btn>
       </v-toolbar-items>
@@ -87,9 +87,9 @@ export default {
       clipped: false,
       drawer: false,
       items: [
-        { icon: "bubble_chart", title: "Welcome", to: "/Welcome" },
-        { icon: "apps", title: "Guilds", to: "/guilds" },
-        { icon: "code", title: "Proyectos", to: "/proyectos" }
+        { icon: "bubble_chart", title: "Welcome", to: "#welcome" },
+        { icon: "apps", title: "Guilds", to: "#guilds" },
+        { icon: "code", title: "Proyectos", to: "#proyectos" }
       ],
       title: "OSWeekends"
     };
@@ -102,6 +102,9 @@ export default {
   created() {
   },
   methods: {
+    scrollTo(id) {
+      this.$scrollTo(id)
+    }
   }
 };
 </script>

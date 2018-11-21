@@ -2,6 +2,17 @@ const pkg = require('./package')
 
 module.exports = {
   mode: 'universal',
+  router: {
+    scrollBehavior (to, from, savedPosition) {
+      if (to.hash) {
+          return { selector: to.hash }
+      } else if (savedPosition) {
+          return savedPosition;
+      } else {
+          return { x: 0, y: 0 }
+      }
+    },    
+  },
 
   /*
   ** Headers of the page
@@ -39,6 +50,7 @@ module.exports = {
   */
   plugins: [
     '@/plugins/vuetify',
+    '@/plugins/vue-scrollto',
   ],
 
   /*
