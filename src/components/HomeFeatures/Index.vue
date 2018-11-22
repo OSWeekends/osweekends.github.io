@@ -44,7 +44,7 @@ import features from '../../db/features.json'
 <style lang="stylus" scoped>
 .home-features
   &__title
-    color #003ea5
+    color #1c299d
     margin 0 auto
     font-size 40px
     margin-bottom 40px
