@@ -45,7 +45,7 @@ export default {
   color #121212
 
   &:hover &__img
-    // box-shadow 0px 10px 40px rgba(#000, .35);
+      box-shadow 0 0 30px rgba(#000, .35)
 
   &__img
     width 150px
@@ -53,7 +53,7 @@ export default {
     background-size cover
     background-position top
     border-radius 100%
-    box-shadow 0 15px 40px rgba(#000, .15);
+    box-shadow 0 0 20px rgba(#000, .25);
     margin 0 auto
     transition all .5s
   

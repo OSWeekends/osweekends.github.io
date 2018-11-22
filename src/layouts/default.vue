@@ -111,7 +111,7 @@ export default {
 
 <style lang="stylus" scoped>
 .footer-section {
-  background-color: #121212;
+  background-color: #24292e;
 }
 </style>
 

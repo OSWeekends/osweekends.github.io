@@ -63,12 +63,16 @@ export default {
   width 90%
   padding-top: 90%;
   margin 10px auto
-  background-size cover
-  background-position top
+  background-size 100%
+  background-position center
   position relative
   border-radius 5px
   box-shadow 0 15px 40px rgba(#000, .15);
   overflow hidden
+  transition all .4s
+
+  &:hover
+    background-size 110%
 
   &:hover &__details
     opacity: 1
@@ -107,16 +111,17 @@ export default {
       text-decoration none
       font-weight 600
       margin-right 10px
-      background-color #f7f7f7
-      color: #003ea5
-      padding 10px 20px
+      background-color transparent
+      color #fff
+      padding 0.75em 1.25em
       transition all .4s
-      border-radius 3px
+      border-radius 6px
+      border 1px solid rgba(255,255,255,0.5);
       box-shadow 0 5px 10px rgba(#000, .2)
     
     &:hover
-      background-color #003ea5
-      color: #f7f7f7
+      background-color #fff
+      color: #1c299d
       box-shadow 0 10px 20px rgba(#000, .2)
       backface-visibility hidded
 

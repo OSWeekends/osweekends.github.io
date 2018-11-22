@@ -34,7 +34,6 @@
 
   &__title-row
     padding-left 20px
-    margin-bottom 40px
     color #fff
 
   &__title
@@ -61,16 +60,17 @@
       text-decoration none
       font-weight 600
       margin-right 10px
-      background-color #f7f7f7
-      color: #003ea5
-      padding 10px 20px
-      transition all .4s
-      border-radius 30px
+      background-color transparent
+      color #fff
+      padding 0.75em 1.25em
+      transition all .2s
+      border-radius 6px
+      border 1px solid rgba(255,255,255,0.5);
       box-shadow 0 5px 10px rgba(#000, .2)
     
     &:hover
-      background-color #333
-      color: #f7f7f7
+      background-color #fff
+      color: #1c299d
       box-shadow 0 10px 20px rgba(#000, .2)
       backface-visibility hidded
 
