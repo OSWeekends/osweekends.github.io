@@ -11,7 +11,7 @@ module.exports = {
       } else {
           return { x: 0, y: 0 }
       }
-    },    
+    },
   },
 
   /*
@@ -51,9 +51,8 @@ module.exports = {
   */
   plugins: [
     '@/plugins/vuetify',
-
-    {src: '~plugins/vue-carousel', ssr: false }
     '@/plugins/vue-scrollto',
+    {src: '~plugins/vue-carousel', ssr: false }
   ],
 
   /*
