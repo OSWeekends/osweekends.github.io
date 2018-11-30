@@ -18,22 +18,22 @@
         <h3 class="home-guilds__subtitle">Equipos de trabajo de la comunidad: </h3>
       </v-flex>
     </v-layout>
-    <carousel
-      :autoplay="true"
-      :navigation-enabled="true"
-      :scroll-per-page="true"
-      :per-page-custom="[[768, 3] ,[411, 1],[375, 1],[320, 1]]"
-      class="carousel">
-      <slide
-        v-for="(guild, index) in allGuilds"
-        :key="index">
+    <v-layout
+      row
+      wrap>
+      <v-flex
+        v-for="(guild, index) in getGuilds"
+        :key="index"
+        sm12
+        md4
+        class="home-guilds__wrapper">
         <home-guilds-card
           :title="guild.name"
           :description="guild.description"
           :img="guild.avatar"
           :github="guild.github"/>
-      </slide>
-    </carousel>
+      </v-flex>
+    </v-layout>
   </v-container>
 </template>
 
@@ -42,14 +42,10 @@
 import HomeGuildsCard from "~/components/HomeGuilds/HomeGuildsCard.vue";
 import { mapGetters } from "vuex";
 
-
 export default {
-
   components: {
-    HomeGuildsCard,
-
+    HomeGuildsCard
   },
-
   data() {
     return {};
   },
@@ -67,15 +63,8 @@ export default {
       }
       return guilds;
     }
-  },
-   created(){
-    if (process.browser) {
-    require('vue-carousel')
-
-    }
-  },
-
-}
+  }
+};
 </script>
 
 <style lang="stylus" scoped>
@@ -107,11 +96,5 @@ export default {
   &__wrapper {
     height: auto;
   }
-.carousel {
-  display: flex;
-  flex-direction: column;
-  flex-wrap: nowrap;
-  overflow hidden;
-}
 }
 </style>

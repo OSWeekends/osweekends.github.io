@@ -19,6 +19,7 @@
     "moment": "^2.22.2",
     "nuxt": "^2.0.0",
     "nuxt-material-design-icons": "^1.0.4",
+    "vue-carousel": "^0.16.0-rc2",
     "vuetify": "^1.2.4"
   },
   "devDependencies": {
