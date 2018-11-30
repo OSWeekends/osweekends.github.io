@@ -51,6 +51,8 @@ module.exports = {
   */
   plugins: [
     '@/plugins/vuetify',
+
+    {src: '~plugins/vue-carousel', ssr: false }
     '@/plugins/vue-scrollto',
   ],
 
