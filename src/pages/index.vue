@@ -2,17 +2,23 @@
   <div class="content">
     <!-- FEATURES -->
     <!--FIXME-->
-    <section class="features-section">
+    <section
+      id="welcome"
+      class="features-section">
       <home-features/>
     </section>
 
     <!-- Guilds -->
-    <section class="guilds-section">
+    <section
+      id="guilds"
+      class="guilds-section">
       <home-guilds/>
     </section>
 
     <!-- Projects -->
-    <section class="projects-section">
+    <section
+      id="proyectos"
+      class="projects-section">
       <home-projects/>
     </section>
 
@@ -100,13 +106,15 @@
 
 <style lang="stylus" scoped>
   color-blue = #003ea5
-  color-white = #f7f7f7
+  color-light-grey = #f7f7f7
+  color-white = #fff
+  
   .features-section
-    background-color #f7f7f7
+    background-color color-white
     padding 60px 0 80px
 
   .projects-section
-    background-color color-white
+    background-color color-light-grey
     padding 60px 0 80px
 
   .guilds-section
@@ -114,11 +122,11 @@
     padding 60px 0 80px
 
   .slack-section
-    background-color color-blue
+    background-color #1c299d
     padding 60px 0 60px
 
   .team-section
-    background-color #f7f7f7
+    background-color color-white
     padding 60px 0 80px
 
   .sponsors-section
@@ -126,10 +134,10 @@
     padding 60px 0 80px
 
   .communities-section
-    background-color #f7f7f7
+    background-color color-light-grey
     padding 60px 0 80px
 
   .video-section
-    background-color #f7f7f7
+    background-color color-white
     padding 60px 0 80px
 </style>

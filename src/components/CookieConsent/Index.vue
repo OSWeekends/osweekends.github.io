@@ -49,14 +49,19 @@ export default {
 .cookie-consent 
     position: fixed;
     width: 100%;
-    height: 10%;
-    top: 90%;
+    min-height: 10%;
+    bottom: 0;
     color: #fff;
     background-color: #003ea5;
     z-index: 90;
+    padding 20px
     display: flex;
+    flex-wrap wrap
     align-items: center;
     justify-content: space-around;
+
+    &__text-box
+      text-align center
 
     &__link
       text-decoration none
@@ -74,4 +79,9 @@ export default {
 
       &:hover
         cursor pointer
+
+@media screen and (max-width: 600px)
+  .cookie-consent 
+    &__text-box
+      margin-bottom 10px
 </style>

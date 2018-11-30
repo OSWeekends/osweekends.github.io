@@ -37,11 +37,10 @@ export default {
   padding 25px
   text-align center
   border-radius 3px
-  box-shadow 0 15px 40px rgba(#000, .15);
+  box-shadow 0 0 40px rgba(#000, .1);
   transition all .3s;
   &:hover
-    // transform translateY(-10px) scale(1.03)
-    // box-shadow 0 15px 40px rgba(#000, .25)
+    box-shadow 0 0 40px rgba(#000, .2)
 
   &__icon
     font-size 72px
@@ -50,7 +49,8 @@ export default {
   &__title
     color #333
     text-transform uppercase
-    margin-bottom 15px
+    font-size 18px
+    margin-bottom 10px
   
   &__text
     text-align justify

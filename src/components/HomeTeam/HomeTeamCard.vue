@@ -1,10 +1,11 @@
 <template>
   <div class="team-card">
-    <div
-      :alt="name"
-      :title="name"
-      :style="{ backgroundImage: 'url(' + img + ')' }"
-      class="team-card__img"/>
+    <div class="team-card__img-wrapper">
+      <img
+        :src="img"
+        :alt="name"
+        class="team-card__img">
+    </div>
     <h3 class="team-card__name"> {{ name }} </h3>
     <p class="team-card__role"> {{ role }} </p>
     <div class="team-card__icons">
@@ -61,16 +62,25 @@ export default {
   text-align center
   color #121212
 
-  &__img
+  &__img-wrapper
     width 200px
     height 200px
-    
-    background-size cover
-    background-position top
     border-radius 100%
-    box-shadow 0 15px 40px rgba(#000, .15);
+    box-shadow 0 0 20px rgba(#000, .25);
+    overflow hidden
     margin 0 auto
-  
+    transition all .5s
+
+    &:hover
+      box-shadow 0 0 30px rgba(#000, .35)
+
+    &:hover > img
+      transform scale(1.1)
+
+  &__img
+    width 100%
+    transition all .5s
+
   &__name
     font-size 18px
     font-weight 600
