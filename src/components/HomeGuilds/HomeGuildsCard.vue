@@ -70,6 +70,6 @@ export default {
 
   &__img
     min-height 200px
-    box-shadow 0px 5px 15px rgba(0,0,0, .25)
+    box-shadow 0px 0px 15px rgba(0,0,0, .1)
 
 </style>

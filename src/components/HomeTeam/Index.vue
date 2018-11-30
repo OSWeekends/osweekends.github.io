@@ -7,7 +7,8 @@
     </v-layout>
     <v-layout
       row
-      wrap>
+      wrap
+      class="home-team__card-wrapper">
       <v-flex
         v-for="(member, index) in teamMembers"
         :key="index"
@@ -48,9 +49,17 @@
 <style lang="stylus" scoped>
   .home-team
     &__title
-      color #003ea5
+      color #1c299d
       margin 0 auto
       font-size 40px
       margin-bottom 40px
+
+    // &__card-wrapper
+    //   &:hover X div
+    //     
+
+    &__card-wrapper:hover img    
+      filter: blur(3px) brightness(80%);
+  
 </style>
 
