@@ -29,7 +29,7 @@ export default {
     name: {
       type: String,
       required: true,
-      default: 'Fulanito'
+      default: ''
     },
     role: {
       type: String,
