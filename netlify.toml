@@ -5,4 +5,4 @@
   # This is the directory that you are publishing from (relative to root of your repo)
   publish = "src/dist/"
   # This will be your default build command
-  command = "yarn generate"
+  command = "npm run generate"
