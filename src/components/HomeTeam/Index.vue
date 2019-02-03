@@ -19,7 +19,7 @@
           :name="member.name"
           :img="member.avatar"
           :role="member.role"
-          :twitter="member.Twitter"
+          :twitter="member.twitter"
           :github="member.github"
           class="home-team__card"/>
       </v-flex>
@@ -56,10 +56,10 @@
 
     // &__card-wrapper
     //   &:hover X div
-    //     
+    //
 
-    &__card-wrapper:hover img    
+    &__card-wrapper:hover img
       filter: blur(3px) brightness(80%);
-  
+
 </style>
 
