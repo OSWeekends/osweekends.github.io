@@ -122,7 +122,7 @@
       .place
         margin-top 15px
         display flex
-        justify-content start
+        justify-content flex-start
         .item-1
           color red
         .item-2
