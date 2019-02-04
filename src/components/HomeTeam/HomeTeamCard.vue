@@ -2,7 +2,7 @@
   <div class="team-card">
     <div class="team-card__img-wrapper">
       <img
-        :src="img"
+        :src="pathImg"
         :alt="name"
         class="team-card__img">
     </div>
@@ -50,6 +50,11 @@ export default {
       type: String,
       required: false,
       default: ''
+    }
+  },
+  computed: {
+    pathImg() {
+      return `img/team/${this.img}`;
     }
   }
 }
