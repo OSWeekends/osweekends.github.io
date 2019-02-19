@@ -6,7 +6,6 @@
         aspect-ratio="2.75"
         class="guilds-card__img"
       />
-
       <v-card-title primary-title>
         <div>
           <h3 class="headline mb-0 text-sm-center">{{ title }}</h3>
@@ -15,13 +14,21 @@
         </div>
       </v-card-title>
 
-      <v-card-actions v-if="github">
+      <v-card-actions>
         <v-btn
-          :href="github"
+          v-if="github_repo"
+          :href="ghUrl"
           title="github"
           target="_blank"
           flat
           color="#003ea5">Github</v-btn>
+        <v-btn
+          v-if="website"
+          :href="website"
+          title="github"
+          target="_blank"
+          flat
+          color="#003ea5">Website</v-btn>
       </v-card-actions>
     </v-card>
   </div>
@@ -30,25 +37,35 @@
 <script>
 export default {
   props: {
-    title: {
-      type: String,
-      required: true,
-      default: 'worknpm'
-      },
-    description: {
-      type: String,
-      required: true,
-      default: 'Lorem ipsun text'
-      },
     img: {
+      type: String,
+      required: true,
+      default: 'Img'
+    },
+    title: {
       type: String,
       required: true,
       default: 'Title'
       },
-    github: {
+    github_repo: {
       type: String,
       required: false,
       default: ''
+    },
+    website: {
+      type: String,
+      required: false,
+      default: ''
+    },
+    description: {
+      type: String,
+      required: true,
+      default: 'Lorem ipsum text'
+      }
+  },
+  computed: {
+    ghUrl () {
+      return `https://github.com/${this.github_repo}`
     }
   }
 }
@@ -56,8 +73,12 @@ export default {
 
 
 <style lang="stylus" scoped>
+  .guilds-card
+    margin 10px 10px
 
-.guilds-card
+    &__wrapper
+      height 100%
+/*
   height 95%
   background-color rgba(#fff, 0.75)
   margin 10px 20px
@@ -70,6 +91,7 @@ export default {
 
   &__img
     min-height 200px
-    box-shadow 0px 0px 15px rgba(0,0,0, .1)
+    box-shadow 0 0 15px rgba(0,0,0, .1)
+    */
 
 </style>

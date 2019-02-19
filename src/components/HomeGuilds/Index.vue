@@ -21,18 +21,22 @@
     <v-layout
       row
       wrap>
-      <v-flex
-        v-for="(guild, index) in getGuilds"
-        :key="index"
-        sm12
-        md4
-        class="home-guilds__wrapper">
-        <home-guilds-card
-          :title="guild.name"
-          :description="guild.description"
-          :img="guild.avatar"
-          :github="guild.github"/>
-      </v-flex>
+      <hooper :settings="hooperSettings">
+        <slide
+          v-for="(guild, index) in shuffleArray"
+          :key="index"
+          class="">
+          <home-guilds-card
+            :img="guild.avatar"
+            :title="guild.name"
+            :website="guild.webdriver"
+            :description="guild.description"
+            :github_repo="guild.github_repo"/>
+        </slide>
+        <hooper-navigation slot="hooper-addons" />
+        <!--<hooper-pagination slot="hooper-addons" /> -->
+        <!--<hooper-progress slot="hooper-addons" /> -->
+      </hooper>
     </v-layout>
   </v-container>
 </template>
@@ -41,28 +45,66 @@
 <script>
 import HomeGuildsCard from "~/components/HomeGuilds/HomeGuildsCard.vue";
 import { mapGetters } from "vuex";
+import {
+  Hooper,
+  Slide,
+  Progress as HooperProgress,
+  Pagination as HooperPagination,
+  Navigation as HooperNavigation
+} from 'hooper';
+
+import 'hooper/dist/hooper.css';
 
 export default {
   components: {
-    HomeGuildsCard
+    HomeGuildsCard,
+    Hooper,
+    Slide,
+    HooperProgress,
+    HooperPagination,
+    HooperNavigation,
   },
   data() {
-    return {};
+    return {
+      hooperSettings: {
+        centerMode: false,
+        breakpoints: {
+          600: {
+            itemsToShow: 1,
+            pagination: 'fraction'
+          },
+          768: {
+            itemsToShow: 2
+          },
+          960: {
+            itemsToShow: 3,
+          },
+          1264: {
+            itemsToShow: 4,
+          }
+        }
+      }
+    };
   },
   computed: {
     ...mapGetters(["allGuilds"]),
-
-    getGuilds() {
-      let guilds = [];
-
-      for (let x = 0; x <= 2; x++) {
-        let i = Math.random() * (0 - (this.allGuilds.length - 1));
-        i = Math.round(i);
-        i = Math.abs(i);
-        guilds.push(this.allGuilds[i]);
+    // Randomize array
+    shuffleArray () {
+      const array = [ ...this.allGuilds ];
+      let m = array.length, i, t;
+      while (m) {
+        // Pick a remaining element…
+        i = Math.floor(Math.random() * m--);
+        // Swap it with the current element.
+        t = array[m];
+        array[m] = array[i];
+        array[i] = t;
       }
-      return guilds;
-    }
+      console.log('<<<<<<<<<<<<<<<<<<ITEMS>>>>>>>>>>>>>>>>>>');
+      console.table(array);
+      return array;
+    },
+
   }
 };
 </script>
@@ -95,6 +137,10 @@ export default {
 
   &__wrapper {
     height: auto;
+  }
+
+  .hooper {
+    height 100%
   }
 }
 </style>
