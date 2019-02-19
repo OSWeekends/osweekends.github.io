@@ -100,8 +100,6 @@ export default {
         array[m] = array[i];
         array[i] = t;
       }
-      console.log('<<<<<<<<<<<<<<<<<<ITEMS>>>>>>>>>>>>>>>>>>');
-      console.table(array);
       return array;
     },
 
