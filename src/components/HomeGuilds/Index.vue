@@ -21,66 +21,73 @@
     <v-layout
       row
       wrap>
-      <hooper :settings="hooperSettings">
-        <slide
-          v-for="(guild, index) in shuffleArray"
-          :key="index"
-          class="">
-          <home-guilds-card
-            :img="guild.avatar"
-            :title="guild.name"
-            :website="guild.webdriver"
-            :description="guild.description"
-            :github_repo="guild.github_repo"/>
-        </slide>
-        <hooper-navigation slot="hooper-addons" />
-        <!--<hooper-pagination slot="hooper-addons" /> -->
-        <!--<hooper-progress slot="hooper-addons" /> -->
-      </hooper>
+      <div v-swiper:mySwiper="swiperOption">
+        <div class="swiper-wrapper">
+          <v-flex
+            v-for="(guild, idx) in shuffleArray"
+            :key="idx"
+            class="swiper-slide">
+            <no-ssr>
+              <home-guilds-card
+                :img="guild.avatar"
+                :title="guild.name"
+                :website="guild.webdriver"
+                :description="guild.description"
+                :github_repo="guild.github_repo"/>
+            </no-ssr>
+          </v-flex>
+        </div>
+        <div
+          slot="button-prev"
+          class="swiper-button-prev"
+        />
+        <div
+          slot="button-next"
+          class="swiper-button-next"
+        />
+      </div>
     </v-layout>
   </v-container>
 </template>
 
 
 <script>
-import HomeGuildsCard from "~/components/HomeGuilds/HomeGuildsCard.vue";
-import { mapGetters } from "vuex";
-import {
-  Hooper,
-  Slide,
-  Progress as HooperProgress,
-  Pagination as HooperPagination,
-  Navigation as HooperNavigation
-} from 'hooper';
+import HomeGuildsCard from '~/components/HomeGuilds/HomeGuildsCard.vue';
+import { mapGetters } from 'vuex';
+import Vue from 'vue'
 
-import 'hooper/dist/hooper.css';
+// If used in nuxt.js/ssr, you should keep it only in browser build environment
+if (process.browser) {
+  const VueAwesomeSwiper = require('vue-awesome-swiper/dist/ssr');
+  Vue.use(VueAwesomeSwiper)
+}
+
 
 export default {
   components: {
     HomeGuildsCard,
-    Hooper,
-    Slide,
-    HooperProgress,
-    HooperPagination,
-    HooperNavigation,
   },
   data() {
     return {
-      hooperSettings: {
-        centerMode: false,
-        breakpoints: {
-          600: {
-            itemsToShow: 1,
-            pagination: 'fraction'
+      swiperOption: {
+        loop: false,
+        slidesPerView: '3',
+        //initialSlide: '2',
+        //centeredSlides: true,
+        // spaceBetween: 30,
+        //pagination: {
+          //el: '.swiper-pagination',
+        //},
+        navigation: {
+          nextEl: '.swiper-button-next',
+          prevEl: '.swiper-button-prev',
+        },
+        on: {
+          slideChange() {
+            console.log('onSlideChangeEnd', this);
           },
-          768: {
-            itemsToShow: 2
-          },
-          960: {
-            itemsToShow: 3,
-          },
-          1264: {
-            itemsToShow: 4,
+          tap() {
+            console.log('onTap', this);
           }
         }
       }

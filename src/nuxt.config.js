@@ -44,6 +44,7 @@ module.exports = {
   */
   css: [
     '~/assets/style/app.styl',
+    'swiper/dist/css/swiper.css'
   ],
 
   /*
@@ -52,6 +53,8 @@ module.exports = {
   plugins: [
     '@/plugins/vuetify',
     '@/plugins/vue-scrollto',
+    //'@plugins/vue-awesome-swiper',
+    { src: '~/plugins/nuxt-swiper-plugin', ssr: false },
   ],
 
   /*
@@ -90,4 +93,4 @@ module.exports = {
       }
     },
   },
-}
+};
