@@ -26,13 +26,16 @@
           v-for="(guild, index) in shuffleArray"
           :key="index"
           class="">
-          <home-guilds-card
-            :img="guild.avatar"
-            :title="guild.name"
-            :website="guild.webdriver"
-            :description="guild.description"
-            :github_repo="guild.github_repo"/>
+          <no-srr>
+            <home-guilds-card
+              :img="guild.avatar"
+              :title="guild.name"
+              :website="guild.webdriver"
+              :description="guild.description"
+              :github_repo="guild.github_repo"/>
+          </no-srr>
         </slide>
+
         <hooper-navigation slot="hooper-addons" />
         <!--<hooper-pagination slot="hooper-addons" /> -->
         <!--<hooper-progress slot="hooper-addons" /> -->
@@ -43,8 +46,9 @@
 
 
 <script>
-import HomeGuildsCard from "~/components/HomeGuilds/HomeGuildsCard.vue";
+
 import { mapGetters } from "vuex";
+import 'hooper/dist/hooper.css';
 import {
   Hooper,
   Slide,
@@ -53,7 +57,7 @@ import {
   Navigation as HooperNavigation
 } from 'hooper';
 
-import 'hooper/dist/hooper.css';
+import HomeGuildsCard from "~/components/HomeGuilds/HomeGuildsCard.vue";
 
 export default {
   components: {
@@ -138,7 +142,7 @@ export default {
   }
 
   .hooper {
-    height 100%
+    height: 100%;
   }
 }
 </style>

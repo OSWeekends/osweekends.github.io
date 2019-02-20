@@ -31,7 +31,7 @@
     "hooper": "0.0.8",
     "jsdom": "^13.0.0",
     "moment": "^2.22.2",
-    "nuxt": "^2.0.0",
+    "nuxt": "^2.4.3",
     "nuxt-material-design-icons": "^1.0.4",
     "terser": "^3.14.1",
     "vue-scrollto": "^2.13.0",

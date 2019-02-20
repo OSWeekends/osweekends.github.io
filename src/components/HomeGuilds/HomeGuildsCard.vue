@@ -4,31 +4,35 @@
       <v-img
         :src="img"
         aspect-ratio="2.75"
-        class="guilds-card__img"
-      />
+        class="guilds-card__img"/>
+
       <v-card-title primary-title>
         <div>
-          <h3 class="headline mb-0 text-sm-center">{{ title }}</h3>
+          <h3 class="headline mb-0 text-sm-center"> {{ title }} </h3>
           <hr class="mb-2">
-          <div> {{ description }}</div>
+          <div> {{ description }} </div>
         </div>
       </v-card-title>
 
       <v-card-actions>
-        <v-btn
-          v-if="github_repo"
-          :href="ghUrl"
-          title="github"
-          target="_blank"
-          flat
-          color="#003ea5">Github</v-btn>
-        <v-btn
-          v-if="website"
-          :href="website"
-          title="github"
-          target="_blank"
-          flat
-          color="#003ea5">Website</v-btn>
+        <template v-if="github_repo">
+          <v-btn
+            :href="ghUrl"
+            title="github"
+            target="_blank"
+            flat
+            color="#003ea5">Github
+          </v-btn>
+        </template>
+        <template v-if="website">
+          <v-btn
+            :href="website"
+            title="github"
+            target="_blank"
+            flat
+            color="#003ea5">Website
+          </v-btn>
+        </template>
       </v-card-actions>
     </v-card>
   </div>
