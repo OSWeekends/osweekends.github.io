@@ -63,13 +63,13 @@ export default {
 <style lang="stylus" scoped>
 .team-card
   margin 10px 20px
-  padding 25px
+  padding-bottom 25px
   text-align center
   color #121212
 
   &__img-wrapper
-    width 200px
-    height 200px
+    width 175px
+    height 175px
     border-radius 100%
     box-shadow 0 0 20px rgba(#000, .25);
     overflow hidden
