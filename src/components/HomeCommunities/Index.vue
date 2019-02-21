@@ -14,7 +14,8 @@
         v-for="(community, index) in communities"
         :key="index"
         xs12
-        sm3
+        sm4
+        lg3
         xl2
         class="text-xs-center">
         <home-communities-card

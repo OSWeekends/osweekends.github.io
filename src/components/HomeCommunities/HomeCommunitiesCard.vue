@@ -40,7 +40,7 @@ export default {
 <style lang="stylus" scoped>
 .community-card
   margin 10px 20px
-  padding 25px
+  padding-bottom 25px
   text-align center
   color #121212
 
