@@ -71,16 +71,28 @@ export default {
     return {
       swiperOption: {
         loop: false,
-        slidesPerView: '3',
-        //initialSlide: '2',
-        //centeredSlides: true,
-        // spaceBetween: 30,
-        //pagination: {
-          //el: '.swiper-pagination',
-        //},
+        slidesPerView: '1',
         navigation: {
           nextEl: '.swiper-button-next',
           prevEl: '.swiper-button-prev',
+        },
+        breakpointsInverse: true,
+        breakpoints: {
+          // when window width is >= 450px
+          450: {
+            slidesPerView: 2,
+            // spaceBetween: 20
+          },
+          // when window width is >= 700px
+          700: {
+            slidesPerView: 3,
+            //spaceBetween: 30
+          },
+          // when window width is >= 900px
+          1264: {
+            slidesPerView: 4,
+            //spaceBetween: 40
+          }
         },
         on: {
           slideChange() {
