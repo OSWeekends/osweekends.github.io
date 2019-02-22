@@ -13,8 +13,8 @@
         </v-btn>        
       </div>
       <div class="home-footer__love">
-        2018 — Made with
-        <v-icon small>fas fa-heart</v-icon> by guilders.
+        Made with
+        <v-icon small>fas fa-heart</v-icon> by Guilders 2019 Bajo licencia MIT.
       </div>
     </div>
   </v-container>
@@ -53,7 +53,7 @@ export default {
           },
           {
             site: 'Slack',
-            icon: 'fab fa-slack-hash',
+            icon: 'fab fa-slack',
             href: 'http://invitations-osweekends.herokuapp.com/',
           }
         ]
