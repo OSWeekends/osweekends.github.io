@@ -11,7 +11,7 @@
       <div>
         <h3 class="headline mb-0 text-sm-center">{{ title }}</h3>
         <hr class="mb-2">
-        <div> {{ description }}</div>
+        <div class="guilds-card__description"> {{ description }}</div>
       </div>
     </v-card-title>
     <v-card-actions>
@@ -87,21 +87,8 @@ export default {
       align-items: start;
 
     &__img
-      max-height 100px
-/*
-  height 95%
-  background-color rgba(#fff, 0.75)
-  margin 10px 20px
-  border-radius 3px
-  overflow hidden
-  box-shadow 0 15px 40px rgba(#000, .15)
+      max-height 175px
 
-  &__wrapper 
-    height 100%
-
-  &__img
-    min-height 200px
-    box-shadow 0 0 15px rgba(0,0,0, .1)
-    */
-
+    &__description
+      text-align justify
 </style>

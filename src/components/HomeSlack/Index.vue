@@ -11,13 +11,13 @@
         <!-- <img
           alt="slack"
           src="/img/social-icons/slack-black.svg">  -->
-        <i class="fab fa-slack-hash home-slack__icon" />
+        <i class="fab fa-slack home-slack__icon"/>
       </v-flex>
       <v-flex
         sm12
         md10>
         <h2 class="home-slack__title">Conversamos sobre Open Source en Slack</h2>
-        <h3 class="home-slack__subtitle">Únete a +2k personas</h3>
+        <h3 class="home-slack__subtitle">Únete a ~1K personas</h3>
         <br>
         <a
           href="http://invitations-osweekends.herokuapp.com/?ref=OSWLanding"
