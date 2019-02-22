@@ -13,7 +13,7 @@
         </v-btn>        
       </div>
       <div class="home-footer__love">
-        &copy;2018 — Made with
+        2018 — Made with
         <v-icon small>fas fa-heart</v-icon> by guilders.
       </div>
     </div>
