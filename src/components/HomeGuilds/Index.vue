@@ -39,11 +39,11 @@
         </div>
         <div
           slot="button-prev"
-          class="swiper-button-prev"
+          class="swiper-button-prev swiper-button-white"
         />
         <div
           slot="button-next"
-          class="swiper-button-next"
+          class="swiper-button-next swiper-button-white"
         />
       </div>
     </v-layout>
@@ -89,7 +89,7 @@ export default {
         breakpoints: {
           // when window width is >= 450px
           450: {
-            slidesPerView: 2,
+            slidesPerView: 1,
             // spaceBetween: 20
           },
           // when window width is >= 700px
@@ -105,10 +105,10 @@ export default {
         },
         on: {
           slideChange() {
-            console.log('onSlideChangeEnd', this);
+            // console.log('onSlideChangeEnd', this);
           },
           tap() {
-            console.log('onTap', this);
+            // console.log('onTap', this);
           }
         }
       }
@@ -167,6 +167,29 @@ export default {
 
   .hooper {
     height 100%
+  }
+}
+
+.swiper-button-prev, .swiper-button-next {  
+  width 45px 
+  margin-left -10px
+  margin-right -10px  
+  margin-top 0
+  background-color rgba(0,0,0,0.4)  
+  border-radius 50%
+  background-size: 30px 30px
+
+  &:hover {
+    background-color rgba(0,0,0,0.8)  
+  }
+}
+
+@media (max-width: 700px) {
+  .swiper-button-prev, .swiper-button-next {
+    height 100%
+    top 0
+    border-radius 1px
+    background-color rgba(0,0,0,0.3)  
   }
 }
 </style>

@@ -1,10 +1,10 @@
 <template>
   <v-card class="guilds-card__wrapper">
-    <!-- <v-img
+    <v-img
       :src="img"
-      aspect-ratio="2.75"
+      position="center center"
       class="guilds-card__img"
-    /> -->
+    />
     <v-card-title 
       primary-title
       class="guilds-card__title">
@@ -86,7 +86,8 @@ export default {
       flex: 1;
       align-items: start;
 
-    
+    &__img
+      max-height 100px
 /*
   height 95%
   background-color rgba(#fff, 0.75)
