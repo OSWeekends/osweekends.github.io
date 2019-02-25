@@ -42,9 +42,9 @@
       <home-communities/>
     </section>
 
-    <!-- Slack -->
+    <!-- Meetup -->
     <section class="slack-section">
-      <home-slack/>
+      <home-meetup/>
     </section>
 
     <!-- Video -->
@@ -62,7 +62,9 @@
   import HomeTeam from '~/components/HomeTeam/Index.vue'
   import HomeCommunities from '~/components/HomeCommunities/Index.vue'
   import HomeSponsors from '~/components/HomeSponsors/Index.vue'
+  import HomeMeetup from '~/components/HomeMeetup/Index.vue'
   import HomeVideo from '~/components/HomeVideo/Index.vue'
+  
 
   import axios from 'axios'
 
@@ -95,6 +97,7 @@
       HomeTeam,
       HomeCommunities,
       HomeSponsors,
+      HomeMeetup,
       HomeVideo
     },
     data() {
