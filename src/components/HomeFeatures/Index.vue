@@ -20,6 +20,7 @@
           :title="feature.title"
           :icon="feature.icon"
           :text="feature.text"
+          :link="feature.link"
           class="home-features__card" />
       </v-flex>
     </v-layout>

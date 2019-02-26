@@ -2,7 +2,14 @@
   <div class="feature-card">
     <i class="feature-card__icon material-icons">  {{ icon }} </i>
     <h3 class="feature-card__title">{{ title }}</h3>
-    <p class="feature-card__text"> {{ text }}</p>
+    <p class="feature-card__text"> {{ text }}
+      <a
+        v-if="link"
+        :href="link"
+        target="_blank"
+        class="feature-card__link">Saber más →
+      </a>
+    </p>
   </div>
 </template>
 
@@ -23,6 +30,11 @@ export default {
       type: String,
       required: true,
       default: 'Title'
+      },
+    link: {
+      type: String,
+      required: false,
+      default: ''
       }
   }
 }
@@ -54,4 +66,10 @@ export default {
   
   &__text
     text-align justify
+
+  &__link     
+    color #003ea5
+    text-decoration none
+    &:hover 
+      text-decoration underline
 </style>
