@@ -2,7 +2,7 @@ import axios from 'axios'
 
 const actions = {
   async getMeetupData( { commit } ) {
-    const key = '765c716753752b6f42355a45103155'
+    const key = '762274756d3756244d1917424d3c1719'
     const status = {
       past: 'past',
       upcoming: 'upcoming',
